@@ -3,7 +3,7 @@ title: Import, export, duplicates and the recycle bin
 seo_title: Import contacts, export data and merge duplicates in Fulcrum CRM | Fulcrum Docs
 description: Import contacts into Fulcrum CRM from a CSV with AI column mapping, export contacts and lists, merge duplicate contacts, companies and deals, and restore deleted records.
 nav: Import, export and duplicates
-updated: 2026-11-04
+updated: 2026-11-05
 about: Fulcrum CRM
 howto: Import contacts into Fulcrum CRM from a CSV file
 related:
@@ -61,3 +61,8 @@ related:
 <li>Select <strong>Restore</strong> next to the record.</li>
 </ol>
 <p>Admins can also delete a single entry forever, or <strong>Empty</strong> the bin. To undo a single field change rather than a deletion, open the record's history and undo that change. This works for contacts, companies and deals.</p>
+
+<h2>Use a small import rehearsal</h2>
+<p>Keep a copy of the original spreadsheet. Clean headers, inspect encoding and map columns carefully. Import a small sample and check names, email, international phone formatting, owners and custom fields before running the full file. Confirm whether the import creates or updates records before repeating it.</p>
+<h2>Protect the context when merging or exporting</h2>
+<p>Inspect both records and their activity before merging. Confirm the surviving details afterwards. Exports can contain personal information: store them in the intended location and share only the necessary columns. An exported file is a snapshot, not an automatically synchronised backup.</p>

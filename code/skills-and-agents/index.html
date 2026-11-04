@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Skills, Sidekicks and specialist agents | Fulcrum Docs</title>
+<meta name="description" content="Use reusable skills and specialist agents in Fulcrum Code, understand Sidekick skill packs, inspect installed skills and write a focused procedure.">
+<link rel="canonical" href="https://fulcrumcortex.github.io/documentation/code/skills-and-agents/">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Fulcrum Docs">
+<meta property="og:locale" content="en_AU">
+<meta property="og:title" content="Skills, Sidekicks and specialist agents">
+<meta property="og:description" content="Use reusable skills and specialist agents in Fulcrum Code, understand Sidekick skill packs, inspect installed skills and write a focused procedure.">
+<meta property="og:url" content="https://fulcrumcortex.github.io/documentation/code/skills-and-agents/">
+<meta property="og:image" content="https://fulcrumcortex.github.io/documentation/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Fulcrum Docs">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Skills, Sidekicks and specialist agents">
+<meta name="twitter:description" content="Use reusable skills and specialist agents in Fulcrum Code, understand Sidekick skill packs, inspect installed skills and write a focused procedure.">
+<meta name="twitter:image" content="https://fulcrumcortex.github.io/documentation/assets/og-image.png">
+<meta name="theme-color" content="#14100f">
+<link rel="icon" href="/documentation/assets/fulcrum-logo.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/documentation/assets/fulcrum-logo.png">
+<link rel="stylesheet" href="/documentation/assets/site.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://fulcrumcortex.com/#organization",
+   "name": "Fulcrum Cortex",
+   "url": "https://fulcrumcortex.com/",
+   "logo": "https://fulcrumcortex.github.io/documentation/assets/fulcrum-logo.png",
+   "description": "Fulcrum Cortex is the AI execution layer for business, built in Australia.",
+   "sameAs": [
+    "https://fulcrumcrm.app/",
+    "https://fulcrumcode.app/",
+    "https://fulcrumail.app/",
+    "https://lyre.au/",
+    "https://docs.lyre.au/",
+    "https://github.com/fulcrumcortex"
+   ]
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://fulcrumcortex.github.io/documentation/#website",
+   "name": "Fulcrum Docs",
+   "url": "https://fulcrumcortex.github.io/documentation/",
+   "inLanguage": "en-AU",
+   "publisher": {
+    "@id": "https://fulcrumcortex.com/#organization"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Docs",
+     "item": "https://fulcrumcortex.github.io/documentation/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Code overview",
+     "item": "https://fulcrumcortex.github.io/documentation/code/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Skills and agents",
+     "item": "https://fulcrumcortex.github.io/documentation/code/skills-and-agents/"
+    }
+   ]
+  },
+  {
+   "@type": "TechArticle",
+   "headline": "Skills, Sidekicks and specialist agents",
+   "description": "Use reusable skills and specialist agents in Fulcrum Code, understand Sidekick skill packs, inspect installed skills and write a focused procedure.",
+   "url": "https://fulcrumcortex.github.io/documentation/code/skills-and-agents/",
+   "mainEntityOfPage": "https://fulcrumcortex.github.io/documentation/code/skills-and-agents/",
+   "inLanguage": "en-AU",
+   "isPartOf": {
+    "@id": "https://fulcrumcortex.github.io/documentation/#website"
+   },
+   "author": {
+    "@id": "https://fulcrumcortex.com/#organization"
+   },
+   "publisher": {
+    "@id": "https://fulcrumcortex.com/#organization"
+   },
+   "image": "https://fulcrumcortex.github.io/documentation/assets/og-image.png",
+   "dateModified": "2026-11-05",
+   "about": {
+    "@type": "SoftwareApplication",
+    "name": "Fulcrum Code",
+    "applicationCategory": "BusinessApplication"
+   }
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="topbar">
+<a class="brand" href="/documentation/"><img src="/documentation/assets/fulcrum-logo.svg" alt="" width="28" height="28"><span>Fulcrum <b>Docs</b></span></a>
+<a class="menu-link" href="#docs-nav">Guides</a>
+</header>
+<div class="layout">
+<main id="main">
+<nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="/documentation/">Docs</a></li><li><a href="/documentation/code/">Code overview</a></li><li><span aria-current="page">Skills and agents</span></li></ol></nav>
+<article>
+<h1>Skills, Sidekicks and specialist agents</h1>
+<p class="lead">Use reusable skills and specialist agents in Fulcrum Code, understand Sidekick skill packs, inspect installed skills and write a focused procedure.</p>
+<h2 id="skill-or-agent">Skill or agent?</h2><p>A <strong>skill</strong> is a reusable procedure loaded into the conversation when relevant. An <strong>agent profile</strong> defines a specialist's role and tool set, and can run a focused task in its own context. A Sidekick is an AI teammate; skills describe how that teammate should approach a kind of work. A skill does not grant account permissions or install the service it describes.</p>
+<h2 id="use-a-skill">Use a skill</h2><ol class="steps"><li>Enter <code>/skills</code> to inspect available skills.</li><li>Ask for the skill by name and describe the task, for example “Use the refactor skill to simplify this parser while keeping its public API.”</li><li>Provide the project constraints and expected checks.</li><li>Review the actions and evidence, just as you would for any other agent task.</li></ol>
+<h2 id="write-a-useful-procedure">Write a useful procedure</h2><p>User skills can live in Markdown files in <code>~/.fulcrum/skills/</code>. The skill loader supports a name, description and body. Start with a small procedure:</p><pre><code>---
+name: review-form-change
+description: Review a form change before release
+---
+1. Read the changed form and its validation.
+2. Check empty, invalid and valid input.
+3. Check keyboard navigation and error messages.
+4. Run the relevant existing tests.
+5. Report findings and untested behaviour.
+Do not publish or change hosted systems.</code></pre><p>Use only fictional examples and public project conventions. Do not put tokens or customer details into a reusable skill. Start a new session after changing skill files if they do not appear in the current session.</p>
+<h2 id="discover-skill-packs">Discover skill packs</h2><p><code>/marketplace</code> provides the available pack management commands. Inspect the pack source and instructions before adding or installing it. The <a href="https://github.com/fulcrumcortex/sidekicks-skills">Sidekick skills repository</a> is currently empty; there is no published pack to install from it yet. This guide's example is a local skill, not a claim that the repository already contains a pack.</p>
+<h2 id="delegate-to-a-specialist">Delegate to a specialist</h2><p>Fulcrum Code includes <strong>general</strong>, <strong>explore</strong> and <strong>scout</strong> profiles. Type <code>@</code> for the agent and file picker. A request such as <code>@explore find the authentication middleware</code> delegates a focused investigation. Ask for findings with file references and a clear stopping point.</p><p>Custom profiles live under <code>~/.fulcrum/agents/</code>. Define a narrow responsibility and the tools it needs. When several agents contribute, ask the coordinating agent to reconcile their findings before treating the overall task as complete.</p>
+
+
+<p class="updated">Last updated <time datetime="2026-11-05">2026-11-05</time></p>
+</article>
+<nav class="pager" aria-label="Previous and next guides"><a class="prev" href="/documentation/code/tools-and-worktrees/"><span>Previous</span>Tools and worktrees</a><a class="next" href="/documentation/code/sessions-and-memory/"><span>Next</span>Sessions and memory</a></nav>
+</main>
+<aside class="toc" aria-label="On this page"><p>On this page</p><ul>
+<li><a href="#skill-or-agent">Skill or agent?</a></li>
+<li><a href="#use-a-skill">Use a skill</a></li>
+<li><a href="#write-a-useful-procedure">Write a useful procedure</a></li>
+<li><a href="#discover-skill-packs">Discover skill packs</a></li>
+<li><a href="#delegate-to-a-specialist">Delegate to a specialist</a></li>
+</ul></aside>
+<nav class="sidebar" id="docs-nav" aria-label="Documentation">
+<p class="nav-section">Start here</p><ul>
+<li><a href="/documentation/">Overview</a></li>
+<li><a href="/documentation/sessions/">Cortex and Sessions</a></li>
+</ul>
+<p class="nav-section">Fulcrum Code</p><ul>
+<li><a href="/documentation/code/">Code overview</a></li>
+<li><a href="/documentation/code/install-and-sign-in/">Install and sign in</a></li>
+<li><a href="/documentation/code/plan-build-and-review/">Plan, build and review</a></li>
+<li><a href="/documentation/code/tools-and-worktrees/">Tools and worktrees</a></li>
+<li><a href="/documentation/code/skills-and-agents/" aria-current="page">Skills and agents</a></li>
+<li><a href="/documentation/code/sessions-and-memory/">Sessions and memory</a></li>
+<li><a href="/documentation/code/connections-and-extensions/">Connections and extensions</a></li>
+<li><a href="/documentation/code/voice-images-and-editor/">Voice, images and editor</a></li>
+</ul>
+<p class="nav-section">Fulcrum Mail</p><ul>
+<li><a href="/documentation/fulcrum-mail/">Fulcrum Mail overview</a></li>
+<li><a href="/documentation/fulcrum-mail/create-an-account/">Create an account</a></li>
+<li><a href="/documentation/fulcrum-mail/workspaces/">Company workspaces</a></li>
+<li><a href="/documentation/fulcrum-mail/invite-and-manage-members/">Invite and manage members</a></li>
+<li><a href="/documentation/fulcrum-mail/switch-workspaces-and-accounts/">Switch workspaces and accounts</a></li>
+<li><a href="/documentation/fulcrum-mail/mail-basics/">Mail basics</a></li>
+<li><a href="/documentation/fulcrum-mail/settings/">Mail settings</a></li>
+</ul>
+<p class="nav-section">Calendar</p><ul>
+<li><a href="/documentation/calendar/">Calendar overview</a></li>
+<li><a href="/documentation/calendar/import-and-connect-calendars/">Import and connect calendars</a></li>
+<li><a href="/documentation/calendar/booking-pages/">Booking pages</a></li>
+<li><a href="/documentation/calendar/manage-bookings/">Manage bookings</a></li>
+<li><a href="/documentation/calendar/meetings/">Meetings</a></li>
+</ul>
+<p class="nav-section">Files and documents</p><ul>
+<li><a href="/documentation/drive/">Drive overview</a></li>
+<li><a href="/documentation/docs/">Docs overview</a></li>
+<li><a href="/documentation/pages/">Shareable pages</a></li>
+<li><a href="/documentation/wallet/">Wallet and credits</a></li>
+</ul>
+<p class="nav-section">Lyre</p><ul>
+<li><a href="/documentation/lyre/">Lyre overview</a></li>
+<li><a href="/documentation/lyre/voice-agents/">Voice agents</a></li>
+<li><a href="/documentation/lyre/phone-numbers/">Phone numbers</a></li>
+<li><a href="/documentation/lyre/outbound-calls-and-campaigns/">Outbound calls and campaigns</a></li>
+<li><a href="/documentation/lyre/book-meetings/">Book meetings</a></li>
+<li><a href="/documentation/lyre/call-history/">Call history</a></li>
+<li><a href="/documentation/lyre/credits-and-billing/">Credits and billing</a></li>
+<li><a href="/documentation/lyre/compliance/">Compliance</a></li>
+<li><a href="/documentation/lyre/sms-contacts-and-connections/">SMS and resources</a></li>
+</ul>
+<p class="nav-section">Fulcrum CRM</p><ul>
+<li><a href="/documentation/crm/">CRM overview</a></li>
+<li><a href="/documentation/crm/contacts-and-companies/">Contacts and companies</a></li>
+<li><a href="/documentation/crm/deals-and-pipelines/">Deals and pipelines</a></li>
+<li><a href="/documentation/crm/activities-and-tasks/">Activities and tasks</a></li>
+<li><a href="/documentation/crm/lists/">Lists</a></li>
+<li><a href="/documentation/crm/custom-fields/">Custom fields</a></li>
+<li><a href="/documentation/crm/import-export-and-duplicates/">Import, export and duplicates</a></li>
+<li><a href="/documentation/crm/lead-forms-and-routing/">Lead forms and routing</a></li>
+<li><a href="/documentation/crm/email/">Email</a></li>
+<li><a href="/documentation/crm/calls-and-ai/">Calls and AI</a></li>
+<li><a href="/documentation/crm/roles-and-permissions/">Roles and permissions</a></li>
+<li><a href="/documentation/crm/reports-and-workflows/">Reports and workflows</a></li>
+<li><a href="/documentation/crm/invoices-and-products/">Invoices and products</a></li>
+<li><a href="/documentation/crm/projects-and-issues/">Projects and issues</a></li>
+<li><a href="/documentation/crm/settings-and-integrations/">Settings and integrations</a></li>
+</ul>
+</nav>
+</div>
+<footer class="footer">
+<p>Fulcrum Docs is written and maintained by the Fulcrum Cortex team in Australia.</p>
+<p><a href="https://github.com/fulcrumcortex/documentation">Suggest a correction on GitHub</a></p>
+</footer>
+</body>
+</html>

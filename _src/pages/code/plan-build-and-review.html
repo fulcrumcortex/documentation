@@ -1,0 +1,18 @@
+---
+title: Plan, build and review a change
+description: Use Fulcrum Code Plan and Build modes, give a precise brief, review tool approvals and verify changes before committing or deploying.
+nav: Plan, build and review
+updated: 2026-11-05
+about: Fulcrum Code
+---
+<figure class="screenshot"><a href="/assets/screenshots/code-plan.svg"><img src="/assets/screenshots/code-plan.svg" alt="Fulcrum Code Plan mode demonstration, with a request to investigate before editing" loading="lazy" decoding="async" width="1440"></a><figcaption>Plan mode is visible in the terminal. This is a demonstration session, not evidence of completed development work. Select the image to view it at full size.</figcaption></figure>
+<h2>Choose the mode</h2><p><strong>Plan</strong> supports investigation and planning while mutating tools are blocked. <strong>Build</strong> gives the agent its full tool access, subject to the active approval controls. Switch with <code>/plan</code>, <code>/build</code>, <code>/mode</code> or Ctrl+Tab. A plan is useful before a change spanning multiple files.</p>
+<h2>Give a brief with a checkable outcome</h2><pre><code>Find why the contact form accepts a blank name.
+Propose a small fix before editing.
+Keep the existing design and avoid new dependencies.
+After approval, run the form validation tests and show the diff.
+Stop before committing or deploying.</code></pre><p>Describe the trigger, the expected behaviour, constraints and completion evidence. If you have a reproduction or error, include it. Tell the agent when the issue happens instead of guessing which file it must change.</p>
+<h2>Move from plan to implementation</h2><ol class="steps"><li>Review the proposed files, approach and checks. Resolve missing requirements.</li><li>Switch to Build and ask for the agreed change.</li><li>Read tool approval prompts before allowing commands or writes. A command may have effects outside the repository.</li><li>Review the final diff and test output. Ask about skipped checks or failures.</li><li>Commit or publish only within the scope you authorised.</li></ol>
+<h2>Stop or redirect work</h2><p>Ctrl+C stops the running task or clears the prompt; pressing it twice exits. <code>/cancel</code> cancels work. Tell the agent what to preserve when redirecting it. After interruption, inspect the working tree: stopping a turn does not roll back every command that has already run.</p>
+<h2>Check more than the summary</h2><p>Ask which tests ran, whether they passed and which behaviours were checked. Use <code>git diff</code> and <code>git status</code> in your repository to inspect the change independently. A local build cannot prove that a service is live. For a release, request the published revision and a check of the live behaviour.</p>
+<h2>Recover a mistaken turn</h2><p><code>/undo</code> and <code>/redo</code> restore conversation state and available file checkpoints. They are not substitutes for Git history or backups, and cannot be relied on to reverse an external operation such as sending a message or changing a hosted service. See <a href="/code/sessions-and-memory/">Sessions and memory</a>.</p>

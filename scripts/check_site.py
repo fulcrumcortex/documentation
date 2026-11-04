@@ -26,7 +26,7 @@ import build  # noqa: E402
 
 ALLOWED_HOSTS = {
     "fulcrumcortex.com", "fulcrumcrm.app", "fulcrumcode.app", "lyre.au",
-    "docs.lyre.au", "fulcrumail.app", "github.com",
+    "docs.lyre.au", "fulcrumail.app", "github.com", "fulcrumcortex.github.io",
 }
 VOID = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "source", "track", "wbr"}
 
@@ -43,6 +43,7 @@ class PageParser(HTMLParser):
         self.canonical = ""
         self.ids: list[str] = []
         self.links: list[tuple[str, str, str]] = []  # (href, rel, text)
+        self.images: list[dict[str, str]] = []
         self._link: list | None = None
         self.jsonld: list[str] = []
         self._in_jsonld = False
@@ -53,6 +54,8 @@ class PageParser(HTMLParser):
             self.stack.append(tag)
         if "id" in a:
             self.ids.append(a["id"])
+        if tag == "img":
+            self.images.append(a)
         if tag == "h1":
             self.h1 += 1
         if tag == "title":
@@ -128,6 +131,14 @@ def main() -> int:
         for key in ("og:title", "og:description", "og:url", "og:image", "twitter:card"):
             if not p.meta.get(key):
                 problems.append(f"{path}: missing {key}")
+        for img in p.images:
+            src = img.get("src", "")
+            if not img.get("alt", "").strip() and "/screenshots/" in src:
+                problems.append(f"{path}: screenshot needs descriptive alt text")
+            if src.startswith(build.BASE_PATH + "/"):
+                target = ROOT / src[len(build.BASE_PATH):].lstrip("/")
+                if not target.is_file():
+                    problems.append(f"{path}: missing image {src}")
         dup_ids = [i for i, n in Counter(p.ids).items() if n > 1]
         if dup_ids:
             problems.append(f"{path}: duplicate ids {dup_ids}")

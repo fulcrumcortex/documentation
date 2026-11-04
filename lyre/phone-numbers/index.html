@@ -95,7 +95,7 @@
     "@id": "https://fulcrumcortex.com/#organization"
    },
    "image": "https://fulcrumcortex.github.io/documentation/assets/og-image.png",
-   "dateModified": "2026-11-04",
+   "dateModified": "2026-11-05",
    "about": {
     "@type": "SoftwareApplication",
     "name": "Lyre",
@@ -187,6 +187,11 @@
 <p><strong>Operators</strong> are the people on your team who place and receive click-to-call bridged calls. Each operator needs a handset and a Lyre number. Invite colleagues to your organisation first, under <strong>Organizations</strong> → members.</p>
 <p>Once a number is live, you're ready to <a href="/documentation/lyre/outbound-calls-and-campaigns/">make outbound calls</a>. The <a href="https://docs.lyre.au/docs/calls">Lyre calls API reference</a> covers placing calls from your own software.</p>
 
+<h2 id="verify-inbound-and-outbound-separately">Verify inbound and outbound separately</h2>
+<p>After assigning a number, place a test inbound call and confirm the expected agent answers. For outbound, confirm the selected source number and make an authorised test call to a number you control. A purchased or imported number can still need routing or provider setup before calls work.</p>
+<h2 id="when-the-wrong-agent-answers">When the wrong agent answers</h2>
+<p>Check the number’s current assignment and the organisation you are editing. Review any imported provider routing and whether the destination was saved. Keep existing working routing intact until you can identify which configuration is actually handling the call.</p>
+
 <section class="related" aria-labelledby="related-reading">
 <h2 id="related-reading">Related reading</h2>
 <ul>
@@ -195,7 +200,7 @@
 <li><a href="https://lyre.au/blog/scx-ai-partnership-sovereign-models-for-voice">Sovereign models for voice: the SCX.ai partnership</a></li>
 </ul>
 </section>
-<p class="updated">Last updated <time datetime="2026-11-04">2026-11-04</time></p>
+<p class="updated">Last updated <time datetime="2026-11-05">2026-11-05</time></p>
 </article>
 <nav class="pager" aria-label="Previous and next guides"><a class="prev" href="/documentation/lyre/voice-agents/"><span>Previous</span>Voice agents</a><a class="next" href="/documentation/lyre/outbound-calls-and-campaigns/"><span>Next</span>Outbound calls and campaigns</a></nav>
 </main>
@@ -205,11 +210,24 @@
 <li><a href="#assign-or-change-the-agent">Assign or change the agent</a></li>
 <li><a href="#recognise-known-callers">Recognise known callers</a></li>
 <li><a href="#operators-people-on-the-phones">Operators: people on the phones</a></li>
+<li><a href="#verify-inbound-and-outbound-separately">Verify inbound and outbound separately</a></li>
+<li><a href="#when-the-wrong-agent-answers">When the wrong agent answers</a></li>
 <li><a href="#related-reading">Related reading</a></li>
 </ul></aside>
 <nav class="sidebar" id="docs-nav" aria-label="Documentation">
 <p class="nav-section">Start here</p><ul>
 <li><a href="/documentation/">Overview</a></li>
+<li><a href="/documentation/sessions/">Cortex and Sessions</a></li>
+</ul>
+<p class="nav-section">Fulcrum Code</p><ul>
+<li><a href="/documentation/code/">Code overview</a></li>
+<li><a href="/documentation/code/install-and-sign-in/">Install and sign in</a></li>
+<li><a href="/documentation/code/plan-build-and-review/">Plan, build and review</a></li>
+<li><a href="/documentation/code/tools-and-worktrees/">Tools and worktrees</a></li>
+<li><a href="/documentation/code/skills-and-agents/">Skills and agents</a></li>
+<li><a href="/documentation/code/sessions-and-memory/">Sessions and memory</a></li>
+<li><a href="/documentation/code/connections-and-extensions/">Connections and extensions</a></li>
+<li><a href="/documentation/code/voice-images-and-editor/">Voice, images and editor</a></li>
 </ul>
 <p class="nav-section">Fulcrum Mail</p><ul>
 <li><a href="/documentation/fulcrum-mail/">Fulcrum Mail overview</a></li>
@@ -227,8 +245,11 @@
 <li><a href="/documentation/calendar/manage-bookings/">Manage bookings</a></li>
 <li><a href="/documentation/calendar/meetings/">Meetings</a></li>
 </ul>
-<p class="nav-section">Pages</p><ul>
+<p class="nav-section">Files and documents</p><ul>
+<li><a href="/documentation/drive/">Drive overview</a></li>
+<li><a href="/documentation/docs/">Docs overview</a></li>
 <li><a href="/documentation/pages/">Shareable pages</a></li>
+<li><a href="/documentation/wallet/">Wallet and credits</a></li>
 </ul>
 <p class="nav-section">Lyre</p><ul>
 <li><a href="/documentation/lyre/">Lyre overview</a></li>
@@ -239,6 +260,7 @@
 <li><a href="/documentation/lyre/call-history/">Call history</a></li>
 <li><a href="/documentation/lyre/credits-and-billing/">Credits and billing</a></li>
 <li><a href="/documentation/lyre/compliance/">Compliance</a></li>
+<li><a href="/documentation/lyre/sms-contacts-and-connections/">SMS and resources</a></li>
 </ul>
 <p class="nav-section">Fulcrum CRM</p><ul>
 <li><a href="/documentation/crm/">CRM overview</a></li>
@@ -252,6 +274,10 @@
 <li><a href="/documentation/crm/email/">Email</a></li>
 <li><a href="/documentation/crm/calls-and-ai/">Calls and AI</a></li>
 <li><a href="/documentation/crm/roles-and-permissions/">Roles and permissions</a></li>
+<li><a href="/documentation/crm/reports-and-workflows/">Reports and workflows</a></li>
+<li><a href="/documentation/crm/invoices-and-products/">Invoices and products</a></li>
+<li><a href="/documentation/crm/projects-and-issues/">Projects and issues</a></li>
+<li><a href="/documentation/crm/settings-and-integrations/">Settings and integrations</a></li>
 </ul>
 </nav>
 </div>

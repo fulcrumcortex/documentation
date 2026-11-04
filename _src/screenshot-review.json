@@ -1,0 +1,79 @@
+[
+  {
+    "file": "assets/screenshots/booking-editor.png",
+    "sha256": "1c20d9ac206992247fc9c5315ee58a41212e9bd48d369fa50ffba002ca835194",
+    "dimensions": [
+      1440,
+      960
+    ],
+    "source": "Actual local interface with fixed fictional API responses",
+    "privacy_review": "Full-resolution visual review; PNG OCR; no personal identifiers or credentials; raster metadata checked",
+    "reviewed": "2026-11-05"
+  },
+  {
+    "file": "assets/screenshots/calendar-event.png",
+    "sha256": "c20fa5d61a536c0d32bdc390e6876ce13fa9e9fbbea89c9b8fc50a90aca7bd14",
+    "dimensions": [
+      1440,
+      960
+    ],
+    "source": "Actual local interface with fixed fictional API responses",
+    "privacy_review": "Full-resolution visual review; PNG OCR; no personal identifiers or credentials; raster metadata checked",
+    "reviewed": "2026-11-05"
+  },
+  {
+    "file": "assets/screenshots/calendar.png",
+    "sha256": "cceaae1c109e09d252188a66b234fc2e4a8eed61ccd11089825933fc7a394654",
+    "dimensions": [
+      1440,
+      960
+    ],
+    "source": "Actual local interface with fixed fictional API responses",
+    "privacy_review": "Full-resolution visual review; PNG OCR; no personal identifiers or credentials; raster metadata checked",
+    "reviewed": "2026-11-05"
+  },
+  {
+    "file": "assets/screenshots/code-plan.svg",
+    "sha256": "d5eec9c59e00f7342169c49b28e65fcd09ba804e97709bd27834a842acfb542b",
+    "dimensions": [
+      1482,
+      1075
+    ],
+    "source": "Actual terminal renderer with stub agent; no tool execution",
+    "privacy_review": "Full-resolution visual review; PNG OCR; no personal identifiers or credentials; raster metadata checked",
+    "reviewed": "2026-11-05"
+  },
+  {
+    "file": "assets/screenshots/docs-home.png",
+    "sha256": "a89ebc39f06f541974c0bdaabb2ddb9078e2071c417fa25bd2f97249c2196732",
+    "dimensions": [
+      1440,
+      960
+    ],
+    "source": "Actual local interface with fixed fictional API responses",
+    "privacy_review": "Full-resolution visual review; PNG OCR; no personal identifiers or credentials; raster metadata checked",
+    "reviewed": "2026-11-05"
+  },
+  {
+    "file": "assets/screenshots/drive.png",
+    "sha256": "6ac0abb0e8d1372663afa10fb8b7f7b49bf7fcc14f7da82da8d0b6091ec00a11",
+    "dimensions": [
+      1440,
+      960
+    ],
+    "source": "Actual local interface with fixed fictional API responses",
+    "privacy_review": "Full-resolution visual review; PNG OCR; no personal identifiers or credentials; raster metadata checked",
+    "reviewed": "2026-11-05"
+  },
+  {
+    "file": "assets/screenshots/mail-inbox.png",
+    "sha256": "6fefc8fc54eccd40fd09799f738204c70392c9b52c77e5adf601048a05a001b3",
+    "dimensions": [
+      1440,
+      960
+    ],
+    "source": "Actual local interface with fixed fictional API responses",
+    "privacy_review": "Full-resolution visual review; PNG OCR; no personal identifiers or credentials; raster metadata checked",
+    "reviewed": "2026-11-05"
+  }
+]

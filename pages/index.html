@@ -67,6 +67,12 @@
     {
      "@type": "ListItem",
      "position": 2,
+     "name": "Drive overview",
+     "item": "https://fulcrumcortex.github.io/documentation/drive/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
      "name": "Shareable pages",
      "item": "https://fulcrumcortex.github.io/documentation/pages/"
     }
@@ -89,7 +95,7 @@
     "@id": "https://fulcrumcortex.com/#organization"
    },
    "image": "https://fulcrumcortex.github.io/documentation/assets/og-image.png",
-   "dateModified": "2026-11-04",
+   "dateModified": "2026-11-05",
    "about": {
     "@type": "SoftwareApplication",
     "name": "Fulcrum Mail",
@@ -141,7 +147,7 @@
 </header>
 <div class="layout">
 <main id="main">
-<nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="/documentation/">Docs</a></li><li><span aria-current="page">Shareable pages</span></li></ol></nav>
+<nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="/documentation/">Docs</a></li><li><a href="/documentation/drive/">Drive overview</a></li><li><span aria-current="page">Shareable pages</span></li></ol></nav>
 <article>
 <h1>Pages you can share from Fulcrum</h1>
 <p class="lead">The public pages Fulcrum makes for people outside your team: booking pages, booking management pages and expiring Drive file links, and how to create them.</p>
@@ -183,6 +189,11 @@
 <h2 id="looking-for-website-or-landing-pages">Looking for website or landing pages?</h2>
 <p>Fulcrum Mail doesn't include a website builder. For marketing and campaign pages, Cortex's coding agent can build them for you. Read about <a href="https://fulcrumcortex.com/blog/building-landing-pages-via-cortex">landing pages built through Cortex</a> and the <a href="https://fulcrumcortex.com/code">Fulcrum Code agent</a>. To capture leads on a site you already have, embed a <a href="/documentation/crm/lead-forms-and-routing/">Fulcrum CRM lead form</a>.</p>
 
+<h2 id="test-a-public-page-as-a-recipient">Test a public page as a recipient</h2>
+<p>Open the link in a signed-out browser window. For a booking page, check the time zone and visible slots. For a shared file, check the name, expiry and download option. For an invitation, verify the event and response options. This catches permissions and link problems that your owner session can hide.</p>
+<h2 id="if-a-shared-link-fails">If a shared link fails</h2>
+<p>Check that you copied the complete URL and that the link is still active. For Drive, confirm external sharing and download permissions; for bookings, confirm the page is published. Treat file-share and booking-management URLs as private links when they reveal content or control a reservation.</p>
+
 <section class="related" aria-labelledby="related-reading">
 <h2 id="related-reading">Related reading</h2>
 <ul>
@@ -191,20 +202,33 @@
 <li><a href="https://fulcrumcrm.app/blog/crm-data-export-portability">Data portability: owning and sharing your customer data</a></li>
 </ul>
 </section>
-<p class="updated">Last updated <time datetime="2026-11-04">2026-11-04</time></p>
+<p class="updated">Last updated <time datetime="2026-11-05">2026-11-05</time></p>
 </article>
-<nav class="pager" aria-label="Previous and next guides"><a class="prev" href="/documentation/calendar/meetings/"><span>Previous</span>Meetings</a><a class="next" href="/documentation/lyre/"><span>Next</span>Lyre overview</a></nav>
+<nav class="pager" aria-label="Previous and next guides"><a class="prev" href="/documentation/docs/"><span>Previous</span>Docs overview</a><a class="next" href="/documentation/wallet/"><span>Next</span>Wallet and credits</a></nav>
 </main>
 <aside class="toc" aria-label="On this page"><p>On this page</p><ul>
 <li><a href="#booking-pages">Booking pages</a></li>
 <li><a href="#shared-file-pages">Shared file pages</a></li>
 <li><a href="#invitation-response-pages">Invitation response pages</a></li>
 <li><a href="#looking-for-website-or-landing-pages">Looking for website or landing pages?</a></li>
+<li><a href="#test-a-public-page-as-a-recipient">Test a public page as a recipient</a></li>
+<li><a href="#if-a-shared-link-fails">If a shared link fails</a></li>
 <li><a href="#related-reading">Related reading</a></li>
 </ul></aside>
 <nav class="sidebar" id="docs-nav" aria-label="Documentation">
 <p class="nav-section">Start here</p><ul>
 <li><a href="/documentation/">Overview</a></li>
+<li><a href="/documentation/sessions/">Cortex and Sessions</a></li>
+</ul>
+<p class="nav-section">Fulcrum Code</p><ul>
+<li><a href="/documentation/code/">Code overview</a></li>
+<li><a href="/documentation/code/install-and-sign-in/">Install and sign in</a></li>
+<li><a href="/documentation/code/plan-build-and-review/">Plan, build and review</a></li>
+<li><a href="/documentation/code/tools-and-worktrees/">Tools and worktrees</a></li>
+<li><a href="/documentation/code/skills-and-agents/">Skills and agents</a></li>
+<li><a href="/documentation/code/sessions-and-memory/">Sessions and memory</a></li>
+<li><a href="/documentation/code/connections-and-extensions/">Connections and extensions</a></li>
+<li><a href="/documentation/code/voice-images-and-editor/">Voice, images and editor</a></li>
 </ul>
 <p class="nav-section">Fulcrum Mail</p><ul>
 <li><a href="/documentation/fulcrum-mail/">Fulcrum Mail overview</a></li>
@@ -222,8 +246,11 @@
 <li><a href="/documentation/calendar/manage-bookings/">Manage bookings</a></li>
 <li><a href="/documentation/calendar/meetings/">Meetings</a></li>
 </ul>
-<p class="nav-section">Pages</p><ul>
+<p class="nav-section">Files and documents</p><ul>
+<li><a href="/documentation/drive/">Drive overview</a></li>
+<li><a href="/documentation/docs/">Docs overview</a></li>
 <li><a href="/documentation/pages/" aria-current="page">Shareable pages</a></li>
+<li><a href="/documentation/wallet/">Wallet and credits</a></li>
 </ul>
 <p class="nav-section">Lyre</p><ul>
 <li><a href="/documentation/lyre/">Lyre overview</a></li>
@@ -234,6 +261,7 @@
 <li><a href="/documentation/lyre/call-history/">Call history</a></li>
 <li><a href="/documentation/lyre/credits-and-billing/">Credits and billing</a></li>
 <li><a href="/documentation/lyre/compliance/">Compliance</a></li>
+<li><a href="/documentation/lyre/sms-contacts-and-connections/">SMS and resources</a></li>
 </ul>
 <p class="nav-section">Fulcrum CRM</p><ul>
 <li><a href="/documentation/crm/">CRM overview</a></li>
@@ -247,6 +275,10 @@
 <li><a href="/documentation/crm/email/">Email</a></li>
 <li><a href="/documentation/crm/calls-and-ai/">Calls and AI</a></li>
 <li><a href="/documentation/crm/roles-and-permissions/">Roles and permissions</a></li>
+<li><a href="/documentation/crm/reports-and-workflows/">Reports and workflows</a></li>
+<li><a href="/documentation/crm/invoices-and-products/">Invoices and products</a></li>
+<li><a href="/documentation/crm/projects-and-issues/">Projects and issues</a></li>
+<li><a href="/documentation/crm/settings-and-integrations/">Settings and integrations</a></li>
 </ul>
 </nav>
 </div>

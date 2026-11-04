@@ -3,7 +3,7 @@ title: Email in Fulcrum CRM
 seo_title: Connect Gmail or Outlook to Fulcrum CRM and log email | Fulcrum Docs
 description: Connect Google or Microsoft 365 mailboxes to Fulcrum CRM, log emails on contacts, send with templates and signatures, and run campaigns and newsletters.
 nav: Email
-updated: 2026-11-04
+updated: 2026-11-05
 about: Fulcrum CRM
 howto: Connect a mailbox to Fulcrum CRM
 related:
@@ -52,3 +52,8 @@ related:
 <p>Members can build campaigns but can't send them, and AI assistants can never send bulk email. <strong>Newsletters</strong> are a simpler option with their own templates: pick your recipients with filters, save a draft, and send.</p>
 <div class="note"><p>Every campaign and newsletter includes an unsubscribe link, and Fulcrum stops sending to anyone who unsubscribes. Make sure you have consent to email the people you send to.</p></div>
 <p>Looking for a full mailbox rather than a CRM connection? <a href="/fulcrum-mail/">Fulcrum Mail</a> is Fulcrum's own email app.</p>
+
+<h2>Check a campaign with a test recipient</h2>
+<p>Confirm the mailbox, sender identity, audience, template, merge fields and unsubscribe behaviour. Send to an address you control and inspect the received message, links and attachments. A valid template preview can still contain the wrong contact values when rendered for the audience.</p>
+<h2>When mail appears missing or duplicated</h2>
+<p>Compare the connected mailbox, contact timeline and actual sent message. Check whether the problem concerns synchronisation, logging or delivery; they are different stages. Inspect an existing send before retrying, particularly after a timeout or a delayed campaign status update.</p>

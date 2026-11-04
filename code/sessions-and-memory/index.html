@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sessions, context, memory and sharing | Fulcrum Docs</title>
+<meta name="description" content="Resume Fulcrum Code sessions, compact long conversations, save durable preferences, review memory and understand undo and local session exports.">
+<link rel="canonical" href="https://fulcrumcortex.github.io/documentation/code/sessions-and-memory/">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Fulcrum Docs">
+<meta property="og:locale" content="en_AU">
+<meta property="og:title" content="Sessions, context, memory and sharing">
+<meta property="og:description" content="Resume Fulcrum Code sessions, compact long conversations, save durable preferences, review memory and understand undo and local session exports.">
+<meta property="og:url" content="https://fulcrumcortex.github.io/documentation/code/sessions-and-memory/">
+<meta property="og:image" content="https://fulcrumcortex.github.io/documentation/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Fulcrum Docs">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sessions, context, memory and sharing">
+<meta name="twitter:description" content="Resume Fulcrum Code sessions, compact long conversations, save durable preferences, review memory and understand undo and local session exports.">
+<meta name="twitter:image" content="https://fulcrumcortex.github.io/documentation/assets/og-image.png">
+<meta name="theme-color" content="#14100f">
+<link rel="icon" href="/documentation/assets/fulcrum-logo.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/documentation/assets/fulcrum-logo.png">
+<link rel="stylesheet" href="/documentation/assets/site.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://fulcrumcortex.com/#organization",
+   "name": "Fulcrum Cortex",
+   "url": "https://fulcrumcortex.com/",
+   "logo": "https://fulcrumcortex.github.io/documentation/assets/fulcrum-logo.png",
+   "description": "Fulcrum Cortex is the AI execution layer for business, built in Australia.",
+   "sameAs": [
+    "https://fulcrumcrm.app/",
+    "https://fulcrumcode.app/",
+    "https://fulcrumail.app/",
+    "https://lyre.au/",
+    "https://docs.lyre.au/",
+    "https://github.com/fulcrumcortex"
+   ]
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://fulcrumcortex.github.io/documentation/#website",
+   "name": "Fulcrum Docs",
+   "url": "https://fulcrumcortex.github.io/documentation/",
+   "inLanguage": "en-AU",
+   "publisher": {
+    "@id": "https://fulcrumcortex.com/#organization"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Docs",
+     "item": "https://fulcrumcortex.github.io/documentation/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Code overview",
+     "item": "https://fulcrumcortex.github.io/documentation/code/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Sessions and memory",
+     "item": "https://fulcrumcortex.github.io/documentation/code/sessions-and-memory/"
+    }
+   ]
+  },
+  {
+   "@type": "TechArticle",
+   "headline": "Sessions, context, memory and sharing",
+   "description": "Resume Fulcrum Code sessions, compact long conversations, save durable preferences, review memory and understand undo and local session exports.",
+   "url": "https://fulcrumcortex.github.io/documentation/code/sessions-and-memory/",
+   "mainEntityOfPage": "https://fulcrumcortex.github.io/documentation/code/sessions-and-memory/",
+   "inLanguage": "en-AU",
+   "isPartOf": {
+    "@id": "https://fulcrumcortex.github.io/documentation/#website"
+   },
+   "author": {
+    "@id": "https://fulcrumcortex.com/#organization"
+   },
+   "publisher": {
+    "@id": "https://fulcrumcortex.com/#organization"
+   },
+   "image": "https://fulcrumcortex.github.io/documentation/assets/og-image.png",
+   "dateModified": "2026-11-05",
+   "about": {
+    "@type": "SoftwareApplication",
+    "name": "Fulcrum Code",
+    "applicationCategory": "BusinessApplication"
+   }
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="topbar">
+<a class="brand" href="/documentation/"><img src="/documentation/assets/fulcrum-logo.svg" alt="" width="28" height="28"><span>Fulcrum <b>Docs</b></span></a>
+<a class="menu-link" href="#docs-nav">Guides</a>
+</header>
+<div class="layout">
+<main id="main">
+<nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="/documentation/">Docs</a></li><li><a href="/documentation/code/">Code overview</a></li><li><span aria-current="page">Sessions and memory</span></li></ol></nav>
+<article>
+<h1>Sessions, context, memory and sharing</h1>
+<p class="lead">Resume Fulcrum Code sessions, compact long conversations, save durable preferences, review memory and understand undo and local session exports.</p>
+<h2 id="resume-and-organise-work">Resume and organise work</h2><p><code>/history</code> lists saved sessions. <code>/resume</code> opens the resume flow; use the help it displays to choose the session you need. <code>/rename</code> gives a session a recognisable name. Confirm the project directory and the current Git state after resuming: files may have changed since the conversation was saved.</p>
+<h2 id="manage-context">Manage context</h2><p><code>/context</code> shows context usage. <code>/compact</code> summarises conversation history to free space. Before a long task, ask for a brief covering the objective, decisions, files changed, checks and remaining work. Compaction can lose detail, so preserve critical requirements in the project instructions as well.</p><p><code>/clear</code> and <code>/reset</code> reset conversation history. They do not mean “revert every file change.” <code>/files</code> shows recently referenced files and <code>/status</code> shows the session's working context.</p>
+<h2 id="save-durable-preferences">Save durable preferences</h2><p>Ask the agent to remember a stable preference or project rule, such as “Remember to use this project's existing package manager.” Memory tools can save, read, list and delete entries. <code>/memory</code> shows the memory view; <code>/save-memories</code> extracts durable notes from the session.</p><p>Memory entries live under <code>~/.fulcrum/memory/</code>, with a generated index. Not every entry is automatically included in every session. Tell the agent to retrieve the relevant project note when necessary. Correct or delete outdated memories, and keep passwords and private customer information out of them.</p>
+<h2 id="undo-and-redo">Undo and redo</h2><p><code>/undo</code> and <code>/redo</code> restore conversation and available file checkpoints. Review the files afterwards. Commands that affect external systems need their own recovery procedure; conversation undo cannot retract a sent email or guarantee recovery of deleted remote data.</p>
+<h2 id="share-a-session-carefully">Share a session carefully</h2><p><code>/share</code> exports Markdown and JSON under <code>~/.fulcrum/shares/</code>. This is a local export. A served link, when enabled through <code>fulcrum serve</code>, is a separate exposure decision. Inspect both exported formats before sharing: prompts, code, paths and tool results can contain private information.</p>
+<h2 id="track-usage">Track usage</h2><p><code>/cost</code> shows session token and estimated cost information. <code>/usage</code> reports usage information and <code>/whoami</code> shows the signed-in account context. Cached input and fallback models can affect the breakdown. Use the account's current billing view for subscription and allowance decisions.</p>
+
+
+<p class="updated">Last updated <time datetime="2026-11-05">2026-11-05</time></p>
+</article>
+<nav class="pager" aria-label="Previous and next guides"><a class="prev" href="/documentation/code/skills-and-agents/"><span>Previous</span>Skills and agents</a><a class="next" href="/documentation/code/connections-and-extensions/"><span>Next</span>Connections and extensions</a></nav>
+</main>
+<aside class="toc" aria-label="On this page"><p>On this page</p><ul>
+<li><a href="#resume-and-organise-work">Resume and organise work</a></li>
+<li><a href="#manage-context">Manage context</a></li>
+<li><a href="#save-durable-preferences">Save durable preferences</a></li>
+<li><a href="#undo-and-redo">Undo and redo</a></li>
+<li><a href="#share-a-session-carefully">Share a session carefully</a></li>
+<li><a href="#track-usage">Track usage</a></li>
+</ul></aside>
+<nav class="sidebar" id="docs-nav" aria-label="Documentation">
+<p class="nav-section">Start here</p><ul>
+<li><a href="/documentation/">Overview</a></li>
+<li><a href="/documentation/sessions/">Cortex and Sessions</a></li>
+</ul>
+<p class="nav-section">Fulcrum Code</p><ul>
+<li><a href="/documentation/code/">Code overview</a></li>
+<li><a href="/documentation/code/install-and-sign-in/">Install and sign in</a></li>
+<li><a href="/documentation/code/plan-build-and-review/">Plan, build and review</a></li>
+<li><a href="/documentation/code/tools-and-worktrees/">Tools and worktrees</a></li>
+<li><a href="/documentation/code/skills-and-agents/">Skills and agents</a></li>
+<li><a href="/documentation/code/sessions-and-memory/" aria-current="page">Sessions and memory</a></li>
+<li><a href="/documentation/code/connections-and-extensions/">Connections and extensions</a></li>
+<li><a href="/documentation/code/voice-images-and-editor/">Voice, images and editor</a></li>
+</ul>
+<p class="nav-section">Fulcrum Mail</p><ul>
+<li><a href="/documentation/fulcrum-mail/">Fulcrum Mail overview</a></li>
+<li><a href="/documentation/fulcrum-mail/create-an-account/">Create an account</a></li>
+<li><a href="/documentation/fulcrum-mail/workspaces/">Company workspaces</a></li>
+<li><a href="/documentation/fulcrum-mail/invite-and-manage-members/">Invite and manage members</a></li>
+<li><a href="/documentation/fulcrum-mail/switch-workspaces-and-accounts/">Switch workspaces and accounts</a></li>
+<li><a href="/documentation/fulcrum-mail/mail-basics/">Mail basics</a></li>
+<li><a href="/documentation/fulcrum-mail/settings/">Mail settings</a></li>
+</ul>
+<p class="nav-section">Calendar</p><ul>
+<li><a href="/documentation/calendar/">Calendar overview</a></li>
+<li><a href="/documentation/calendar/import-and-connect-calendars/">Import and connect calendars</a></li>
+<li><a href="/documentation/calendar/booking-pages/">Booking pages</a></li>
+<li><a href="/documentation/calendar/manage-bookings/">Manage bookings</a></li>
+<li><a href="/documentation/calendar/meetings/">Meetings</a></li>
+</ul>
+<p class="nav-section">Files and documents</p><ul>
+<li><a href="/documentation/drive/">Drive overview</a></li>
+<li><a href="/documentation/docs/">Docs overview</a></li>
+<li><a href="/documentation/pages/">Shareable pages</a></li>
+<li><a href="/documentation/wallet/">Wallet and credits</a></li>
+</ul>
+<p class="nav-section">Lyre</p><ul>
+<li><a href="/documentation/lyre/">Lyre overview</a></li>
+<li><a href="/documentation/lyre/voice-agents/">Voice agents</a></li>
+<li><a href="/documentation/lyre/phone-numbers/">Phone numbers</a></li>
+<li><a href="/documentation/lyre/outbound-calls-and-campaigns/">Outbound calls and campaigns</a></li>
+<li><a href="/documentation/lyre/book-meetings/">Book meetings</a></li>
+<li><a href="/documentation/lyre/call-history/">Call history</a></li>
+<li><a href="/documentation/lyre/credits-and-billing/">Credits and billing</a></li>
+<li><a href="/documentation/lyre/compliance/">Compliance</a></li>
+<li><a href="/documentation/lyre/sms-contacts-and-connections/">SMS and resources</a></li>
+</ul>
+<p class="nav-section">Fulcrum CRM</p><ul>
+<li><a href="/documentation/crm/">CRM overview</a></li>
+<li><a href="/documentation/crm/contacts-and-companies/">Contacts and companies</a></li>
+<li><a href="/documentation/crm/deals-and-pipelines/">Deals and pipelines</a></li>
+<li><a href="/documentation/crm/activities-and-tasks/">Activities and tasks</a></li>
+<li><a href="/documentation/crm/lists/">Lists</a></li>
+<li><a href="/documentation/crm/custom-fields/">Custom fields</a></li>
+<li><a href="/documentation/crm/import-export-and-duplicates/">Import, export and duplicates</a></li>
+<li><a href="/documentation/crm/lead-forms-and-routing/">Lead forms and routing</a></li>
+<li><a href="/documentation/crm/email/">Email</a></li>
+<li><a href="/documentation/crm/calls-and-ai/">Calls and AI</a></li>
+<li><a href="/documentation/crm/roles-and-permissions/">Roles and permissions</a></li>
+<li><a href="/documentation/crm/reports-and-workflows/">Reports and workflows</a></li>
+<li><a href="/documentation/crm/invoices-and-products/">Invoices and products</a></li>
+<li><a href="/documentation/crm/projects-and-issues/">Projects and issues</a></li>
+<li><a href="/documentation/crm/settings-and-integrations/">Settings and integrations</a></li>
+</ul>
+</nav>
+</div>
+<footer class="footer">
+<p>Fulcrum Docs is written and maintained by the Fulcrum Cortex team in Australia.</p>
+<p><a href="https://github.com/fulcrumcortex/documentation">Suggest a correction on GitHub</a></p>
+</footer>
+</body>
+</html>

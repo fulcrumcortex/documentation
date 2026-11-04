@@ -3,7 +3,7 @@ title: Book meetings with a Lyre voice agent
 seo_title: Let a Lyre voice agent check calendars and book meetings | Fulcrum Docs
 description: Connect Google Workspace so a Lyre voice agent can check availability and book meetings during a call, then switch the booking tools on for the agent.
 nav: Book meetings
-updated: 2026-11-04
+updated: 2026-11-05
 about: Lyre
 howto: Connect Google Workspace so a Lyre agent can book meetings
 related:
@@ -38,3 +38,8 @@ related:
 <h2>Other calendar tools</h2>
 <p>Lyre's tools page (<strong>Connections</strong> → CRM, calendars and tool servers) also lists Calendly and Google Calendar cards. You connect them with a token and then assign them to agents. Availability of these integrations can vary; if a card doesn't connect, use the Google Workspace connection above.</p>
 <div class="note"><p>Lyre bookings go into the Google calendar you connect here. They are separate from <a href="/calendar/booking-pages/">Fulcrum Calendar booking pages</a>, which people use to book themselves.</p></div>
+
+<h2>A booking test needs a real destination record</h2>
+<p>Connect the intended calendar account, enable the booking tool for the intended agent and save. Test an available time, an unavailable time and a caller in another time zone. Confirm the event and guest invitation after the call. A spoken agreement is not evidence that the calendar accepted a booking.</p>
+<h2>When booking fails</h2>
+<p>Check connection status, calendar access, selected destination, availability and the exact requested time. Inspect tool errors in the call history. Do not tell a caller a meeting is confirmed when the result is still pending or failed; offer a follow-up path instead.</p>

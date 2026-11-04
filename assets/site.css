@@ -192,3 +192,11 @@ th { font-weight: 650; background: var(--code-bg); }
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; scroll-behavior: auto !important; }
 }
+
+/* Full-resolution, accessible documentation screenshots. */
+.screenshot { margin: 24px 0 32px; }
+.screenshot a { display: block; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; background: #fff; }
+.screenshot img { display: block; width: 100%; max-width: 100%; height: auto; }
+.screenshot figcaption { margin-top: 10px; color: var(--muted); font-size: 13px; line-height: 1.6; }
+pre { max-width: 100%; overflow-x: auto; padding: 16px; border-radius: var(--radius); background: var(--code-bg); }
+pre code { padding: 0; background: transparent; }

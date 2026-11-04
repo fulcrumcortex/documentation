@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fulcrum Cortex and Sessions: directing your AI team | Fulcrum Docs</title>
+<meta name="description" content="Understand Cortex, the AI execution layer, and Sessions, the orchestrator; give Sidekicks clear tasks, review permissions and verify completed work.">
+<link rel="canonical" href="https://fulcrumcortex.github.io/documentation/sessions/">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Fulcrum Docs">
+<meta property="og:locale" content="en_AU">
+<meta property="og:title" content="Fulcrum Cortex and Sessions: directing your AI team">
+<meta property="og:description" content="Understand Cortex, the AI execution layer, and Sessions, the orchestrator; give Sidekicks clear tasks, review permissions and verify completed work.">
+<meta property="og:url" content="https://fulcrumcortex.github.io/documentation/sessions/">
+<meta property="og:image" content="https://fulcrumcortex.github.io/documentation/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Fulcrum Docs">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Fulcrum Cortex and Sessions: directing your AI team">
+<meta name="twitter:description" content="Understand Cortex, the AI execution layer, and Sessions, the orchestrator; give Sidekicks clear tasks, review permissions and verify completed work.">
+<meta name="twitter:image" content="https://fulcrumcortex.github.io/documentation/assets/og-image.png">
+<meta name="theme-color" content="#14100f">
+<link rel="icon" href="/documentation/assets/fulcrum-logo.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/documentation/assets/fulcrum-logo.png">
+<link rel="stylesheet" href="/documentation/assets/site.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://fulcrumcortex.com/#organization",
+   "name": "Fulcrum Cortex",
+   "url": "https://fulcrumcortex.com/",
+   "logo": "https://fulcrumcortex.github.io/documentation/assets/fulcrum-logo.png",
+   "description": "Fulcrum Cortex is the AI execution layer for business, built in Australia.",
+   "sameAs": [
+    "https://fulcrumcrm.app/",
+    "https://fulcrumcode.app/",
+    "https://fulcrumail.app/",
+    "https://lyre.au/",
+    "https://docs.lyre.au/",
+    "https://github.com/fulcrumcortex"
+   ]
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://fulcrumcortex.github.io/documentation/#website",
+   "name": "Fulcrum Docs",
+   "url": "https://fulcrumcortex.github.io/documentation/",
+   "inLanguage": "en-AU",
+   "publisher": {
+    "@id": "https://fulcrumcortex.com/#organization"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Docs",
+     "item": "https://fulcrumcortex.github.io/documentation/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Overview",
+     "item": "https://fulcrumcortex.github.io/documentation/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Cortex and Sessions",
+     "item": "https://fulcrumcortex.github.io/documentation/sessions/"
+    }
+   ]
+  },
+  {
+   "@type": "TechArticle",
+   "headline": "Fulcrum Cortex and Sessions: directing your AI team",
+   "description": "Understand Cortex, the AI execution layer, and Sessions, the orchestrator; give Sidekicks clear tasks, review permissions and verify completed work.",
+   "url": "https://fulcrumcortex.github.io/documentation/sessions/",
+   "mainEntityOfPage": "https://fulcrumcortex.github.io/documentation/sessions/",
+   "inLanguage": "en-AU",
+   "isPartOf": {
+    "@id": "https://fulcrumcortex.github.io/documentation/#website"
+   },
+   "author": {
+    "@id": "https://fulcrumcortex.com/#organization"
+   },
+   "publisher": {
+    "@id": "https://fulcrumcortex.com/#organization"
+   },
+   "image": "https://fulcrumcortex.github.io/documentation/assets/og-image.png",
+   "dateModified": "2026-11-05",
+   "about": {
+    "@type": "SoftwareApplication",
+    "name": "Fulcrum Cortex",
+    "applicationCategory": "BusinessApplication"
+   }
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="topbar">
+<a class="brand" href="/documentation/"><img src="/documentation/assets/fulcrum-logo.svg" alt="" width="28" height="28"><span>Fulcrum <b>Docs</b></span></a>
+<a class="menu-link" href="#docs-nav">Guides</a>
+</header>
+<div class="layout">
+<main id="main">
+<nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="/documentation/">Docs</a></li><li><a href="/documentation/">Overview</a></li><li><span aria-current="page">Cortex and Sessions</span></li></ol></nav>
+<article>
+<h1>Fulcrum Cortex and Sessions: directing your AI team</h1>
+<p class="lead">Understand Cortex, the AI execution layer, and Sessions, the orchestrator; give Sidekicks clear tasks, review permissions and verify completed work.</p>
+<p><a href="https://fulcrumcortex.com/">Fulcrum Cortex</a> is the AI execution layer for business. <strong>Fulcrum Sessions is the orchestrator</strong>: humans and AI as one team. Code builds and runs software, Lyre handles voice, and CRM holds the customer relationship. Sidekicks are AI teammates working with the tools and access you connect.</p><h2 id="give-an-outcome-context-and-limits">Give an outcome, context and limits</h2><pre><code>Prepare a follow-up for the demo enquiry.
+Read the relevant customer record and last conversation.
+Draft the reply and suggest two available meeting times.
+Show me the draft and the source record before sending anything.</code></pre><p>A useful task names the result, the source of truth and the actions that need approval. Tell the assistant what “done” means: draft ready, message sent, record updated or release verified live are different endpoints.</p><h2 id="use-connected-channels">Use connected channels</h2><p>Cortex is designed to work through Discord, Telegram, WhatsApp and Slack. Availability depends on your configured channel and workspace. Use the conversation assigned to the intended assistant and project; a different thread can have different context and access. See <a href="https://fulcrumcortex.com/channels">Cortex channels</a> for the platform overview.</p><h2 id="connect-tools-deliberately">Connect tools deliberately</h2><p>Check the signed-in account, workspace and permissions when connecting an app. An agent may be able to read but not edit a record. A skill describes a method; it does not create missing credentials or permission. Reconnect or adjust the intended scoped access if an action is unavailable.</p><h2 id="follow-progress-and-verify">Follow progress and verify</h2><ol class="steps"><li>Ask for a short plan and milestones for work spanning several products.</li><li>Review approval requests against the original task.</li><li>Ask for evidence of the result: a document, a record link, a sent item or the live revision.</li><li>Check outstanding failures and skipped actions before accepting completion.</li></ol><h2 id="common-cross-product-workflows">Common cross-product workflows</h2><ul><li><a href="/documentation/lyre/">Lyre</a> answers an enquiry, with results reviewed in <a href="/documentation/crm/">CRM</a>.</li><li><a href="/documentation/calendar/booking-pages/">Calendar booking pages</a> let customers choose a time; <a href="/documentation/calendar/meetings/">Meetings</a> hosts the conversation.</li><li><a href="/documentation/code/">Code</a> builds a change, with checks and publication included when requested.</li><li><a href="/documentation/docs/">Docs</a> and <a href="/documentation/drive/">Drive</a> keep plans and shared material accessible to the right people.</li></ul><h2 id="if-the-assistant-cannot-act">If the assistant cannot act</h2><p>Check the selected assistant, connection, workspace, permission and account allowance. Ask it to distinguish a failed attempt from a confirmed blocker and to report the concrete next action. Do not send passwords or tokens in a channel to resolve a connection error.</p>
+
+
+<p class="updated">Last updated <time datetime="2026-11-05">2026-11-05</time></p>
+</article>
+<nav class="pager" aria-label="Previous and next guides"><a class="prev" href="/documentation/"><span>Previous</span>Overview</a><a class="next" href="/documentation/code/"><span>Next</span>Code overview</a></nav>
+</main>
+<aside class="toc" aria-label="On this page"><p>On this page</p><ul>
+<li><a href="#give-an-outcome-context-and-limits">Give an outcome, context and limits</a></li>
+<li><a href="#use-connected-channels">Use connected channels</a></li>
+<li><a href="#connect-tools-deliberately">Connect tools deliberately</a></li>
+<li><a href="#follow-progress-and-verify">Follow progress and verify</a></li>
+<li><a href="#common-cross-product-workflows">Common cross-product workflows</a></li>
+<li><a href="#if-the-assistant-cannot-act">If the assistant cannot act</a></li>
+</ul></aside>
+<nav class="sidebar" id="docs-nav" aria-label="Documentation">
+<p class="nav-section">Start here</p><ul>
+<li><a href="/documentation/">Overview</a></li>
+<li><a href="/documentation/sessions/" aria-current="page">Cortex and Sessions</a></li>
+</ul>
+<p class="nav-section">Fulcrum Code</p><ul>
+<li><a href="/documentation/code/">Code overview</a></li>
+<li><a href="/documentation/code/install-and-sign-in/">Install and sign in</a></li>
+<li><a href="/documentation/code/plan-build-and-review/">Plan, build and review</a></li>
+<li><a href="/documentation/code/tools-and-worktrees/">Tools and worktrees</a></li>
+<li><a href="/documentation/code/skills-and-agents/">Skills and agents</a></li>
+<li><a href="/documentation/code/sessions-and-memory/">Sessions and memory</a></li>
+<li><a href="/documentation/code/connections-and-extensions/">Connections and extensions</a></li>
+<li><a href="/documentation/code/voice-images-and-editor/">Voice, images and editor</a></li>
+</ul>
+<p class="nav-section">Fulcrum Mail</p><ul>
+<li><a href="/documentation/fulcrum-mail/">Fulcrum Mail overview</a></li>
+<li><a href="/documentation/fulcrum-mail/create-an-account/">Create an account</a></li>
+<li><a href="/documentation/fulcrum-mail/workspaces/">Company workspaces</a></li>
+<li><a href="/documentation/fulcrum-mail/invite-and-manage-members/">Invite and manage members</a></li>
+<li><a href="/documentation/fulcrum-mail/switch-workspaces-and-accounts/">Switch workspaces and accounts</a></li>
+<li><a href="/documentation/fulcrum-mail/mail-basics/">Mail basics</a></li>
+<li><a href="/documentation/fulcrum-mail/settings/">Mail settings</a></li>
+</ul>
+<p class="nav-section">Calendar</p><ul>
+<li><a href="/documentation/calendar/">Calendar overview</a></li>
+<li><a href="/documentation/calendar/import-and-connect-calendars/">Import and connect calendars</a></li>
+<li><a href="/documentation/calendar/booking-pages/">Booking pages</a></li>
+<li><a href="/documentation/calendar/manage-bookings/">Manage bookings</a></li>
+<li><a href="/documentation/calendar/meetings/">Meetings</a></li>
+</ul>
+<p class="nav-section">Files and documents</p><ul>
+<li><a href="/documentation/drive/">Drive overview</a></li>
+<li><a href="/documentation/docs/">Docs overview</a></li>
+<li><a href="/documentation/pages/">Shareable pages</a></li>
+<li><a href="/documentation/wallet/">Wallet and credits</a></li>
+</ul>
+<p class="nav-section">Lyre</p><ul>
+<li><a href="/documentation/lyre/">Lyre overview</a></li>
+<li><a href="/documentation/lyre/voice-agents/">Voice agents</a></li>
+<li><a href="/documentation/lyre/phone-numbers/">Phone numbers</a></li>
+<li><a href="/documentation/lyre/outbound-calls-and-campaigns/">Outbound calls and campaigns</a></li>
+<li><a href="/documentation/lyre/book-meetings/">Book meetings</a></li>
+<li><a href="/documentation/lyre/call-history/">Call history</a></li>
+<li><a href="/documentation/lyre/credits-and-billing/">Credits and billing</a></li>
+<li><a href="/documentation/lyre/compliance/">Compliance</a></li>
+<li><a href="/documentation/lyre/sms-contacts-and-connections/">SMS and resources</a></li>
+</ul>
+<p class="nav-section">Fulcrum CRM</p><ul>
+<li><a href="/documentation/crm/">CRM overview</a></li>
+<li><a href="/documentation/crm/contacts-and-companies/">Contacts and companies</a></li>
+<li><a href="/documentation/crm/deals-and-pipelines/">Deals and pipelines</a></li>
+<li><a href="/documentation/crm/activities-and-tasks/">Activities and tasks</a></li>
+<li><a href="/documentation/crm/lists/">Lists</a></li>
+<li><a href="/documentation/crm/custom-fields/">Custom fields</a></li>
+<li><a href="/documentation/crm/import-export-and-duplicates/">Import, export and duplicates</a></li>
+<li><a href="/documentation/crm/lead-forms-and-routing/">Lead forms and routing</a></li>
+<li><a href="/documentation/crm/email/">Email</a></li>
+<li><a href="/documentation/crm/calls-and-ai/">Calls and AI</a></li>
+<li><a href="/documentation/crm/roles-and-permissions/">Roles and permissions</a></li>
+<li><a href="/documentation/crm/reports-and-workflows/">Reports and workflows</a></li>
+<li><a href="/documentation/crm/invoices-and-products/">Invoices and products</a></li>
+<li><a href="/documentation/crm/projects-and-issues/">Projects and issues</a></li>
+<li><a href="/documentation/crm/settings-and-integrations/">Settings and integrations</a></li>
+</ul>
+</nav>
+</div>
+<footer class="footer">
+<p>Fulcrum Docs is written and maintained by the Fulcrum Cortex team in Australia.</p>
+<p><a href="https://github.com/fulcrumcortex/documentation">Suggest a correction on GitHub</a></p>
+</footer>
+</body>
+</html>

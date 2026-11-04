@@ -58,7 +58,8 @@ ORGANIZATION = {
 
 # Sidebar order. Each section starts with its hub page. Prev/next links follow this order.
 NAV: list[tuple[str, list[str]]] = [
-    ("Start here", ["/"]),
+    ("Start here", ["/", "/sessions/"]),
+    ("Fulcrum Code", ["/code/", "/code/install-and-sign-in/", "/code/plan-build-and-review/", "/code/tools-and-worktrees/", "/code/skills-and-agents/", "/code/sessions-and-memory/", "/code/connections-and-extensions/", "/code/voice-images-and-editor/"]),
     ("Fulcrum Mail", [
         "/fulcrum-mail/",
         "/fulcrum-mail/create-an-account/",
@@ -75,7 +76,7 @@ NAV: list[tuple[str, list[str]]] = [
         "/calendar/manage-bookings/",
         "/calendar/meetings/",
     ]),
-    ("Pages", ["/pages/"]),
+    ("Files and documents", ["/drive/", "/docs/", "/pages/", "/wallet/"]),
     ("Lyre", [
         "/lyre/",
         "/lyre/voice-agents/",
@@ -85,6 +86,7 @@ NAV: list[tuple[str, list[str]]] = [
         "/lyre/call-history/",
         "/lyre/credits-and-billing/",
         "/lyre/compliance/",
+        "/lyre/sms-contacts-and-connections/",
     ]),
     ("Fulcrum CRM", [
         "/crm/",
@@ -98,6 +100,10 @@ NAV: list[tuple[str, list[str]]] = [
         "/crm/email/",
         "/crm/calls-and-ai/",
         "/crm/roles-and-permissions/",
+        "/crm/reports-and-workflows/",
+        "/crm/invoices-and-products/",
+        "/crm/projects-and-issues/",
+        "/crm/settings-and-integrations/",
     ]),
 ]
 

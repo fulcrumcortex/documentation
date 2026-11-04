@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Voice, images, themes and VS Code | Fulcrum Docs</title>
+<meta name="description" content="Use voice input and spoken replies in Fulcrum Code, add image context, adjust themes and keybindings, and work from the VS Code extension.">
+<link rel="canonical" href="https://fulcrumcortex.github.io/documentation/code/voice-images-and-editor/">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Fulcrum Docs">
+<meta property="og:locale" content="en_AU">
+<meta property="og:title" content="Voice, images, themes and VS Code">
+<meta property="og:description" content="Use voice input and spoken replies in Fulcrum Code, add image context, adjust themes and keybindings, and work from the VS Code extension.">
+<meta property="og:url" content="https://fulcrumcortex.github.io/documentation/code/voice-images-and-editor/">
+<meta property="og:image" content="https://fulcrumcortex.github.io/documentation/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Fulcrum Docs">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Voice, images, themes and VS Code">
+<meta name="twitter:description" content="Use voice input and spoken replies in Fulcrum Code, add image context, adjust themes and keybindings, and work from the VS Code extension.">
+<meta name="twitter:image" content="https://fulcrumcortex.github.io/documentation/assets/og-image.png">
+<meta name="theme-color" content="#14100f">
+<link rel="icon" href="/documentation/assets/fulcrum-logo.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/documentation/assets/fulcrum-logo.png">
+<link rel="stylesheet" href="/documentation/assets/site.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://fulcrumcortex.com/#organization",
+   "name": "Fulcrum Cortex",
+   "url": "https://fulcrumcortex.com/",
+   "logo": "https://fulcrumcortex.github.io/documentation/assets/fulcrum-logo.png",
+   "description": "Fulcrum Cortex is the AI execution layer for business, built in Australia.",
+   "sameAs": [
+    "https://fulcrumcrm.app/",
+    "https://fulcrumcode.app/",
+    "https://fulcrumail.app/",
+    "https://lyre.au/",
+    "https://docs.lyre.au/",
+    "https://github.com/fulcrumcortex"
+   ]
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://fulcrumcortex.github.io/documentation/#website",
+   "name": "Fulcrum Docs",
+   "url": "https://fulcrumcortex.github.io/documentation/",
+   "inLanguage": "en-AU",
+   "publisher": {
+    "@id": "https://fulcrumcortex.com/#organization"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Docs",
+     "item": "https://fulcrumcortex.github.io/documentation/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Code overview",
+     "item": "https://fulcrumcortex.github.io/documentation/code/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Voice, images and editor",
+     "item": "https://fulcrumcortex.github.io/documentation/code/voice-images-and-editor/"
+    }
+   ]
+  },
+  {
+   "@type": "TechArticle",
+   "headline": "Voice, images, themes and VS Code",
+   "description": "Use voice input and spoken replies in Fulcrum Code, add image context, adjust themes and keybindings, and work from the VS Code extension.",
+   "url": "https://fulcrumcortex.github.io/documentation/code/voice-images-and-editor/",
+   "mainEntityOfPage": "https://fulcrumcortex.github.io/documentation/code/voice-images-and-editor/",
+   "inLanguage": "en-AU",
+   "isPartOf": {
+    "@id": "https://fulcrumcortex.github.io/documentation/#website"
+   },
+   "author": {
+    "@id": "https://fulcrumcortex.com/#organization"
+   },
+   "publisher": {
+    "@id": "https://fulcrumcortex.com/#organization"
+   },
+   "image": "https://fulcrumcortex.github.io/documentation/assets/og-image.png",
+   "dateModified": "2026-11-05",
+   "about": {
+    "@type": "SoftwareApplication",
+    "name": "Fulcrum Code",
+    "applicationCategory": "BusinessApplication"
+   }
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="topbar">
+<a class="brand" href="/documentation/"><img src="/documentation/assets/fulcrum-logo.svg" alt="" width="28" height="28"><span>Fulcrum <b>Docs</b></span></a>
+<a class="menu-link" href="#docs-nav">Guides</a>
+</header>
+<div class="layout">
+<main id="main">
+<nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="/documentation/">Docs</a></li><li><a href="/documentation/code/">Code overview</a></li><li><span aria-current="page">Voice, images and editor</span></li></ol></nav>
+<article>
+<h1>Voice, images, themes and VS Code</h1>
+<p class="lead">Use voice input and spoken replies in Fulcrum Code, add image context, adjust themes and keybindings, and work from the VS Code extension.</p>
+<h2 id="speak-a-request">Speak a request</h2><p><code>/voice</code> records microphone input for transcription. Allow microphone access in your operating system, speak your request and review the transcript. Names, file paths and commands can be misheard; correct them before letting the agent act.</p><h2 id="hear-the-response">Hear the response</h2><p><code>/speak</code> speaks a response; <code>/speak-on</code> and <code>/speak-off</code> control spoken replies. <code>/voices</code> opens the voice picker. Check output volume and consider who can hear sensitive content around you.</p>
+<h2 id="give-visual-context">Give visual context</h2><p>Paste a clipboard image into the prompt to discuss a layout or visual problem. <code>/vision</code> controls the vision model. Describe what should be compared or changed, and crop account names, browser tabs, tokens and unrelated windows out of the image before sharing it. Image analysis depends on a vision-capable model being available.</p>
+<h2 id="set-up-the-terminal">Set up the terminal</h2><table><thead><tr><th>Command</th><th>Purpose</th></tr></thead><tbody><tr><td><code>/theme</code></td><td>List and choose themes, including Fulcrum Amber, Midnight, Mono and Forest</td></tr><tr><td><code>/vim</code></td><td>Toggle Vim-style prompt editing</td></tr><tr><td><code>/keys</code></td><td>Show keyboard shortcuts</td></tr><tr><td><code>/keys edit</code></td><td>Edit the keybinding override file</td></tr><tr><td><code>/keys reset</code></td><td>Remove custom bindings</td></tr><tr><td><code>/config-path</code></td><td>Find the preferences file</td></tr></tbody></table><p>Preferences live under <code>~/.fulcrum/</code>. Restart after changing keybindings. If a shortcut stops working, check the terminal's own bindings as well as Fulcrum's.</p>
+<h2 id="work-from-vs-code">Work from VS Code</h2><p>The Fulcrum Code extension adds an activity-bar panel and actions to send selected code, mention a file and make one-shot requests. Follow the extension's installation instructions for your release. Check the active project and selected text before sending context. Use the terminal agent when you need the complete interactive workflow.</p><h2 id="get-help">Get help</h2><p><code>/help</code> lists the installed commands. Include <code>/version</code> and a redacted error when reporting a problem. Current models, extension packaging and operating-system permissions can differ between installations.</p>
+
+
+<p class="updated">Last updated <time datetime="2026-11-05">2026-11-05</time></p>
+</article>
+<nav class="pager" aria-label="Previous and next guides"><a class="prev" href="/documentation/code/connections-and-extensions/"><span>Previous</span>Connections and extensions</a><a class="next" href="/documentation/fulcrum-mail/"><span>Next</span>Fulcrum Mail overview</a></nav>
+</main>
+<aside class="toc" aria-label="On this page"><p>On this page</p><ul>
+<li><a href="#speak-a-request">Speak a request</a></li>
+<li><a href="#hear-the-response">Hear the response</a></li>
+<li><a href="#give-visual-context">Give visual context</a></li>
+<li><a href="#set-up-the-terminal">Set up the terminal</a></li>
+<li><a href="#work-from-vs-code">Work from VS Code</a></li>
+<li><a href="#get-help">Get help</a></li>
+</ul></aside>
+<nav class="sidebar" id="docs-nav" aria-label="Documentation">
+<p class="nav-section">Start here</p><ul>
+<li><a href="/documentation/">Overview</a></li>
+<li><a href="/documentation/sessions/">Cortex and Sessions</a></li>
+</ul>
+<p class="nav-section">Fulcrum Code</p><ul>
+<li><a href="/documentation/code/">Code overview</a></li>
+<li><a href="/documentation/code/install-and-sign-in/">Install and sign in</a></li>
+<li><a href="/documentation/code/plan-build-and-review/">Plan, build and review</a></li>
+<li><a href="/documentation/code/tools-and-worktrees/">Tools and worktrees</a></li>
+<li><a href="/documentation/code/skills-and-agents/">Skills and agents</a></li>
+<li><a href="/documentation/code/sessions-and-memory/">Sessions and memory</a></li>
+<li><a href="/documentation/code/connections-and-extensions/">Connections and extensions</a></li>
+<li><a href="/documentation/code/voice-images-and-editor/" aria-current="page">Voice, images and editor</a></li>
+</ul>
+<p class="nav-section">Fulcrum Mail</p><ul>
+<li><a href="/documentation/fulcrum-mail/">Fulcrum Mail overview</a></li>
+<li><a href="/documentation/fulcrum-mail/create-an-account/">Create an account</a></li>
+<li><a href="/documentation/fulcrum-mail/workspaces/">Company workspaces</a></li>
+<li><a href="/documentation/fulcrum-mail/invite-and-manage-members/">Invite and manage members</a></li>
+<li><a href="/documentation/fulcrum-mail/switch-workspaces-and-accounts/">Switch workspaces and accounts</a></li>
+<li><a href="/documentation/fulcrum-mail/mail-basics/">Mail basics</a></li>
+<li><a href="/documentation/fulcrum-mail/settings/">Mail settings</a></li>
+</ul>
+<p class="nav-section">Calendar</p><ul>
+<li><a href="/documentation/calendar/">Calendar overview</a></li>
+<li><a href="/documentation/calendar/import-and-connect-calendars/">Import and connect calendars</a></li>
+<li><a href="/documentation/calendar/booking-pages/">Booking pages</a></li>
+<li><a href="/documentation/calendar/manage-bookings/">Manage bookings</a></li>
+<li><a href="/documentation/calendar/meetings/">Meetings</a></li>
+</ul>
+<p class="nav-section">Files and documents</p><ul>
+<li><a href="/documentation/drive/">Drive overview</a></li>
+<li><a href="/documentation/docs/">Docs overview</a></li>
+<li><a href="/documentation/pages/">Shareable pages</a></li>
+<li><a href="/documentation/wallet/">Wallet and credits</a></li>
+</ul>
+<p class="nav-section">Lyre</p><ul>
+<li><a href="/documentation/lyre/">Lyre overview</a></li>
+<li><a href="/documentation/lyre/voice-agents/">Voice agents</a></li>
+<li><a href="/documentation/lyre/phone-numbers/">Phone numbers</a></li>
+<li><a href="/documentation/lyre/outbound-calls-and-campaigns/">Outbound calls and campaigns</a></li>
+<li><a href="/documentation/lyre/book-meetings/">Book meetings</a></li>
+<li><a href="/documentation/lyre/call-history/">Call history</a></li>
+<li><a href="/documentation/lyre/credits-and-billing/">Credits and billing</a></li>
+<li><a href="/documentation/lyre/compliance/">Compliance</a></li>
+<li><a href="/documentation/lyre/sms-contacts-and-connections/">SMS and resources</a></li>
+</ul>
+<p class="nav-section">Fulcrum CRM</p><ul>
+<li><a href="/documentation/crm/">CRM overview</a></li>
+<li><a href="/documentation/crm/contacts-and-companies/">Contacts and companies</a></li>
+<li><a href="/documentation/crm/deals-and-pipelines/">Deals and pipelines</a></li>
+<li><a href="/documentation/crm/activities-and-tasks/">Activities and tasks</a></li>
+<li><a href="/documentation/crm/lists/">Lists</a></li>
+<li><a href="/documentation/crm/custom-fields/">Custom fields</a></li>
+<li><a href="/documentation/crm/import-export-and-duplicates/">Import, export and duplicates</a></li>
+<li><a href="/documentation/crm/lead-forms-and-routing/">Lead forms and routing</a></li>
+<li><a href="/documentation/crm/email/">Email</a></li>
+<li><a href="/documentation/crm/calls-and-ai/">Calls and AI</a></li>
+<li><a href="/documentation/crm/roles-and-permissions/">Roles and permissions</a></li>
+<li><a href="/documentation/crm/reports-and-workflows/">Reports and workflows</a></li>
+<li><a href="/documentation/crm/invoices-and-products/">Invoices and products</a></li>
+<li><a href="/documentation/crm/projects-and-issues/">Projects and issues</a></li>
+<li><a href="/documentation/crm/settings-and-integrations/">Settings and integrations</a></li>
+</ul>
+</nav>
+</div>
+<footer class="footer">
+<p>Fulcrum Docs is written and maintained by the Fulcrum Cortex team in Australia.</p>
+<p><a href="https://github.com/fulcrumcortex/documentation">Suggest a correction on GitHub</a></p>
+</footer>
+</body>
+</html>

@@ -1,4 +1,13 @@
 index.html
+sessions/index.html
+code/index.html
+code/install-and-sign-in/index.html
+code/plan-build-and-review/index.html
+code/tools-and-worktrees/index.html
+code/skills-and-agents/index.html
+code/sessions-and-memory/index.html
+code/connections-and-extensions/index.html
+code/voice-images-and-editor/index.html
 fulcrum-mail/index.html
 fulcrum-mail/create-an-account/index.html
 fulcrum-mail/workspaces/index.html
@@ -11,7 +20,10 @@ calendar/import-and-connect-calendars/index.html
 calendar/booking-pages/index.html
 calendar/manage-bookings/index.html
 calendar/meetings/index.html
+drive/index.html
+docs/index.html
 pages/index.html
+wallet/index.html
 lyre/index.html
 lyre/voice-agents/index.html
 lyre/phone-numbers/index.html
@@ -20,6 +32,7 @@ lyre/book-meetings/index.html
 lyre/call-history/index.html
 lyre/credits-and-billing/index.html
 lyre/compliance/index.html
+lyre/sms-contacts-and-connections/index.html
 crm/index.html
 crm/contacts-and-companies/index.html
 crm/deals-and-pipelines/index.html
@@ -31,6 +44,10 @@ crm/lead-forms-and-routing/index.html
 crm/email/index.html
 crm/calls-and-ai/index.html
 crm/roles-and-permissions/index.html
+crm/reports-and-workflows/index.html
+crm/invoices-and-products/index.html
+crm/projects-and-issues/index.html
+crm/settings-and-integrations/index.html
 404.html
 sitemap.xml
 robots.txt

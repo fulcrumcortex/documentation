@@ -95,7 +95,7 @@
     "@id": "https://fulcrumcortex.com/#organization"
    },
    "image": "https://fulcrumcortex.github.io/documentation/assets/og-image.png",
-   "dateModified": "2026-11-04",
+   "dateModified": "2026-11-05",
    "about": {
     "@type": "SoftwareApplication",
     "name": "Fulcrum CRM",
@@ -186,6 +186,11 @@
 <p>Use <strong>Revoke</strong> to cut a tool off, or <strong>Rotate</strong> to issue a fresh token. By default only owners and admins can manage MCP tokens. Give each tool the narrowest scopes it needs.</p>
 <p>The same agent-native approach runs across the whole fleet. The <a href="https://fulcrumcortex.com/blog/agent-native-crm">agent-native CRM article</a> explains the thinking, and <a href="https://fulcrumcortex.com/integrations">Fulcrum Cortex integrations</a> lists the tools the agents already work with.</p>
 
+<h2 id="give-an-ai-action-a-bounded-objective">Give an AI action a bounded objective</h2>
+<p>Specify the contact, reason for the call, facts it may rely on and the result you expect. Check the consent state and chosen agent before starting. After the call, compare the transcript, summary and activity on the intended contact. Ask for human review where an answer could create a commitment.</p>
+<h2 id="when-a-tool-is-unavailable">When a tool is unavailable</h2>
+<p>Check the organisation, connected account, module access, role and service credits. A visible assistant does not mean every connected action is permitted. MCP tools use their configured credentials and scope; do not broaden them or paste a token into chat simply to clear an error.</p>
+
 <section class="related" aria-labelledby="related-reading">
 <h2 id="related-reading">Related reading</h2>
 <ul>
@@ -195,7 +200,7 @@
 <li><a href="https://fulcrumcortex.com/blog/ai-voice-agents-australia">An operator&#x27;s guide to AI voice agents in Australia</a></li>
 </ul>
 </section>
-<p class="updated">Last updated <time datetime="2026-11-04">2026-11-04</time></p>
+<p class="updated">Last updated <time datetime="2026-11-05">2026-11-05</time></p>
 </article>
 <nav class="pager" aria-label="Previous and next guides"><a class="prev" href="/documentation/crm/email/"><span>Previous</span>Email</a><a class="next" href="/documentation/crm/roles-and-permissions/"><span>Next</span>Roles and permissions</a></nav>
 </main>
@@ -205,11 +210,24 @@
 <li><a href="#ai-agents">AI Agents</a></li>
 <li><a href="#your-ai-pal">Your AI Pal</a></li>
 <li><a href="#connect-your-own-ai-tools-mcp">Connect your own AI tools (MCP)</a></li>
+<li><a href="#give-an-ai-action-a-bounded-objective">Give an AI action a bounded objective</a></li>
+<li><a href="#when-a-tool-is-unavailable">When a tool is unavailable</a></li>
 <li><a href="#related-reading">Related reading</a></li>
 </ul></aside>
 <nav class="sidebar" id="docs-nav" aria-label="Documentation">
 <p class="nav-section">Start here</p><ul>
 <li><a href="/documentation/">Overview</a></li>
+<li><a href="/documentation/sessions/">Cortex and Sessions</a></li>
+</ul>
+<p class="nav-section">Fulcrum Code</p><ul>
+<li><a href="/documentation/code/">Code overview</a></li>
+<li><a href="/documentation/code/install-and-sign-in/">Install and sign in</a></li>
+<li><a href="/documentation/code/plan-build-and-review/">Plan, build and review</a></li>
+<li><a href="/documentation/code/tools-and-worktrees/">Tools and worktrees</a></li>
+<li><a href="/documentation/code/skills-and-agents/">Skills and agents</a></li>
+<li><a href="/documentation/code/sessions-and-memory/">Sessions and memory</a></li>
+<li><a href="/documentation/code/connections-and-extensions/">Connections and extensions</a></li>
+<li><a href="/documentation/code/voice-images-and-editor/">Voice, images and editor</a></li>
 </ul>
 <p class="nav-section">Fulcrum Mail</p><ul>
 <li><a href="/documentation/fulcrum-mail/">Fulcrum Mail overview</a></li>
@@ -227,8 +245,11 @@
 <li><a href="/documentation/calendar/manage-bookings/">Manage bookings</a></li>
 <li><a href="/documentation/calendar/meetings/">Meetings</a></li>
 </ul>
-<p class="nav-section">Pages</p><ul>
+<p class="nav-section">Files and documents</p><ul>
+<li><a href="/documentation/drive/">Drive overview</a></li>
+<li><a href="/documentation/docs/">Docs overview</a></li>
 <li><a href="/documentation/pages/">Shareable pages</a></li>
+<li><a href="/documentation/wallet/">Wallet and credits</a></li>
 </ul>
 <p class="nav-section">Lyre</p><ul>
 <li><a href="/documentation/lyre/">Lyre overview</a></li>
@@ -239,6 +260,7 @@
 <li><a href="/documentation/lyre/call-history/">Call history</a></li>
 <li><a href="/documentation/lyre/credits-and-billing/">Credits and billing</a></li>
 <li><a href="/documentation/lyre/compliance/">Compliance</a></li>
+<li><a href="/documentation/lyre/sms-contacts-and-connections/">SMS and resources</a></li>
 </ul>
 <p class="nav-section">Fulcrum CRM</p><ul>
 <li><a href="/documentation/crm/">CRM overview</a></li>
@@ -252,6 +274,10 @@
 <li><a href="/documentation/crm/email/">Email</a></li>
 <li><a href="/documentation/crm/calls-and-ai/" aria-current="page">Calls and AI</a></li>
 <li><a href="/documentation/crm/roles-and-permissions/">Roles and permissions</a></li>
+<li><a href="/documentation/crm/reports-and-workflows/">Reports and workflows</a></li>
+<li><a href="/documentation/crm/invoices-and-products/">Invoices and products</a></li>
+<li><a href="/documentation/crm/projects-and-issues/">Projects and issues</a></li>
+<li><a href="/documentation/crm/settings-and-integrations/">Settings and integrations</a></li>
 </ul>
 </nav>
 </div>

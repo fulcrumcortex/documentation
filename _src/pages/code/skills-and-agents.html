@@ -1,0 +1,21 @@
+---
+title: Skills, Sidekicks and specialist agents
+description: Use reusable skills and specialist agents in Fulcrum Code, understand Sidekick skill packs, inspect installed skills and write a focused procedure.
+nav: Skills and agents
+updated: 2026-11-05
+about: Fulcrum Code
+---
+<h2>Skill or agent?</h2><p>A <strong>skill</strong> is a reusable procedure loaded into the conversation when relevant. An <strong>agent profile</strong> defines a specialist's role and tool set, and can run a focused task in its own context. A Sidekick is an AI teammate; skills describe how that teammate should approach a kind of work. A skill does not grant account permissions or install the service it describes.</p>
+<h2>Use a skill</h2><ol class="steps"><li>Enter <code>/skills</code> to inspect available skills.</li><li>Ask for the skill by name and describe the task, for example “Use the refactor skill to simplify this parser while keeping its public API.”</li><li>Provide the project constraints and expected checks.</li><li>Review the actions and evidence, just as you would for any other agent task.</li></ol>
+<h2>Write a useful procedure</h2><p>User skills can live in Markdown files in <code>~/.fulcrum/skills/</code>. The skill loader supports a name, description and body. Start with a small procedure:</p><pre><code>---
+name: review-form-change
+description: Review a form change before release
+---
+1. Read the changed form and its validation.
+2. Check empty, invalid and valid input.
+3. Check keyboard navigation and error messages.
+4. Run the relevant existing tests.
+5. Report findings and untested behaviour.
+Do not publish or change hosted systems.</code></pre><p>Use only fictional examples and public project conventions. Do not put tokens or customer details into a reusable skill. Start a new session after changing skill files if they do not appear in the current session.</p>
+<h2>Discover skill packs</h2><p><code>/marketplace</code> provides the available pack management commands. Inspect the pack source and instructions before adding or installing it. The <a href="https://github.com/fulcrumcortex/sidekicks-skills">Sidekick skills repository</a> is currently empty; there is no published pack to install from it yet. This guide's example is a local skill, not a claim that the repository already contains a pack.</p>
+<h2>Delegate to a specialist</h2><p>Fulcrum Code includes <strong>general</strong>, <strong>explore</strong> and <strong>scout</strong> profiles. Type <code>@</code> for the agent and file picker. A request such as <code>@explore find the authentication middleware</code> delegates a focused investigation. Ask for findings with file references and a clear stopping point.</p><p>Custom profiles live under <code>~/.fulcrum/agents/</code>. Define a narrow responsibility and the tools it needs. When several agents contribute, ask the coordinating agent to reconcile their findings before treating the overall task as complete.</p>

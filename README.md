@@ -1,6 +1,6 @@
 # Fulcrum documentation
 
-User guides for Fulcrum Cortex and the apps it runs: Fulcrum Mail, Calendar, booking pages, Lyre and Fulcrum CRM.
+User guides for Fulcrum Cortex and the apps it runs: Fulcrum Code, Mail, Calendar, booking pages, Drive, Docs, Wallet, Sessions, Lyre and Fulcrum CRM.
 
 Published with GitHub Pages at https://fulcrumcortex.github.io/documentation/.
 
@@ -17,7 +17,7 @@ The site is plain static HTML generated from sources in this repository. No Java
 | `assets/` | Stylesheet, logo and social image |
 | `_config.yml` | Holds `site_url` and stops GitHub Pages publishing the generator files |
 
-Generated pages (`index.html`, `fulcrum-mail/`, `calendar/`, `pages/`, `lyre/`, `crm/`, `sitemap.xml`, `robots.txt`, `404.html`) are committed, because GitHub Pages serves the repository as it is.
+Generated pages (`index.html`, `fulcrum-mail/`, `calendar/`, `pages/`, `lyre/`, `crm/`, `code/`, `drive/`, `docs/`, `wallet/`, `sessions/`, `sitemap.xml`, `robots.txt`, `404.html`) are committed, because GitHub Pages serves the repository as it is.
 
 ## Editing a guide
 
@@ -70,3 +70,16 @@ To serve the docs from a custom domain such as `docs.fulcrumcortex.com`:
 3. Create a DNS `CNAME` record for `docs` pointing to `fulcrumcortex.github.io`.
 4. In **Settings → Pages**, enter the custom domain and tick **Enforce HTTPS** once the certificate is issued.
 5. Resubmit the new `sitemap.xml` in Google Search Console.
+
+## Screenshots and review
+
+Screenshots use a local product build, a fresh browser context, blocked external network access and fixed fictional API data. Never reuse a signed-in personal browser profile. The Code screenshot uses its actual terminal renderer and a stub agent, without bootstrap, LSP or model requests. Captions distinguish demonstrations from live integration evidence.
+
+- `node scripts/capture-screenshots.cjs /path/to/fulcrum-mail http://127.0.0.1:3187` captures the real local Mail, Calendar, booking, Drive and Docs interfaces. The source checkout needs installed Playwright and a running build.
+- Run `scripts/capture-code.py` with the Code checkout’s Python environment to export the terminal screenshot.
+- Visually inspect every output at full resolution, OCR raster screenshots where available, and check metadata and the SVG text before publishing.
+- Recalculate `_src/screenshot-review.json` after approving a replacement.
+
+The November 2026 review expands 33 guides to 50: eight Code guides, dedicated Drive/Docs/Wallet/Sessions guides, Lyre resources and additional CRM guides. Existing task guides gain worked examples, result verification and troubleshooting. `_src/review-notes.md` records the evidence scope and limits.
+
+`landing/` is a noindex preview of the separately hosted GitHub profile homepage. The production homepage lives in `fulcrumcortex/fulcrumcortex.github.io`; edit that repository for future homepage changes.

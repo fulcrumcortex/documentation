@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Install Fulcrum Code and sign in | Fulcrum Docs</title>
+<meta name="description" content="Install Fulcrum Code, authenticate with your Fulcrum account, launch it in a project folder, select a model and check your installation.">
+<link rel="canonical" href="https://fulcrumcortex.github.io/documentation/code/install-and-sign-in/">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Fulcrum Docs">
+<meta property="og:locale" content="en_AU">
+<meta property="og:title" content="Install Fulcrum Code and sign in">
+<meta property="og:description" content="Install Fulcrum Code, authenticate with your Fulcrum account, launch it in a project folder, select a model and check your installation.">
+<meta property="og:url" content="https://fulcrumcortex.github.io/documentation/code/install-and-sign-in/">
+<meta property="og:image" content="https://fulcrumcortex.github.io/documentation/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Fulcrum Docs">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Install Fulcrum Code and sign in">
+<meta name="twitter:description" content="Install Fulcrum Code, authenticate with your Fulcrum account, launch it in a project folder, select a model and check your installation.">
+<meta name="twitter:image" content="https://fulcrumcortex.github.io/documentation/assets/og-image.png">
+<meta name="theme-color" content="#14100f">
+<link rel="icon" href="/documentation/assets/fulcrum-logo.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/documentation/assets/fulcrum-logo.png">
+<link rel="stylesheet" href="/documentation/assets/site.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://fulcrumcortex.com/#organization",
+   "name": "Fulcrum Cortex",
+   "url": "https://fulcrumcortex.com/",
+   "logo": "https://fulcrumcortex.github.io/documentation/assets/fulcrum-logo.png",
+   "description": "Fulcrum Cortex is the AI execution layer for business, built in Australia.",
+   "sameAs": [
+    "https://fulcrumcrm.app/",
+    "https://fulcrumcode.app/",
+    "https://fulcrumail.app/",
+    "https://lyre.au/",
+    "https://docs.lyre.au/",
+    "https://github.com/fulcrumcortex"
+   ]
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://fulcrumcortex.github.io/documentation/#website",
+   "name": "Fulcrum Docs",
+   "url": "https://fulcrumcortex.github.io/documentation/",
+   "inLanguage": "en-AU",
+   "publisher": {
+    "@id": "https://fulcrumcortex.com/#organization"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Docs",
+     "item": "https://fulcrumcortex.github.io/documentation/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Code overview",
+     "item": "https://fulcrumcortex.github.io/documentation/code/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Install and sign in",
+     "item": "https://fulcrumcortex.github.io/documentation/code/install-and-sign-in/"
+    }
+   ]
+  },
+  {
+   "@type": "TechArticle",
+   "headline": "Install Fulcrum Code and sign in",
+   "description": "Install Fulcrum Code, authenticate with your Fulcrum account, launch it in a project folder, select a model and check your installation.",
+   "url": "https://fulcrumcortex.github.io/documentation/code/install-and-sign-in/",
+   "mainEntityOfPage": "https://fulcrumcortex.github.io/documentation/code/install-and-sign-in/",
+   "inLanguage": "en-AU",
+   "isPartOf": {
+    "@id": "https://fulcrumcortex.github.io/documentation/#website"
+   },
+   "author": {
+    "@id": "https://fulcrumcortex.com/#organization"
+   },
+   "publisher": {
+    "@id": "https://fulcrumcortex.com/#organization"
+   },
+   "image": "https://fulcrumcortex.github.io/documentation/assets/og-image.png",
+   "dateModified": "2026-11-05",
+   "about": {
+    "@type": "SoftwareApplication",
+    "name": "Fulcrum Code",
+    "applicationCategory": "BusinessApplication"
+   }
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="topbar">
+<a class="brand" href="/documentation/"><img src="/documentation/assets/fulcrum-logo.svg" alt="" width="28" height="28"><span>Fulcrum <b>Docs</b></span></a>
+<a class="menu-link" href="#docs-nav">Guides</a>
+</header>
+<div class="layout">
+<main id="main">
+<nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="/documentation/">Docs</a></li><li><a href="/documentation/code/">Code overview</a></li><li><span aria-current="page">Install and sign in</span></li></ol></nav>
+<article>
+<h1>Install Fulcrum Code and sign in</h1>
+<p class="lead">Install Fulcrum Code, authenticate with your Fulcrum account, launch it in a project folder, select a model and check your installation.</p>
+<h2 id="install-the-application">Install the application</h2><ol class="steps"><li>Open <a href="https://fulcrumcode.app/">the Fulcrum Code website</a> and use its current download or installation instructions. Choose your operating system and processor architecture.</li><li>Follow the instructions for that download. Open a fresh terminal after changing your PATH.</li><li>Run <code>fulcrum --version</code>. A version response confirms that the launcher is on PATH; it does not test your account or model access.</li></ol>
+<h2 id="authenticate">Authenticate</h2><pre><code>fulcrum login
+fulcrum whoami</code></pre><p>The login command opens the browser for Fulcrum authentication. Complete the flow with the account you intend to use. The managed platform supplies model access; normal setup does not require copying provider API keys into a configuration file. Sign-in credentials are stored separately in the operating system keychain.</p>
+<h2 id="open-a-project">Open a project</h2><pre><code>cd path/to/your-project
+fulcrum</code></pre><p>Choose <code>/models</code>, then ask a read-only question such as “Summarise this project and identify its test command.” Check <code>/status</code> to confirm the working directory. Starting in the wrong folder gives the agent the wrong context and may affect the wrong files.</p>
+<h2 id="update-and-check">Update and check</h2><p><code>fulcrum --check-update</code> checks for an update. <code>fulcrum --update</code> installs the available release. Inside a session, <code>/doctor</code> runs diagnostic checks and <code>/version</code> reports the running version. Save work before replacing a running installation.</p>
+<h2 id="if-setup-fails">If setup fails</h2><table><thead><tr><th>Symptom</th><th>Next step</th></tr></thead><tbody><tr><td>Command not found</td><td>Check the download's launcher location and PATH. Restart the terminal and retry the version command.</td></tr><tr><td>Browser signs in to the wrong account</td><td>Check the browser account before completing login, then verify with <code>fulcrum whoami</code>.</td></tr><tr><td>Session expired or revoked</td><td>Run <code>fulcrum login</code> again; do not paste credential files into a chat.</td></tr><tr><td>Slow startup around connected tools</td><td>Try <code>fulcrum --skip-mcp</code> to isolate MCP startup, then inspect the failing connection.</td></tr><tr><td>Model or allowance error</td><td>Check <code>/whoami</code>, <code>/usage</code> and the available catalogue with <code>/models</code>.</td></tr></tbody></table><p>For a support request, include the version, operating system, command and redacted error. Exclude account tokens, private source and full diagnostic dumps containing personal paths.</p>
+
+
+<p class="updated">Last updated <time datetime="2026-11-05">2026-11-05</time></p>
+</article>
+<nav class="pager" aria-label="Previous and next guides"><a class="prev" href="/documentation/code/"><span>Previous</span>Code overview</a><a class="next" href="/documentation/code/plan-build-and-review/"><span>Next</span>Plan, build and review</a></nav>
+</main>
+<aside class="toc" aria-label="On this page"><p>On this page</p><ul>
+<li><a href="#install-the-application">Install the application</a></li>
+<li><a href="#authenticate">Authenticate</a></li>
+<li><a href="#open-a-project">Open a project</a></li>
+<li><a href="#update-and-check">Update and check</a></li>
+<li><a href="#if-setup-fails">If setup fails</a></li>
+</ul></aside>
+<nav class="sidebar" id="docs-nav" aria-label="Documentation">
+<p class="nav-section">Start here</p><ul>
+<li><a href="/documentation/">Overview</a></li>
+<li><a href="/documentation/sessions/">Cortex and Sessions</a></li>
+</ul>
+<p class="nav-section">Fulcrum Code</p><ul>
+<li><a href="/documentation/code/">Code overview</a></li>
+<li><a href="/documentation/code/install-and-sign-in/" aria-current="page">Install and sign in</a></li>
+<li><a href="/documentation/code/plan-build-and-review/">Plan, build and review</a></li>
+<li><a href="/documentation/code/tools-and-worktrees/">Tools and worktrees</a></li>
+<li><a href="/documentation/code/skills-and-agents/">Skills and agents</a></li>
+<li><a href="/documentation/code/sessions-and-memory/">Sessions and memory</a></li>
+<li><a href="/documentation/code/connections-and-extensions/">Connections and extensions</a></li>
+<li><a href="/documentation/code/voice-images-and-editor/">Voice, images and editor</a></li>
+</ul>
+<p class="nav-section">Fulcrum Mail</p><ul>
+<li><a href="/documentation/fulcrum-mail/">Fulcrum Mail overview</a></li>
+<li><a href="/documentation/fulcrum-mail/create-an-account/">Create an account</a></li>
+<li><a href="/documentation/fulcrum-mail/workspaces/">Company workspaces</a></li>
+<li><a href="/documentation/fulcrum-mail/invite-and-manage-members/">Invite and manage members</a></li>
+<li><a href="/documentation/fulcrum-mail/switch-workspaces-and-accounts/">Switch workspaces and accounts</a></li>
+<li><a href="/documentation/fulcrum-mail/mail-basics/">Mail basics</a></li>
+<li><a href="/documentation/fulcrum-mail/settings/">Mail settings</a></li>
+</ul>
+<p class="nav-section">Calendar</p><ul>
+<li><a href="/documentation/calendar/">Calendar overview</a></li>
+<li><a href="/documentation/calendar/import-and-connect-calendars/">Import and connect calendars</a></li>
+<li><a href="/documentation/calendar/booking-pages/">Booking pages</a></li>
+<li><a href="/documentation/calendar/manage-bookings/">Manage bookings</a></li>
+<li><a href="/documentation/calendar/meetings/">Meetings</a></li>
+</ul>
+<p class="nav-section">Files and documents</p><ul>
+<li><a href="/documentation/drive/">Drive overview</a></li>
+<li><a href="/documentation/docs/">Docs overview</a></li>
+<li><a href="/documentation/pages/">Shareable pages</a></li>
+<li><a href="/documentation/wallet/">Wallet and credits</a></li>
+</ul>
+<p class="nav-section">Lyre</p><ul>
+<li><a href="/documentation/lyre/">Lyre overview</a></li>
+<li><a href="/documentation/lyre/voice-agents/">Voice agents</a></li>
+<li><a href="/documentation/lyre/phone-numbers/">Phone numbers</a></li>
+<li><a href="/documentation/lyre/outbound-calls-and-campaigns/">Outbound calls and campaigns</a></li>
+<li><a href="/documentation/lyre/book-meetings/">Book meetings</a></li>
+<li><a href="/documentation/lyre/call-history/">Call history</a></li>
+<li><a href="/documentation/lyre/credits-and-billing/">Credits and billing</a></li>
+<li><a href="/documentation/lyre/compliance/">Compliance</a></li>
+<li><a href="/documentation/lyre/sms-contacts-and-connections/">SMS and resources</a></li>
+</ul>
+<p class="nav-section">Fulcrum CRM</p><ul>
+<li><a href="/documentation/crm/">CRM overview</a></li>
+<li><a href="/documentation/crm/contacts-and-companies/">Contacts and companies</a></li>
+<li><a href="/documentation/crm/deals-and-pipelines/">Deals and pipelines</a></li>
+<li><a href="/documentation/crm/activities-and-tasks/">Activities and tasks</a></li>
+<li><a href="/documentation/crm/lists/">Lists</a></li>
+<li><a href="/documentation/crm/custom-fields/">Custom fields</a></li>
+<li><a href="/documentation/crm/import-export-and-duplicates/">Import, export and duplicates</a></li>
+<li><a href="/documentation/crm/lead-forms-and-routing/">Lead forms and routing</a></li>
+<li><a href="/documentation/crm/email/">Email</a></li>
+<li><a href="/documentation/crm/calls-and-ai/">Calls and AI</a></li>
+<li><a href="/documentation/crm/roles-and-permissions/">Roles and permissions</a></li>
+<li><a href="/documentation/crm/reports-and-workflows/">Reports and workflows</a></li>
+<li><a href="/documentation/crm/invoices-and-products/">Invoices and products</a></li>
+<li><a href="/documentation/crm/projects-and-issues/">Projects and issues</a></li>
+<li><a href="/documentation/crm/settings-and-integrations/">Settings and integrations</a></li>
+</ul>
+</nav>
+</div>
+<footer class="footer">
+<p>Fulcrum Docs is written and maintained by the Fulcrum Cortex team in Australia.</p>
+<p><a href="https://github.com/fulcrumcortex/documentation">Suggest a correction on GitHub</a></p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plan, build and review a change | Fulcrum Docs</title>
+<meta name="description" content="Use Fulcrum Code Plan and Build modes, give a precise brief, review tool approvals and verify changes before committing or deploying.">
+<link rel="canonical" href="https://fulcrumcortex.github.io/documentation/code/plan-build-and-review/">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Fulcrum Docs">
+<meta property="og:locale" content="en_AU">
+<meta property="og:title" content="Plan, build and review a change">
+<meta property="og:description" content="Use Fulcrum Code Plan and Build modes, give a precise brief, review tool approvals and verify changes before committing or deploying.">
+<meta property="og:url" content="https://fulcrumcortex.github.io/documentation/code/plan-build-and-review/">
+<meta property="og:image" content="https://fulcrumcortex.github.io/documentation/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Fulcrum Docs">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Plan, build and review a change">
+<meta name="twitter:description" content="Use Fulcrum Code Plan and Build modes, give a precise brief, review tool approvals and verify changes before committing or deploying.">
+<meta name="twitter:image" content="https://fulcrumcortex.github.io/documentation/assets/og-image.png">
+<meta name="theme-color" content="#14100f">
+<link rel="icon" href="/documentation/assets/fulcrum-logo.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/documentation/assets/fulcrum-logo.png">
+<link rel="stylesheet" href="/documentation/assets/site.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://fulcrumcortex.com/#organization",
+   "name": "Fulcrum Cortex",
+   "url": "https://fulcrumcortex.com/",
+   "logo": "https://fulcrumcortex.github.io/documentation/assets/fulcrum-logo.png",
+   "description": "Fulcrum Cortex is the AI execution layer for business, built in Australia.",
+   "sameAs": [
+    "https://fulcrumcrm.app/",
+    "https://fulcrumcode.app/",
+    "https://fulcrumail.app/",
+    "https://lyre.au/",
+    "https://docs.lyre.au/",
+    "https://github.com/fulcrumcortex"
+   ]
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://fulcrumcortex.github.io/documentation/#website",
+   "name": "Fulcrum Docs",
+   "url": "https://fulcrumcortex.github.io/documentation/",
+   "inLanguage": "en-AU",
+   "publisher": {
+    "@id": "https://fulcrumcortex.com/#organization"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Docs",
+     "item": "https://fulcrumcortex.github.io/documentation/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Code overview",
+     "item": "https://fulcrumcortex.github.io/documentation/code/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Plan, build and review",
+     "item": "https://fulcrumcortex.github.io/documentation/code/plan-build-and-review/"
+    }
+   ]
+  },
+  {
+   "@type": "TechArticle",
+   "headline": "Plan, build and review a change",
+   "description": "Use Fulcrum Code Plan and Build modes, give a precise brief, review tool approvals and verify changes before committing or deploying.",
+   "url": "https://fulcrumcortex.github.io/documentation/code/plan-build-and-review/",
+   "mainEntityOfPage": "https://fulcrumcortex.github.io/documentation/code/plan-build-and-review/",
+   "inLanguage": "en-AU",
+   "isPartOf": {
+    "@id": "https://fulcrumcortex.github.io/documentation/#website"
+   },
+   "author": {
+    "@id": "https://fulcrumcortex.com/#organization"
+   },
+   "publisher": {
+    "@id": "https://fulcrumcortex.com/#organization"
+   },
+   "image": "https://fulcrumcortex.github.io/documentation/assets/og-image.png",
+   "dateModified": "2026-11-05",
+   "about": {
+    "@type": "SoftwareApplication",
+    "name": "Fulcrum Code",
+    "applicationCategory": "BusinessApplication"
+   }
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="topbar">
+<a class="brand" href="/documentation/"><img src="/documentation/assets/fulcrum-logo.svg" alt="" width="28" height="28"><span>Fulcrum <b>Docs</b></span></a>
+<a class="menu-link" href="#docs-nav">Guides</a>
+</header>
+<div class="layout">
+<main id="main">
+<nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="/documentation/">Docs</a></li><li><a href="/documentation/code/">Code overview</a></li><li><span aria-current="page">Plan, build and review</span></li></ol></nav>
+<article>
+<h1>Plan, build and review a change</h1>
+<p class="lead">Use Fulcrum Code Plan and Build modes, give a precise brief, review tool approvals and verify changes before committing or deploying.</p>
+<figure class="screenshot"><a href="/documentation/assets/screenshots/code-plan.svg"><img src="/documentation/assets/screenshots/code-plan.svg" alt="Fulcrum Code Plan mode demonstration, with a request to investigate before editing" loading="lazy" decoding="async" width="1440"></a><figcaption>Plan mode is visible in the terminal. This is a demonstration session, not evidence of completed development work. Select the image to view it at full size.</figcaption></figure>
+<h2 id="choose-the-mode">Choose the mode</h2><p><strong>Plan</strong> supports investigation and planning while mutating tools are blocked. <strong>Build</strong> gives the agent its full tool access, subject to the active approval controls. Switch with <code>/plan</code>, <code>/build</code>, <code>/mode</code> or Ctrl+Tab. A plan is useful before a change spanning multiple files.</p>
+<h2 id="give-a-brief-with-a-checkable-outcome">Give a brief with a checkable outcome</h2><pre><code>Find why the contact form accepts a blank name.
+Propose a small fix before editing.
+Keep the existing design and avoid new dependencies.
+After approval, run the form validation tests and show the diff.
+Stop before committing or deploying.</code></pre><p>Describe the trigger, the expected behaviour, constraints and completion evidence. If you have a reproduction or error, include it. Tell the agent when the issue happens instead of guessing which file it must change.</p>
+<h2 id="move-from-plan-to-implementation">Move from plan to implementation</h2><ol class="steps"><li>Review the proposed files, approach and checks. Resolve missing requirements.</li><li>Switch to Build and ask for the agreed change.</li><li>Read tool approval prompts before allowing commands or writes. A command may have effects outside the repository.</li><li>Review the final diff and test output. Ask about skipped checks or failures.</li><li>Commit or publish only within the scope you authorised.</li></ol>
+<h2 id="stop-or-redirect-work">Stop or redirect work</h2><p>Ctrl+C stops the running task or clears the prompt; pressing it twice exits. <code>/cancel</code> cancels work. Tell the agent what to preserve when redirecting it. After interruption, inspect the working tree: stopping a turn does not roll back every command that has already run.</p>
+<h2 id="check-more-than-the-summary">Check more than the summary</h2><p>Ask which tests ran, whether they passed and which behaviours were checked. Use <code>git diff</code> and <code>git status</code> in your repository to inspect the change independently. A local build cannot prove that a service is live. For a release, request the published revision and a check of the live behaviour.</p>
+<h2 id="recover-a-mistaken-turn">Recover a mistaken turn</h2><p><code>/undo</code> and <code>/redo</code> restore conversation state and available file checkpoints. They are not substitutes for Git history or backups, and cannot be relied on to reverse an external operation such as sending a message or changing a hosted service. See <a href="/documentation/code/sessions-and-memory/">Sessions and memory</a>.</p>
+
+
+<p class="updated">Last updated <time datetime="2026-11-05">2026-11-05</time></p>
+</article>
+<nav class="pager" aria-label="Previous and next guides"><a class="prev" href="/documentation/code/install-and-sign-in/"><span>Previous</span>Install and sign in</a><a class="next" href="/documentation/code/tools-and-worktrees/"><span>Next</span>Tools and worktrees</a></nav>
+</main>
+<aside class="toc" aria-label="On this page"><p>On this page</p><ul>
+<li><a href="#choose-the-mode">Choose the mode</a></li>
+<li><a href="#give-a-brief-with-a-checkable-outcome">Give a brief with a checkable outcome</a></li>
+<li><a href="#move-from-plan-to-implementation">Move from plan to implementation</a></li>
+<li><a href="#stop-or-redirect-work">Stop or redirect work</a></li>
+<li><a href="#check-more-than-the-summary">Check more than the summary</a></li>
+<li><a href="#recover-a-mistaken-turn">Recover a mistaken turn</a></li>
+</ul></aside>
+<nav class="sidebar" id="docs-nav" aria-label="Documentation">
+<p class="nav-section">Start here</p><ul>
+<li><a href="/documentation/">Overview</a></li>
+<li><a href="/documentation/sessions/">Cortex and Sessions</a></li>
+</ul>
+<p class="nav-section">Fulcrum Code</p><ul>
+<li><a href="/documentation/code/">Code overview</a></li>
+<li><a href="/documentation/code/install-and-sign-in/">Install and sign in</a></li>
+<li><a href="/documentation/code/plan-build-and-review/" aria-current="page">Plan, build and review</a></li>
+<li><a href="/documentation/code/tools-and-worktrees/">Tools and worktrees</a></li>
+<li><a href="/documentation/code/skills-and-agents/">Skills and agents</a></li>
+<li><a href="/documentation/code/sessions-and-memory/">Sessions and memory</a></li>
+<li><a href="/documentation/code/connections-and-extensions/">Connections and extensions</a></li>
+<li><a href="/documentation/code/voice-images-and-editor/">Voice, images and editor</a></li>
+</ul>
+<p class="nav-section">Fulcrum Mail</p><ul>
+<li><a href="/documentation/fulcrum-mail/">Fulcrum Mail overview</a></li>
+<li><a href="/documentation/fulcrum-mail/create-an-account/">Create an account</a></li>
+<li><a href="/documentation/fulcrum-mail/workspaces/">Company workspaces</a></li>
+<li><a href="/documentation/fulcrum-mail/invite-and-manage-members/">Invite and manage members</a></li>
+<li><a href="/documentation/fulcrum-mail/switch-workspaces-and-accounts/">Switch workspaces and accounts</a></li>
+<li><a href="/documentation/fulcrum-mail/mail-basics/">Mail basics</a></li>
+<li><a href="/documentation/fulcrum-mail/settings/">Mail settings</a></li>
+</ul>
+<p class="nav-section">Calendar</p><ul>
+<li><a href="/documentation/calendar/">Calendar overview</a></li>
+<li><a href="/documentation/calendar/import-and-connect-calendars/">Import and connect calendars</a></li>
+<li><a href="/documentation/calendar/booking-pages/">Booking pages</a></li>
+<li><a href="/documentation/calendar/manage-bookings/">Manage bookings</a></li>
+<li><a href="/documentation/calendar/meetings/">Meetings</a></li>
+</ul>
+<p class="nav-section">Files and documents</p><ul>
+<li><a href="/documentation/drive/">Drive overview</a></li>
+<li><a href="/documentation/docs/">Docs overview</a></li>
+<li><a href="/documentation/pages/">Shareable pages</a></li>
+<li><a href="/documentation/wallet/">Wallet and credits</a></li>
+</ul>
+<p class="nav-section">Lyre</p><ul>
+<li><a href="/documentation/lyre/">Lyre overview</a></li>
+<li><a href="/documentation/lyre/voice-agents/">Voice agents</a></li>
+<li><a href="/documentation/lyre/phone-numbers/">Phone numbers</a></li>
+<li><a href="/documentation/lyre/outbound-calls-and-campaigns/">Outbound calls and campaigns</a></li>
+<li><a href="/documentation/lyre/book-meetings/">Book meetings</a></li>
+<li><a href="/documentation/lyre/call-history/">Call history</a></li>
+<li><a href="/documentation/lyre/credits-and-billing/">Credits and billing</a></li>
+<li><a href="/documentation/lyre/compliance/">Compliance</a></li>
+<li><a href="/documentation/lyre/sms-contacts-and-connections/">SMS and resources</a></li>
+</ul>
+<p class="nav-section">Fulcrum CRM</p><ul>
+<li><a href="/documentation/crm/">CRM overview</a></li>
+<li><a href="/documentation/crm/contacts-and-companies/">Contacts and companies</a></li>
+<li><a href="/documentation/crm/deals-and-pipelines/">Deals and pipelines</a></li>
+<li><a href="/documentation/crm/activities-and-tasks/">Activities and tasks</a></li>
+<li><a href="/documentation/crm/lists/">Lists</a></li>
+<li><a href="/documentation/crm/custom-fields/">Custom fields</a></li>
+<li><a href="/documentation/crm/import-export-and-duplicates/">Import, export and duplicates</a></li>
+<li><a href="/documentation/crm/lead-forms-and-routing/">Lead forms and routing</a></li>
+<li><a href="/documentation/crm/email/">Email</a></li>
+<li><a href="/documentation/crm/calls-and-ai/">Calls and AI</a></li>
+<li><a href="/documentation/crm/roles-and-permissions/">Roles and permissions</a></li>
+<li><a href="/documentation/crm/reports-and-workflows/">Reports and workflows</a></li>
+<li><a href="/documentation/crm/invoices-and-products/">Invoices and products</a></li>
+<li><a href="/documentation/crm/projects-and-issues/">Projects and issues</a></li>
+<li><a href="/documentation/crm/settings-and-integrations/">Settings and integrations</a></li>
+</ul>
+</nav>
+</div>
+<footer class="footer">
+<p>Fulcrum Docs is written and maintained by the Fulcrum Cortex team in Australia.</p>
+<p><a href="https://github.com/fulcrumcortex/documentation">Suggest a correction on GitHub</a></p>
+</footer>
+</body>
+</html>
