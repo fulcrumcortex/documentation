@@ -1,0 +1,63 @@
+---
+title: Import, export, duplicates and the recycle bin
+seo_title: Import contacts, export data and merge duplicates in Fulcrum CRM | Fulcrum Docs
+description: Import contacts into Fulcrum CRM from a CSV with AI column mapping, export contacts and lists, merge duplicate contacts, companies and deals, and restore deleted records.
+nav: Import, export and duplicates
+updated: 2026-11-04
+about: Fulcrum CRM
+howto: Import contacts into Fulcrum CRM from a CSV file
+related:
+  - https://fulcrumcortex.com/blog/clean-contact-list-before-crm-import | Checklist: clean a contact list before CRM import
+  - https://fulcrumcrm.app/blog/crm-data-quality-guide | Why CRM data quality matters for revenue
+  - https://fulcrumcrm.app/blog/crm-data-export-portability | Your right to export and own your customer data
+---
+<p>This guide covers getting data into and out of Fulcrum CRM and keeping it tidy. It also covers how to undo a deletion. If you're moving from another CRM, read <a href="https://fulcrumcrm.app/blog/crm-data-migration-switch-crms-without-losing-contacts">how to switch CRMs without losing contacts</a> before your first import.</p>
+
+<h2>Import contacts from a CSV</h2>
+<ol class="steps">
+<li>Open <strong>Contacts</strong> and select <strong>Import</strong>. The <strong>Import Contacts</strong> window opens on the <strong>CSV Upload</strong> tab.</li>
+<li>Click or drop your CSV file into the upload area.</li>
+<li>AI maps your columns to CRM fields and shows how many it mapped, such as "Mapped 8 of 9 columns". Check the preview.</li>
+<li>If a column is mapped wrongly, describe the fix in <strong>Wrong mapping? Tell the AI what to fix:</strong> and select <strong>Remap</strong>. To start over, choose <strong>Upload a different file</strong>.</li>
+<li>Select the import button, which shows how many contacts will be imported.</li>
+</ol>
+<div class="warning"><p>Before you import, know these rules:</p>
+<ul>
+<li>Every row becomes a new contact. The import doesn't check for duplicates, so clean the file first, or merge afterwards (see below).</li>
+<li>You become the owner of the imported contacts.</li>
+<li>The company column is added to the contact's description. It isn't linked to a company record.</li>
+<li>The import stops at your plan's contact limit.</li>
+<li>Column mapping uses AI credits.</li>
+</ul></div>
+<p>You need the import permission to see the <strong>Import</strong> button. The <strong>HubSpot</strong> tab in the import window is marked <strong>Coming Soon</strong>, so use a CSV export from HubSpot for now. You can also import straight into a list with <strong>Import CSV</strong>; see <a href="/crm/lists/">Lists</a>.</p>
+
+<h2>Export your data</h2>
+<ul>
+<li><strong>Contacts</strong> → <strong>Export</strong> downloads a CSV with name, email, phone, role, description, status, score, lead status, lifecycle stage, lead source, LinkedIn URL, company, owner and created date.</li>
+<li>A list's <strong>Export CSV</strong> downloads that list.</li>
+<li>On a contact's page (on desktop), <strong>Export</strong> next to the activity timeline downloads that contact's activity history as a CSV.</li>
+</ul>
+<p>Export is limited to owners by default. An owner can give other roles the <strong>Export</strong> permission in <strong>Settings</strong> → <strong>Roles &amp; Permissions</strong>. Deals and companies can't be exported yet.</p>
+
+<h2>Merge duplicate contacts</h2>
+<ol>
+<li>Open <strong>Contacts</strong> and select <strong>Duplicates</strong>. Each suggested pair shows why it matched, such as same email or same phone, and how confident the match is (High, Medium or Low).</li>
+<li>Select <strong>Details and history</strong> to compare the two records side by side.</li>
+<li>Tick <strong>Keep</strong> on the record you want to keep, then select <strong>Merge</strong>. To merge several pairs at once, tick them and select <strong>Bulk merge</strong>.</li>
+<li>If two records really are different people, select <strong>Not a duplicate</strong> so the pair isn't suggested again.</li>
+</ol>
+<p>The merged-away record goes to the recycle bin. By default, owners and admins can merge.</p>
+
+<h3>Companies and deals</h3>
+<ul>
+<li><strong>Companies</strong>: open <strong>Duplicates</strong> on the Companies page, then <strong>Compare side by side</strong>. Choose <strong>Keep</strong> and pick which values to keep, then <strong>Merge</strong>, or use <strong>Bulk merge</strong>.</li>
+<li><strong>Deals</strong>: open <strong>Duplicates</strong> on the Deals page, then <strong>Compare and merge</strong>. Pick the deal to keep and the values it should end with, then merge. If they aren't the same deal, choose <strong>Not duplicates</strong>.</li>
+</ul>
+
+<h2 id="recycle-bin">Restore something you deleted</h2>
+<ol>
+<li>Go to <strong>Settings</strong> → <strong>Recycle bin</strong>. Deleted contacts, companies and deals are kept for 90 days.</li>
+<li>Filter by <strong>Type</strong>, by <strong>Who</strong> deleted it, and by <strong>Show</strong> (in the bin, restored, or all).</li>
+<li>Select <strong>Restore</strong> next to the record.</li>
+</ol>
+<p>Admins can also delete a single entry forever, or <strong>Empty</strong> the bin. To undo a single field change rather than a deletion, open the record's history and undo that change. This works for contacts, companies and deals.</p>

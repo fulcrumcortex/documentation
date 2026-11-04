@@ -1,0 +1,57 @@
+---
+title: Import and connect calendars
+seo_title: Import and connect Google or Microsoft calendars | Fulcrum Docs
+description: Copy events into the Fulcrum Calendar from an .ics export, create extra Fulcrum calendars, and connect Google or Microsoft calendars for booking availability.
+nav: Import and connect calendars
+updated: 2026-11-04
+about: Fulcrum Calendar
+howto: Import an .ics calendar file into Fulcrum
+related:
+  - https://lyre.au/blog/connect-google-workspace-ai-voice-agent-10-minutes | Connect Google Workspace to an AI voice agent
+  - https://lyre.au/blog/google-workspace-security-domain-wide-delegation-explained | Google Workspace security and domain-wide delegation, explained
+  - https://fulcrumcrm.app/blog/crm-calendar-integration | How CRM calendar integration keeps follow-ups on track
+---
+<p>There are two ways to bring other calendars into Fulcrum, and they do different jobs. <strong>Importing</strong> copies the events from another calendar into the Fulcrum Calendar once. <strong>Connecting</strong> a Google or Microsoft account doesn't show its events in your Fulcrum Calendar. Fulcrum uses a connected calendar to check when you're busy and to add new bookings to it from your <a href="/calendar/booking-pages/">booking pages</a>.</p>
+
+<h2>Import a calendar file</h2>
+<p>Most calendar apps, including Zoho, Google and Outlook, can export your events as an <code>.ics</code> file.</p>
+<ol class="steps">
+<li>Export your calendar from your current app as an <code>.ics</code> file. For Zoho, follow the <strong>Export from Zoho Calendar</strong> help inside the import dialog.</li>
+<li>In Fulcrum Calendar, select <strong>Import calendar</strong> in the sidebar.</li>
+<li>Choose your <strong>Calendar file (.ics)</strong>. It must be smaller than 2 MB.</li>
+<li>Under <strong>Import into</strong>, choose <strong>New imported calendar</strong> or an existing calendar. For a new calendar you can give it a name.</li>
+<li>Set the <strong>Time zone for events without a time zone</strong>.</li>
+<li>Select <strong>Preview import</strong> and check the count of events, recurring series and skipped items.</li>
+<li>Select the import button to finish, or <strong>Change file or settings</strong> to go back.</li>
+</ol>
+
+<h3>What an import does and doesn't do</h3>
+<ul>
+<li>It's a one-time copy. It doesn't keep the old calendar in sync, and it doesn't send invitations to guests.</li>
+<li>Importing the same file into the same calendar again skips events you already have and keeps any edits you made.</li>
+<li>Repeating events that repeat daily, weekly, monthly or yearly are kept.</li>
+<li>Reminders from the export are kept with the events but don't fire in Fulcrum yet.</li>
+<li>Editing an imported event changes it in Fulcrum only, and no invitations go out. When you delete an imported repeating event, you can choose <strong>Only this occurrence</strong> or <strong>Entire series</strong>.</li>
+</ul>
+
+<h2>Create another Fulcrum calendar</h2>
+<p>Extra calendars are handy for keeping bookings of one kind together, such as consultations.</p>
+<ol>
+<li>In Calendar, select <strong>Booking pages</strong>, then open the <strong>Connected calendars</strong> tab.</li>
+<li>Under <strong>Fulcrum calendars</strong>, enter a <strong>New calendar name</strong>.</li>
+<li>Select <strong>Create calendar</strong>.</li>
+</ol>
+<p>You can have up to 30 calendars, and each name must be different.</p>
+
+<h2>Connect a Google or Microsoft calendar</h2>
+<ol>
+<li>In Calendar, select <strong>Booking pages</strong> and open <strong>Connected calendars</strong>. (In <strong>Settings</strong> → <strong>Connected calendars</strong>, the same choice appears as <strong>Connect Google</strong> and <strong>Connect Microsoft</strong>.)</li>
+<li>On the <strong>Google Calendar</strong> card (Gmail and Google Workspace) or the <strong>Microsoft Outlook</strong> card (Microsoft 365 and personal Outlook), select <strong>Connect account</strong>.</li>
+<li>Sign in to that provider and approve the calendar permissions. Fulcrum needs them to check your availability and add bookings.</li>
+</ol>
+<p>If a card shows <strong>Connection setup pending</strong>, that provider isn't available yet. Each connected account appears with its email address and status. If the status reads <strong>Reconnect required</strong>, select <strong>Reconnect</strong>.</p>
+<div class="note"><p><strong>Use this provider to sign in</strong> is a different option. It lets you sign in to Fulcrum with that Google or Microsoft account, and it doesn't connect any calendars.</p></div>
+
+<h3>Disconnect a calendar</h3>
+<p>Select <strong>Disconnect</strong> next to the account. Any booking page that uses that calendar is unpublished, either to check for conflicts or as the place new bookings go. You can't disconnect a calendar while upcoming bookings are still being added to it. Complete or cancel them first; see <a href="/calendar/manage-bookings/">Manage bookings</a>.</p>
+<p>Lyre voice agents book through their own Google Workspace connection, not this one. See <a href="/lyre/book-meetings/">Book meetings with a Lyre agent</a>.</p>

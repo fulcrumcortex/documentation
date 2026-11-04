@@ -1,0 +1,61 @@
+---
+title: Invite and manage workspace members
+seo_title: Invite people to a Fulcrum Mail workspace and manage roles | Fulcrum Docs
+description: Invite colleagues to a Fulcrum Mail company workspace, create users on your domain, set roles, reset passwords, suspend access and organise people into groups.
+nav: Invite and manage members
+updated: 2026-11-04
+about: Fulcrum Mail
+howto: Invite someone to a Fulcrum Mail workspace
+related:
+  - https://fulcrumcortex.com/blog/least-privilege-access-for-ai-agents | Giving AI agents only the access they need
+  - https://fulcrumcortex.com/blog/audit-trails-for-ai-agent-actions | What to log for every AI agent action
+  - https://fulcrumcortex.com/blog/approval-gates-for-autonomous-agents | Human-in-the-loop approvals: what to gate
+---
+<p>Company workspace owners and administrators manage people from the <strong>Workspace</strong> app in the left rail. There are two ways to add someone. <strong>Invite</strong> brings in a person who already has a Fulcrum account. <strong>Create user</strong> makes a new account on your company domain. If you haven't set up a company yet, start with <a href="/fulcrum-mail/workspaces/">Create a company workspace</a>.</p>
+
+<h2>Invite someone with an existing account</h2>
+<ol class="steps">
+<li>Open <strong>Workspace</strong> and select <strong>Invite</strong>.</li>
+<li>In <strong>Invite to your workspace</strong>, enter the person's <strong>Email address</strong>.</li>
+<li>Choose a <strong>Workspace role</strong>: <strong>Member</strong> or <strong>Administrator</strong>.</li>
+<li>Select <strong>Create invitation</strong>. Fulcrum emails the person an invitation titled "Join <em>your workspace</em> on Fulcrum".</li>
+<li>The person opens the link and signs in, or creates a free account, with the email address the invitation was sent to. They then select <strong>Accept invitation</strong>.</li>
+</ol>
+<div class="note"><p>Invitation links expire after seven days. The person must sign in with the address you invited (or their matching <code>@fulcrumail.app</code> address), and that email must be verified. If the link has expired, send a new invitation.</p></div>
+
+<h2>Create a user on your domain</h2>
+<p>Use this when the person doesn't have a Fulcrum account yet and you want to give them a mailbox on your company domain. No invitation is needed.</p>
+<ol>
+<li>Open <strong>Workspace</strong> and select <strong>Create user</strong>.</li>
+<li>In <strong>Create workspace user</strong>, enter their <strong>Full name</strong> and <strong>Username</strong>, then pick a verified <strong>Domain</strong>.</li>
+<li>Set an <strong>Initial password</strong> and choose a <strong>Workspace role</strong>: <strong>Member</strong>, <strong>Administrator</strong> or <strong>Guest</strong>.</li>
+<li>Select <strong>Create user</strong>, then share the sign-in details with them securely.</li>
+</ol>
+
+<h2>Roles at a glance</h2>
+<table>
+<thead><tr><th>Role</th><th>What it means</th></tr></thead>
+<tbody>
+<tr><td>Owner</td><td>The person who created the company workspace. Owners manage settings, members and domains.</td></tr>
+<tr><td>Administrator</td><td>Manages company settings, members and domains, the same as an owner.</td></tr>
+<tr><td>Member</td><td>Uses the workspace apps but can't change company settings.</td></tr>
+<tr><td>Guest</td><td>Available when you create a user. Guests don't see the Wallet.</td></tr>
+</tbody>
+</table>
+
+<h2>Manage a person</h2>
+<p>On the <strong>People</strong> tab, select <strong>Manage user</strong> next to someone. The dialog has three sections:</p>
+<ul>
+<li><strong>Details</strong>: update their details and select <strong>Save details</strong>. You can also use <strong>Change mailbox address</strong> or <strong>Assign mailbox</strong>.</li>
+<li><strong>Password</strong>: choose <strong>Set new password</strong> to set one yourself, or <strong>Send reset email</strong> to let them choose.</li>
+<li><strong>Access</strong>: change their <strong>Workspace role</strong> and select <strong>Save role</strong>. Use <strong>Suspend user</strong> to block access without deleting anything. Use <strong>Restore user</strong> to give it back.</li>
+</ul>
+
+<h2>Organise people into groups</h2>
+<p>Groups are teams you use for shared Drive permissions. Open <strong>Workspace</strong> → <strong>Groups</strong> (shown as <strong>Company groups</strong>):</p>
+<ol>
+<li>Select <strong>Create group</strong>, enter a <strong>Group name</strong> and save.</li>
+<li>Select <strong>Manage members</strong> on the group, then <strong>Add member</strong> for each person.</li>
+<li>When you share a company drive or folder, choose the group instead of naming each person.</li>
+</ol>
+<p>If your team also uses Fulcrum CRM, roles there are set separately. See <a href="/crm/roles-and-permissions/">CRM roles and permissions</a>. People and AI agents can work side by side across these apps. The <a href="https://fulcrumcortex.com/sessions">Fulcrum Sessions orchestrator</a> is what coordinates that shared team.</p>

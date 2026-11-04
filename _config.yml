@@ -1,0 +1,14 @@
+# Fulcrum Docs is pre-built static HTML. Run `python3 build.py` after editing _src/.
+# GitHub Pages copies the generated files as they are; nothing below adds plugins.
+
+# Public address of the site. build.py uses it for canonical URLs, the sitemap,
+# Open Graph tags and internal links. For a custom domain such as
+# docs.fulcrumcortex.com, change this line to https://docs.fulcrumcortex.com,
+# run `python3 build.py`, and add a CNAME file (see README.md).
+site_url: https://fulcrumcortex.github.io/documentation
+
+# Keep the generator and its sources out of the published site.
+exclude:
+  - README.md
+  - build.py
+  - scripts

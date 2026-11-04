@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Set up roles and permissions in Fulcrum CRM | Fulcrum Docs</title>
+<meta name="description" content="Understand the built-in Fulcrum CRM roles, edit what each role can see and do, preview the app as a role, create custom roles and assign them to team members.">
+<link rel="canonical" href="https://fulcrumcortex.github.io/documentation/crm/roles-and-permissions/">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Fulcrum Docs">
+<meta property="og:locale" content="en_AU">
+<meta property="og:title" content="Roles and permissions in Fulcrum CRM">
+<meta property="og:description" content="Understand the built-in Fulcrum CRM roles, edit what each role can see and do, preview the app as a role, create custom roles and assign them to team members.">
+<meta property="og:url" content="https://fulcrumcortex.github.io/documentation/crm/roles-and-permissions/">
+<meta property="og:image" content="https://fulcrumcortex.github.io/documentation/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Fulcrum Docs">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Roles and permissions in Fulcrum CRM">
+<meta name="twitter:description" content="Understand the built-in Fulcrum CRM roles, edit what each role can see and do, preview the app as a role, create custom roles and assign them to team members.">
+<meta name="twitter:image" content="https://fulcrumcortex.github.io/documentation/assets/og-image.png">
+<meta name="theme-color" content="#14100f">
+<link rel="icon" href="/documentation/assets/fulcrum-logo.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/documentation/assets/fulcrum-logo.png">
+<link rel="stylesheet" href="/documentation/assets/site.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://fulcrumcortex.com/#organization",
+   "name": "Fulcrum Cortex",
+   "url": "https://fulcrumcortex.com/",
+   "logo": "https://fulcrumcortex.github.io/documentation/assets/fulcrum-logo.png",
+   "description": "Fulcrum Cortex is the AI execution layer for business, built in Australia.",
+   "sameAs": [
+    "https://fulcrumcrm.app/",
+    "https://fulcrumcode.app/",
+    "https://fulcrumail.app/",
+    "https://lyre.au/",
+    "https://docs.lyre.au/",
+    "https://github.com/fulcrumcortex"
+   ]
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://fulcrumcortex.github.io/documentation/#website",
+   "name": "Fulcrum Docs",
+   "url": "https://fulcrumcortex.github.io/documentation/",
+   "inLanguage": "en-AU",
+   "publisher": {
+    "@id": "https://fulcrumcortex.com/#organization"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Docs",
+     "item": "https://fulcrumcortex.github.io/documentation/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "CRM overview",
+     "item": "https://fulcrumcortex.github.io/documentation/crm/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Roles and permissions",
+     "item": "https://fulcrumcortex.github.io/documentation/crm/roles-and-permissions/"
+    }
+   ]
+  },
+  {
+   "@type": "TechArticle",
+   "headline": "Roles and permissions in Fulcrum CRM",
+   "description": "Understand the built-in Fulcrum CRM roles, edit what each role can see and do, preview the app as a role, create custom roles and assign them to team members.",
+   "url": "https://fulcrumcortex.github.io/documentation/crm/roles-and-permissions/",
+   "mainEntityOfPage": "https://fulcrumcortex.github.io/documentation/crm/roles-and-permissions/",
+   "inLanguage": "en-AU",
+   "isPartOf": {
+    "@id": "https://fulcrumcortex.github.io/documentation/#website"
+   },
+   "author": {
+    "@id": "https://fulcrumcortex.com/#organization"
+   },
+   "publisher": {
+    "@id": "https://fulcrumcortex.com/#organization"
+   },
+   "image": "https://fulcrumcortex.github.io/documentation/assets/og-image.png",
+   "dateModified": "2026-11-04",
+   "about": {
+    "@type": "SoftwareApplication",
+    "name": "Fulcrum CRM",
+    "applicationCategory": "BusinessApplication"
+   }
+  },
+  {
+   "@type": "HowTo",
+   "name": "Edit a role in Fulcrum CRM",
+   "description": "Understand the built-in Fulcrum CRM roles, edit what each role can see and do, preview the app as a role, create custom roles and assign them to team members.",
+   "url": "https://fulcrumcortex.github.io/documentation/crm/roles-and-permissions/",
+   "step": [
+    {
+     "@type": "HowToStep",
+     "position": 1,
+     "text": "Go to Settings → Roles & Permissions and pick a role."
+    },
+    {
+     "@type": "HowToStep",
+     "position": 2,
+     "text": "For each area of the CRM, set the level: None, View, Edit or Manage."
+    },
+    {
+     "@type": "HowToStep",
+     "position": 3,
+     "text": "Set the record scope, which controls whose records the role can reach, and tick any extra capabilities, such as Export."
+    },
+    {
+     "@type": "HowToStep",
+     "position": 4,
+     "text": "Select Preview as this role to see the app the way that role would before you save."
+    },
+    {
+     "@type": "HowToStep",
+     "position": 5,
+     "text": "Save your changes."
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="topbar">
+<a class="brand" href="/documentation/"><img src="/documentation/assets/fulcrum-logo.svg" alt="" width="28" height="28"><span>Fulcrum <b>Docs</b></span></a>
+<a class="menu-link" href="#docs-nav">Guides</a>
+</header>
+<div class="layout">
+<main id="main">
+<nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="/documentation/">Docs</a></li><li><a href="/documentation/crm/">CRM overview</a></li><li><span aria-current="page">Roles and permissions</span></li></ol></nav>
+<article>
+<h1>Roles and permissions in Fulcrum CRM</h1>
+<p class="lead">Understand the built-in Fulcrum CRM roles, edit what each role can see and do, preview the app as a role, create custom roles and assign them to team members.</p>
+<p>Roles control what each person can see and do in Fulcrum CRM, from viewing contacts to exporting data. The sidebar only shows the areas a person's role allows, so it's simpler for everyone.</p>
+
+<h2 id="built-in-roles">Built-in roles</h2>
+<p>Every workspace starts with six roles: <strong>Owner</strong>, <strong>Admin</strong>, <strong>Manager</strong>, <strong>Member</strong>, <strong>Limited</strong> and <strong>Read-only</strong>. Owner and Admin are locked. You can adjust the others, or create your own.</p>
+
+<h2 id="edit-a-role">Edit a role</h2>
+<ol class="steps">
+<li>Go to <strong>Settings</strong> → <strong>Roles &amp; Permissions</strong> and pick a role.</li>
+<li>For each area of the CRM, set the level: <strong>None</strong>, <strong>View</strong>, <strong>Edit</strong> or <strong>Manage</strong>.</li>
+<li>Set the record scope, which controls whose records the role can reach, and tick any extra capabilities, such as <strong>Export</strong>.</li>
+<li>Select <strong>Preview as this role</strong> to see the app the way that role would before you save.</li>
+<li>Save your changes.</li>
+</ol>
+<p>To start a new role, use <strong>New role</strong>, or duplicate an existing one and adjust it. <strong>Reset to default</strong> undoes your changes to a built-in role, and <strong>Delete role</strong> removes a custom one.</p>
+
+<h2 id="sensitive-capabilities">Sensitive capabilities</h2>
+<p>Some actions are kept to owners or admins by default:</p>
+<ul>
+<li>Exporting contacts and activity history: owner only.</li>
+<li>Deleting contacts in bulk: owner only.</li>
+<li>Merging duplicates: owners and admins.</li>
+<li>Reassigning a contact to someone else: needs the reassign capability.</li>
+<li>Creating and managing MCP tokens for AI tools: owners and admins.</li>
+</ul>
+<p>Grant these to other roles only when there's a clear need.</p>
+
+<h2 id="assign-roles-to-people">Assign roles to people</h2>
+<ol>
+<li>Invite people with <strong>Invite User</strong> in Quick Actions, or from <strong>Settings</strong> → <strong>Teams &amp; Members</strong>.</li>
+<li>In <strong>Teams &amp; Members</strong>, set each person's role on their member row. This is also where you limit which pipelines a person can see.</li>
+</ol>
+
+<h2 id="keep-a-record">Keep a record</h2>
+<p>Owners and admins can check two records. <strong>Settings</strong> → <strong>Activity log</strong> shows who did what (exports, edits, emails, calls, sign-ins and AI Pal actions) per person and day. <strong>Settings</strong> → <strong>Audit log</strong> records permission and token changes, restores and denied access attempts. AI Pals always act within their owner's permissions; see <a href="/documentation/crm/calls-and-ai/">Calls and AI</a>. Fulcrum Mail workspace roles are separate; see <a href="/documentation/fulcrum-mail/invite-and-manage-members/">Invite and manage members</a>.</p>
+
+<section class="related" aria-labelledby="related-reading">
+<h2 id="related-reading">Related reading</h2>
+<ul>
+<li><a href="https://fulcrumcrm.app/blog/crm-security-2026-protecting-customer-data-ai-era">CRM security in the AI era</a></li>
+<li><a href="https://fulcrumcrm.app/blog/crm-privacy-act-australia">CRM and the Privacy Act: what Australian businesses must know</a></li>
+<li><a href="https://fulcrumcortex.com/blog/audit-trails-for-ai-agent-actions">Audit trails for AI agent actions</a></li>
+</ul>
+</section>
+<p class="updated">Last updated <time datetime="2026-11-04">2026-11-04</time></p>
+</article>
+<nav class="pager" aria-label="Previous and next guides"><a class="prev" href="/documentation/crm/calls-and-ai/"><span>Previous</span>Calls and AI</a></nav>
+</main>
+<aside class="toc" aria-label="On this page"><p>On this page</p><ul>
+<li><a href="#built-in-roles">Built-in roles</a></li>
+<li><a href="#edit-a-role">Edit a role</a></li>
+<li><a href="#sensitive-capabilities">Sensitive capabilities</a></li>
+<li><a href="#assign-roles-to-people">Assign roles to people</a></li>
+<li><a href="#keep-a-record">Keep a record</a></li>
+<li><a href="#related-reading">Related reading</a></li>
+</ul></aside>
+<nav class="sidebar" id="docs-nav" aria-label="Documentation">
+<p class="nav-section">Start here</p><ul>
+<li><a href="/documentation/">Overview</a></li>
+</ul>
+<p class="nav-section">Fulcrum Mail</p><ul>
+<li><a href="/documentation/fulcrum-mail/">Fulcrum Mail overview</a></li>
+<li><a href="/documentation/fulcrum-mail/create-an-account/">Create an account</a></li>
+<li><a href="/documentation/fulcrum-mail/workspaces/">Company workspaces</a></li>
+<li><a href="/documentation/fulcrum-mail/invite-and-manage-members/">Invite and manage members</a></li>
+<li><a href="/documentation/fulcrum-mail/switch-workspaces-and-accounts/">Switch workspaces and accounts</a></li>
+<li><a href="/documentation/fulcrum-mail/mail-basics/">Mail basics</a></li>
+<li><a href="/documentation/fulcrum-mail/settings/">Mail settings</a></li>
+</ul>
+<p class="nav-section">Calendar</p><ul>
+<li><a href="/documentation/calendar/">Calendar overview</a></li>
+<li><a href="/documentation/calendar/import-and-connect-calendars/">Import and connect calendars</a></li>
+<li><a href="/documentation/calendar/booking-pages/">Booking pages</a></li>
+<li><a href="/documentation/calendar/manage-bookings/">Manage bookings</a></li>
+<li><a href="/documentation/calendar/meetings/">Meetings</a></li>
+</ul>
+<p class="nav-section">Pages</p><ul>
+<li><a href="/documentation/pages/">Shareable pages</a></li>
+</ul>
+<p class="nav-section">Lyre</p><ul>
+<li><a href="/documentation/lyre/">Lyre overview</a></li>
+<li><a href="/documentation/lyre/voice-agents/">Voice agents</a></li>
+<li><a href="/documentation/lyre/phone-numbers/">Phone numbers</a></li>
+<li><a href="/documentation/lyre/outbound-calls-and-campaigns/">Outbound calls and campaigns</a></li>
+<li><a href="/documentation/lyre/book-meetings/">Book meetings</a></li>
+<li><a href="/documentation/lyre/call-history/">Call history</a></li>
+<li><a href="/documentation/lyre/credits-and-billing/">Credits and billing</a></li>
+<li><a href="/documentation/lyre/compliance/">Compliance</a></li>
+</ul>
+<p class="nav-section">Fulcrum CRM</p><ul>
+<li><a href="/documentation/crm/">CRM overview</a></li>
+<li><a href="/documentation/crm/contacts-and-companies/">Contacts and companies</a></li>
+<li><a href="/documentation/crm/deals-and-pipelines/">Deals and pipelines</a></li>
+<li><a href="/documentation/crm/activities-and-tasks/">Activities and tasks</a></li>
+<li><a href="/documentation/crm/lists/">Lists</a></li>
+<li><a href="/documentation/crm/custom-fields/">Custom fields</a></li>
+<li><a href="/documentation/crm/import-export-and-duplicates/">Import, export and duplicates</a></li>
+<li><a href="/documentation/crm/lead-forms-and-routing/">Lead forms and routing</a></li>
+<li><a href="/documentation/crm/email/">Email</a></li>
+<li><a href="/documentation/crm/calls-and-ai/">Calls and AI</a></li>
+<li><a href="/documentation/crm/roles-and-permissions/" aria-current="page">Roles and permissions</a></li>
+</ul>
+</nav>
+</div>
+<footer class="footer">
+<p>Fulcrum Docs is written and maintained by the Fulcrum Cortex team in Australia.</p>
+<p><a href="https://github.com/fulcrumcortex/documentation">Suggest a correction on GitHub</a></p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Run outbound AI calls and campaigns with Lyre | Fulcrum Docs</title>
+<meta name="description" content="Place a one-off outbound call with a Lyre agent, set reusable objectives that qualify leads, and run call, SMS or email campaigns across a list of recipients.">
+<link rel="canonical" href="https://fulcrumcortex.github.io/documentation/lyre/outbound-calls-and-campaigns/">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Fulcrum Docs">
+<meta property="og:locale" content="en_AU">
+<meta property="og:title" content="Outbound calls, objectives and campaigns in Lyre">
+<meta property="og:description" content="Place a one-off outbound call with a Lyre agent, set reusable objectives that qualify leads, and run call, SMS or email campaigns across a list of recipients.">
+<meta property="og:url" content="https://fulcrumcortex.github.io/documentation/lyre/outbound-calls-and-campaigns/">
+<meta property="og:image" content="https://fulcrumcortex.github.io/documentation/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Fulcrum Docs">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Outbound calls, objectives and campaigns in Lyre">
+<meta name="twitter:description" content="Place a one-off outbound call with a Lyre agent, set reusable objectives that qualify leads, and run call, SMS or email campaigns across a list of recipients.">
+<meta name="twitter:image" content="https://fulcrumcortex.github.io/documentation/assets/og-image.png">
+<meta name="theme-color" content="#14100f">
+<link rel="icon" href="/documentation/assets/fulcrum-logo.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/documentation/assets/fulcrum-logo.png">
+<link rel="stylesheet" href="/documentation/assets/site.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://fulcrumcortex.com/#organization",
+   "name": "Fulcrum Cortex",
+   "url": "https://fulcrumcortex.com/",
+   "logo": "https://fulcrumcortex.github.io/documentation/assets/fulcrum-logo.png",
+   "description": "Fulcrum Cortex is the AI execution layer for business, built in Australia.",
+   "sameAs": [
+    "https://fulcrumcrm.app/",
+    "https://fulcrumcode.app/",
+    "https://fulcrumail.app/",
+    "https://lyre.au/",
+    "https://docs.lyre.au/",
+    "https://github.com/fulcrumcortex"
+   ]
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://fulcrumcortex.github.io/documentation/#website",
+   "name": "Fulcrum Docs",
+   "url": "https://fulcrumcortex.github.io/documentation/",
+   "inLanguage": "en-AU",
+   "publisher": {
+    "@id": "https://fulcrumcortex.com/#organization"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Docs",
+     "item": "https://fulcrumcortex.github.io/documentation/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Lyre overview",
+     "item": "https://fulcrumcortex.github.io/documentation/lyre/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Outbound calls and campaigns",
+     "item": "https://fulcrumcortex.github.io/documentation/lyre/outbound-calls-and-campaigns/"
+    }
+   ]
+  },
+  {
+   "@type": "TechArticle",
+   "headline": "Outbound calls, objectives and campaigns in Lyre",
+   "description": "Place a one-off outbound call with a Lyre agent, set reusable objectives that qualify leads, and run call, SMS or email campaigns across a list of recipients.",
+   "url": "https://fulcrumcortex.github.io/documentation/lyre/outbound-calls-and-campaigns/",
+   "mainEntityOfPage": "https://fulcrumcortex.github.io/documentation/lyre/outbound-calls-and-campaigns/",
+   "inLanguage": "en-AU",
+   "isPartOf": {
+    "@id": "https://fulcrumcortex.github.io/documentation/#website"
+   },
+   "author": {
+    "@id": "https://fulcrumcortex.com/#organization"
+   },
+   "publisher": {
+    "@id": "https://fulcrumcortex.com/#organization"
+   },
+   "image": "https://fulcrumcortex.github.io/documentation/assets/og-image.png",
+   "dateModified": "2026-11-04",
+   "about": {
+    "@type": "SoftwareApplication",
+    "name": "Lyre",
+    "applicationCategory": "BusinessApplication"
+   }
+  },
+  {
+   "@type": "HowTo",
+   "name": "Run an outbound call campaign in Lyre",
+   "description": "Place a one-off outbound call with a Lyre agent, set reusable objectives that qualify leads, and run call, SMS or email campaigns across a list of recipients.",
+   "url": "https://fulcrumcortex.github.io/documentation/lyre/outbound-calls-and-campaigns/",
+   "step": [
+    {
+     "@type": "HowToStep",
+     "position": 1,
+     "text": "Open Campaigns and select New campaign."
+    },
+    {
+     "@type": "HowToStep",
+     "position": 2,
+     "text": "Give it a Name and choose the Channel: call, SMS or email."
+    },
+    {
+     "@type": "HowToStep",
+     "position": 3,
+     "text": "Under Agent & number, pick an outbound number that has an agent assigned."
+    },
+    {
+     "@type": "HowToStep",
+     "position": 4,
+     "text": "For calls, set Concurrent calls, which is how many calls run at a time (1 to 10)."
+    },
+    {
+     "@type": "HowToStep",
+     "position": 5,
+     "text": "Choose the Objective, an optional Category, and the Recipients."
+    },
+    {
+     "@type": "HowToStep",
+     "position": 6,
+     "text": "Under Schedule, choose Send now or Schedule a start time. Scheduled times use your local time."
+    },
+    {
+     "@type": "HowToStep",
+     "position": 7,
+     "text": "Optionally enter a Report email to have the campaign report sent by email."
+    },
+    {
+     "@type": "HowToStep",
+     "position": 8,
+     "text": "Select Create & run, or Schedule campaign if it starts later."
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="topbar">
+<a class="brand" href="/documentation/"><img src="/documentation/assets/fulcrum-logo.svg" alt="" width="28" height="28"><span>Fulcrum <b>Docs</b></span></a>
+<a class="menu-link" href="#docs-nav">Guides</a>
+</header>
+<div class="layout">
+<main id="main">
+<nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="/documentation/">Docs</a></li><li><a href="/documentation/lyre/">Lyre overview</a></li><li><span aria-current="page">Outbound calls and campaigns</span></li></ol></nav>
+<article>
+<h1>Outbound calls, objectives and campaigns in Lyre</h1>
+<p class="lead">Place a one-off outbound call with a Lyre agent, set reusable objectives that qualify leads, and run call, SMS or email campaigns across a list of recipients.</p>
+<p>Lyre agents can call people as well as answer. You can place a single call, give the agent a reusable <strong>objective</strong> that says what the call should achieve, or run a <strong>campaign</strong> across a whole list. Before you start, make sure the agent has a <a href="/documentation/lyre/phone-numbers/">phone number</a> and you've read <a href="/documentation/lyre/compliance/">calling hours and do-not-contact rules</a>.</p>
+
+<h2 id="place-a-one-off-call">Place a one-off call</h2>
+<ol>
+<li>Open <strong>Calls</strong> and select <strong>New outbound call</strong>.</li>
+<li>Choose the <strong>Agent</strong> and, optionally, an <strong>Objective</strong>. Without one, the agent uses its default persona.</li>
+<li>Check <strong>Call from</strong>. The agent needs a phone number attached.</li>
+<li>In <strong>Call to</strong>, search for a name or number, or type a number such as +61412345678. Add a <strong>Name</strong> if you like.</li>
+<li>Select <strong>Dial</strong>.</li>
+</ol>
+
+<h2 id="set-an-objective">Set an objective</h2>
+<p>An objective is a reusable goal for outbound calls, such as qualifying a new enquiry or confirming an appointment. Open <strong>Objectives</strong> and fill in:</p>
+<ul>
+<li><strong>Name</strong> and <strong>Goal</strong>: what a successful call looks like.</li>
+<li><strong>Information to collect</strong>: the answers you need, such as budget, timing or decision-maker. This is how Lyre qualifies a lead.</li>
+<li><strong>Guardrails</strong>: what the agent must not say or do.</li>
+<li><strong>Opening line</strong>: you can personalise it with <code>{{name}}</code>, <code>{{agent_name}}</code>, <code>{{date}}</code> and <code>{{time}}</code>.</li>
+</ul>
+<p>Select <strong>Create objective</strong>. Then choose it on a one-off call or a campaign.</p>
+
+<h2 id="run-a-campaign">Run a campaign</h2>
+<ol class="steps">
+<li>Open <strong>Campaigns</strong> and select <strong>New campaign</strong>.</li>
+<li>Give it a <strong>Name</strong> and choose the <strong>Channel</strong>: call, SMS or email.</li>
+<li>Under <strong>Agent &amp; number</strong>, pick an outbound number that has an agent assigned.</li>
+<li>For calls, set <strong>Concurrent calls</strong>, which is how many calls run at a time (1 to 10).</li>
+<li>Choose the <strong>Objective</strong>, an optional <strong>Category</strong>, and the <strong>Recipients</strong>.</li>
+<li>Under <strong>Schedule</strong>, choose <strong>Send now</strong> or <strong>Schedule</strong> a start time. Scheduled times use your local time.</li>
+<li>Optionally enter a <strong>Report email</strong> to have the campaign report sent by email.</li>
+<li>Select <strong>Create &amp; run</strong>, or <strong>Schedule campaign</strong> if it starts later.</li>
+</ol>
+<p>Open a campaign to follow each recipient's <strong>Status</strong>, <strong>Outcome</strong> and attempt time. From there you can open the <strong>Campaign report</strong> or select <strong>Cancel campaign</strong> to stop it.</p>
+<div class="note"><p>Campaigns only call within your organisation's calling hours. The <strong>Override calling hours</strong> option is only for testing or for contacts who have agreed to be called; see <a href="/documentation/lyre/compliance/">Compliance</a>.</p></div>
+
+<h2 id="multi-step-journeys">Multi-step journeys</h2>
+<p>For outreach with several steps and branches, use <strong>Journeys</strong>. Select <strong>New journey</strong> to design the flow on a visual canvas.</p>
+
+<h2 id="how-lyre-records-the-result">How Lyre records the result</h2>
+<p>After each call, Lyre classifies the outcome. Examples are <strong>Booking made</strong>, <strong>Lead captured</strong>, <strong>Not the decision maker</strong>, <strong>Not interested</strong>, <strong>Callback requested</strong>, <strong>Do not call</strong> and <strong>Escalated to human</strong>. Outcomes and quality scores appear in <a href="/documentation/lyre/call-history/">call history</a>. You can use them to decide who to follow up first. If your team works the leads in a CRM, <a href="/documentation/crm/calls-and-ai/">Fulcrum CRM can place Lyre calls from a contact record</a> and logs each call on the timeline.</p>
+
+<section class="related" aria-labelledby="related-reading">
+<h2 id="related-reading">Related reading</h2>
+<ul>
+<li><a href="https://fulcrumcortex.com/blog/speed-to-lead-with-lyre-calls">Calling new enquiries back within minutes</a></li>
+<li><a href="https://fulcrumcortex.com/blog/measuring-call-ai-like-a-sales-floor">AI voice agent metrics: the call funnel to track</a></li>
+<li><a href="https://fulcrumcrm.app/blog/ai-voice-calling-in-sales-future-of-outbound-prospecting">AI voice calling in outbound prospecting</a></li>
+<li><a href="https://fulcrumcortex.com/blog/acma-compliant-ai-calling-australia">ACMA rules for AI outbound calls</a></li>
+</ul>
+</section>
+<p class="updated">Last updated <time datetime="2026-11-04">2026-11-04</time></p>
+</article>
+<nav class="pager" aria-label="Previous and next guides"><a class="prev" href="/documentation/lyre/phone-numbers/"><span>Previous</span>Phone numbers</a><a class="next" href="/documentation/lyre/book-meetings/"><span>Next</span>Book meetings</a></nav>
+</main>
+<aside class="toc" aria-label="On this page"><p>On this page</p><ul>
+<li><a href="#place-a-one-off-call">Place a one-off call</a></li>
+<li><a href="#set-an-objective">Set an objective</a></li>
+<li><a href="#run-a-campaign">Run a campaign</a></li>
+<li><a href="#multi-step-journeys">Multi-step journeys</a></li>
+<li><a href="#how-lyre-records-the-result">How Lyre records the result</a></li>
+<li><a href="#related-reading">Related reading</a></li>
+</ul></aside>
+<nav class="sidebar" id="docs-nav" aria-label="Documentation">
+<p class="nav-section">Start here</p><ul>
+<li><a href="/documentation/">Overview</a></li>
+</ul>
+<p class="nav-section">Fulcrum Mail</p><ul>
+<li><a href="/documentation/fulcrum-mail/">Fulcrum Mail overview</a></li>
+<li><a href="/documentation/fulcrum-mail/create-an-account/">Create an account</a></li>
+<li><a href="/documentation/fulcrum-mail/workspaces/">Company workspaces</a></li>
+<li><a href="/documentation/fulcrum-mail/invite-and-manage-members/">Invite and manage members</a></li>
+<li><a href="/documentation/fulcrum-mail/switch-workspaces-and-accounts/">Switch workspaces and accounts</a></li>
+<li><a href="/documentation/fulcrum-mail/mail-basics/">Mail basics</a></li>
+<li><a href="/documentation/fulcrum-mail/settings/">Mail settings</a></li>
+</ul>
+<p class="nav-section">Calendar</p><ul>
+<li><a href="/documentation/calendar/">Calendar overview</a></li>
+<li><a href="/documentation/calendar/import-and-connect-calendars/">Import and connect calendars</a></li>
+<li><a href="/documentation/calendar/booking-pages/">Booking pages</a></li>
+<li><a href="/documentation/calendar/manage-bookings/">Manage bookings</a></li>
+<li><a href="/documentation/calendar/meetings/">Meetings</a></li>
+</ul>
+<p class="nav-section">Pages</p><ul>
+<li><a href="/documentation/pages/">Shareable pages</a></li>
+</ul>
+<p class="nav-section">Lyre</p><ul>
+<li><a href="/documentation/lyre/">Lyre overview</a></li>
+<li><a href="/documentation/lyre/voice-agents/">Voice agents</a></li>
+<li><a href="/documentation/lyre/phone-numbers/">Phone numbers</a></li>
+<li><a href="/documentation/lyre/outbound-calls-and-campaigns/" aria-current="page">Outbound calls and campaigns</a></li>
+<li><a href="/documentation/lyre/book-meetings/">Book meetings</a></li>
+<li><a href="/documentation/lyre/call-history/">Call history</a></li>
+<li><a href="/documentation/lyre/credits-and-billing/">Credits and billing</a></li>
+<li><a href="/documentation/lyre/compliance/">Compliance</a></li>
+</ul>
+<p class="nav-section">Fulcrum CRM</p><ul>
+<li><a href="/documentation/crm/">CRM overview</a></li>
+<li><a href="/documentation/crm/contacts-and-companies/">Contacts and companies</a></li>
+<li><a href="/documentation/crm/deals-and-pipelines/">Deals and pipelines</a></li>
+<li><a href="/documentation/crm/activities-and-tasks/">Activities and tasks</a></li>
+<li><a href="/documentation/crm/lists/">Lists</a></li>
+<li><a href="/documentation/crm/custom-fields/">Custom fields</a></li>
+<li><a href="/documentation/crm/import-export-and-duplicates/">Import, export and duplicates</a></li>
+<li><a href="/documentation/crm/lead-forms-and-routing/">Lead forms and routing</a></li>
+<li><a href="/documentation/crm/email/">Email</a></li>
+<li><a href="/documentation/crm/calls-and-ai/">Calls and AI</a></li>
+<li><a href="/documentation/crm/roles-and-permissions/">Roles and permissions</a></li>
+</ul>
+</nav>
+</div>
+<footer class="footer">
+<p>Fulcrum Docs is written and maintained by the Fulcrum Cortex team in Australia.</p>
+<p><a href="https://github.com/fulcrumcortex/documentation">Suggest a correction on GitHub</a></p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lyre calls, AI agents, AI Pals and the MCP server in Fulcrum CRM | Fulcrum Docs</title>
+<meta name="description" content="Call contacts through Lyre from Fulcrum CRM, let an AI voice agent make consented calls, work with your AI Pal, and connect your own AI tools with an MCP token.">
+<link rel="canonical" href="https://fulcrumcortex.github.io/documentation/crm/calls-and-ai/">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Fulcrum Docs">
+<meta property="og:locale" content="en_AU">
+<meta property="og:title" content="Calls and AI in Fulcrum CRM">
+<meta property="og:description" content="Call contacts through Lyre from Fulcrum CRM, let an AI voice agent make consented calls, work with your AI Pal, and connect your own AI tools with an MCP token.">
+<meta property="og:url" content="https://fulcrumcortex.github.io/documentation/crm/calls-and-ai/">
+<meta property="og:image" content="https://fulcrumcortex.github.io/documentation/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Fulcrum Docs">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Calls and AI in Fulcrum CRM">
+<meta name="twitter:description" content="Call contacts through Lyre from Fulcrum CRM, let an AI voice agent make consented calls, work with your AI Pal, and connect your own AI tools with an MCP token.">
+<meta name="twitter:image" content="https://fulcrumcortex.github.io/documentation/assets/og-image.png">
+<meta name="theme-color" content="#14100f">
+<link rel="icon" href="/documentation/assets/fulcrum-logo.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/documentation/assets/fulcrum-logo.png">
+<link rel="stylesheet" href="/documentation/assets/site.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://fulcrumcortex.com/#organization",
+   "name": "Fulcrum Cortex",
+   "url": "https://fulcrumcortex.com/",
+   "logo": "https://fulcrumcortex.github.io/documentation/assets/fulcrum-logo.png",
+   "description": "Fulcrum Cortex is the AI execution layer for business, built in Australia.",
+   "sameAs": [
+    "https://fulcrumcrm.app/",
+    "https://fulcrumcode.app/",
+    "https://fulcrumail.app/",
+    "https://lyre.au/",
+    "https://docs.lyre.au/",
+    "https://github.com/fulcrumcortex"
+   ]
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://fulcrumcortex.github.io/documentation/#website",
+   "name": "Fulcrum Docs",
+   "url": "https://fulcrumcortex.github.io/documentation/",
+   "inLanguage": "en-AU",
+   "publisher": {
+    "@id": "https://fulcrumcortex.com/#organization"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Docs",
+     "item": "https://fulcrumcortex.github.io/documentation/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "CRM overview",
+     "item": "https://fulcrumcortex.github.io/documentation/crm/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Calls and AI",
+     "item": "https://fulcrumcortex.github.io/documentation/crm/calls-and-ai/"
+    }
+   ]
+  },
+  {
+   "@type": "TechArticle",
+   "headline": "Calls and AI in Fulcrum CRM",
+   "description": "Call contacts through Lyre from Fulcrum CRM, let an AI voice agent make consented calls, work with your AI Pal, and connect your own AI tools with an MCP token.",
+   "url": "https://fulcrumcortex.github.io/documentation/crm/calls-and-ai/",
+   "mainEntityOfPage": "https://fulcrumcortex.github.io/documentation/crm/calls-and-ai/",
+   "inLanguage": "en-AU",
+   "isPartOf": {
+    "@id": "https://fulcrumcortex.github.io/documentation/#website"
+   },
+   "author": {
+    "@id": "https://fulcrumcortex.com/#organization"
+   },
+   "publisher": {
+    "@id": "https://fulcrumcortex.com/#organization"
+   },
+   "image": "https://fulcrumcortex.github.io/documentation/assets/og-image.png",
+   "dateModified": "2026-11-04",
+   "about": {
+    "@type": "SoftwareApplication",
+    "name": "Fulcrum CRM",
+    "applicationCategory": "BusinessApplication"
+   }
+  },
+  {
+   "@type": "HowTo",
+   "name": "Connect your AI tool to Fulcrum CRM with an MCP token",
+   "description": "Call contacts through Lyre from Fulcrum CRM, let an AI voice agent make consented calls, work with your AI Pal, and connect your own AI tools with an MCP token.",
+   "url": "https://fulcrumcortex.github.io/documentation/crm/calls-and-ai/",
+   "step": [
+    {
+     "@type": "HowToStep",
+     "position": 1,
+     "text": "Go to Settings → Connected Apps and select New MCP token."
+    },
+    {
+     "@type": "HowToStep",
+     "position": 2,
+     "text": "Choose the Scopes, which are the parts of the CRM the tool can use, and select Create token."
+    },
+    {
+     "@type": "HowToStep",
+     "position": 3,
+     "text": "Copy the token straight away. It's only shown once."
+    },
+    {
+     "@type": "HowToStep",
+     "position": 4,
+     "text": "In your AI tool, add your workspace's /api/mcp address as the MCP server and send the token as a bearer token."
+    },
+    {
+     "@type": "HowToStep",
+     "position": 5,
+     "text": "Check Settings → MCP Tool Logs to see the calls the tool makes."
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="topbar">
+<a class="brand" href="/documentation/"><img src="/documentation/assets/fulcrum-logo.svg" alt="" width="28" height="28"><span>Fulcrum <b>Docs</b></span></a>
+<a class="menu-link" href="#docs-nav">Guides</a>
+</header>
+<div class="layout">
+<main id="main">
+<nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="/documentation/">Docs</a></li><li><a href="/documentation/crm/">CRM overview</a></li><li><span aria-current="page">Calls and AI</span></li></ol></nav>
+<article>
+<h1>Calls and AI in Fulcrum CRM</h1>
+<p class="lead">Call contacts through Lyre from Fulcrum CRM, let an AI voice agent make consented calls, work with your AI Pal, and connect your own AI tools with an MCP token.</p>
+<p>Fulcrum CRM is built for people and AI agents working on the same records. You can ring a contact through Lyre, have a voice agent call them for you, and ask your AI Pal to do CRM work on your behalf. You can also connect your own AI tools securely. The <a href="https://fulcrumcrm.app/platform/ai-bdrs">AI BDR agents</a> page describes the outbound prospecting side.</p>
+
+<h2 id="call-contacts-through-lyre">Call contacts through Lyre</h2>
+<ol>
+<li>An administrator connects Lyre on the Lyre telephony card in <strong>Settings</strong> → <strong>Integrations</strong>. They select <strong>Sync</strong>, then assign phone numbers to people or AI agents.</li>
+<li>To call, open a contact and press <strong>Call</strong>. The button only appears once you're set up to call.</li>
+<li>If you'd like Lyre to ring your own phone first and then connect you, add your mobile number in <strong>Settings</strong> → <strong>Profile &amp; Security</strong>.</li>
+</ol>
+<p>Every call is logged on the contact's timeline. To set up agents, numbers and campaigns in Lyre itself, see the <a href="/documentation/lyre/">Lyre guides</a>.</p>
+
+<h2 id="have-an-ai-voice-agent-call-a-contact">Have an AI voice agent call a contact</h2>
+<p>On a contact's page, <strong>Call with AI Agent</strong> has a voice agent make the call. It's only available when the contact has agreed to AI calls; this is recorded under <strong>AI Call Consent</strong>. The agent's call is logged on the timeline like any other. Read the <a href="/documentation/lyre/compliance/">Lyre compliance guide</a> before calling at scale.</p>
+
+<h2 id="ai-agents">AI Agents</h2>
+<p><strong>AI Agents</strong> in the sidebar is where your workspace's agents are built and managed. The tabs are <strong>Builder</strong>, <strong>All Agents</strong>, <strong>Providers</strong>, <strong>AI Pals</strong>, <strong>Pal Chat</strong> and <strong>Conversations</strong>. Voice agents can make and answer calls. Agents can own contacts and be assigned tasks, just like people.</p>
+
+<h2 id="your-ai-pal">Your AI Pal</h2>
+<p>An AI Pal is a personal assistant that works for one person. Administrators create Pals under <strong>AI Agents</strong> → <strong>AI Pals</strong>. They can switch on <strong>CRM access</strong> and choose what the Pal may do. A Pal acts as its owner and can never do more than its owner can.</p>
+<ul>
+<li>Chat with your Pal by tapping its picture, or open <strong>Pal Chat</strong>.</li>
+<li>If a Pal seems stuck, an administrator can select <strong>Restart</strong>. <strong>Duplicate</strong> copies a Pal's set-up for someone else.</li>
+</ul>
+
+<h2 id="connect-your-own-ai-tools-mcp">Connect your own AI tools (MCP)</h2>
+<p>Fulcrum CRM includes an MCP server, so AI tools that support the Model Context Protocol can read and update your CRM. They only get the access you allow.</p>
+<ol class="steps">
+<li>Go to <strong>Settings</strong> → <strong>Connected Apps</strong> and select <strong>New MCP token</strong>.</li>
+<li>Choose the <strong>Scopes</strong>, which are the parts of the CRM the tool can use, and select <strong>Create token</strong>.</li>
+<li>Copy the token straight away. It's only shown once.</li>
+<li>In your AI tool, add your workspace's <code>/api/mcp</code> address as the MCP server and send the token as a bearer token.</li>
+<li>Check <strong>Settings</strong> → <strong>MCP Tool Logs</strong> to see the calls the tool makes.</li>
+</ol>
+<p>Use <strong>Revoke</strong> to cut a tool off, or <strong>Rotate</strong> to issue a fresh token. By default only owners and admins can manage MCP tokens. Give each tool the narrowest scopes it needs.</p>
+<p>The same agent-native approach runs across the whole fleet. The <a href="https://fulcrumcortex.com/blog/agent-native-crm">agent-native CRM article</a> explains the thinking, and <a href="https://fulcrumcortex.com/integrations">Fulcrum Cortex integrations</a> lists the tools the agents already work with.</p>
+
+<section class="related" aria-labelledby="related-reading">
+<h2 id="related-reading">Related reading</h2>
+<ul>
+<li><a href="https://fulcrumcrm.app/blog/agentic-crm-explained">What is agentic CRM?</a></li>
+<li><a href="https://fulcrumcrm.app/blog/ai-voice-calling-in-sales-future-of-outbound-prospecting">The future of outbound prospecting with AI voice</a></li>
+<li><a href="https://fulcrumcortex.com/blog/least-privilege-access-for-ai-agents">Least-privilege access for AI agents</a></li>
+<li><a href="https://fulcrumcortex.com/blog/ai-voice-agents-australia">An operator&#x27;s guide to AI voice agents in Australia</a></li>
+</ul>
+</section>
+<p class="updated">Last updated <time datetime="2026-11-04">2026-11-04</time></p>
+</article>
+<nav class="pager" aria-label="Previous and next guides"><a class="prev" href="/documentation/crm/email/"><span>Previous</span>Email</a><a class="next" href="/documentation/crm/roles-and-permissions/"><span>Next</span>Roles and permissions</a></nav>
+</main>
+<aside class="toc" aria-label="On this page"><p>On this page</p><ul>
+<li><a href="#call-contacts-through-lyre">Call contacts through Lyre</a></li>
+<li><a href="#have-an-ai-voice-agent-call-a-contact">Have an AI voice agent call a contact</a></li>
+<li><a href="#ai-agents">AI Agents</a></li>
+<li><a href="#your-ai-pal">Your AI Pal</a></li>
+<li><a href="#connect-your-own-ai-tools-mcp">Connect your own AI tools (MCP)</a></li>
+<li><a href="#related-reading">Related reading</a></li>
+</ul></aside>
+<nav class="sidebar" id="docs-nav" aria-label="Documentation">
+<p class="nav-section">Start here</p><ul>
+<li><a href="/documentation/">Overview</a></li>
+</ul>
+<p class="nav-section">Fulcrum Mail</p><ul>
+<li><a href="/documentation/fulcrum-mail/">Fulcrum Mail overview</a></li>
+<li><a href="/documentation/fulcrum-mail/create-an-account/">Create an account</a></li>
+<li><a href="/documentation/fulcrum-mail/workspaces/">Company workspaces</a></li>
+<li><a href="/documentation/fulcrum-mail/invite-and-manage-members/">Invite and manage members</a></li>
+<li><a href="/documentation/fulcrum-mail/switch-workspaces-and-accounts/">Switch workspaces and accounts</a></li>
+<li><a href="/documentation/fulcrum-mail/mail-basics/">Mail basics</a></li>
+<li><a href="/documentation/fulcrum-mail/settings/">Mail settings</a></li>
+</ul>
+<p class="nav-section">Calendar</p><ul>
+<li><a href="/documentation/calendar/">Calendar overview</a></li>
+<li><a href="/documentation/calendar/import-and-connect-calendars/">Import and connect calendars</a></li>
+<li><a href="/documentation/calendar/booking-pages/">Booking pages</a></li>
+<li><a href="/documentation/calendar/manage-bookings/">Manage bookings</a></li>
+<li><a href="/documentation/calendar/meetings/">Meetings</a></li>
+</ul>
+<p class="nav-section">Pages</p><ul>
+<li><a href="/documentation/pages/">Shareable pages</a></li>
+</ul>
+<p class="nav-section">Lyre</p><ul>
+<li><a href="/documentation/lyre/">Lyre overview</a></li>
+<li><a href="/documentation/lyre/voice-agents/">Voice agents</a></li>
+<li><a href="/documentation/lyre/phone-numbers/">Phone numbers</a></li>
+<li><a href="/documentation/lyre/outbound-calls-and-campaigns/">Outbound calls and campaigns</a></li>
+<li><a href="/documentation/lyre/book-meetings/">Book meetings</a></li>
+<li><a href="/documentation/lyre/call-history/">Call history</a></li>
+<li><a href="/documentation/lyre/credits-and-billing/">Credits and billing</a></li>
+<li><a href="/documentation/lyre/compliance/">Compliance</a></li>
+</ul>
+<p class="nav-section">Fulcrum CRM</p><ul>
+<li><a href="/documentation/crm/">CRM overview</a></li>
+<li><a href="/documentation/crm/contacts-and-companies/">Contacts and companies</a></li>
+<li><a href="/documentation/crm/deals-and-pipelines/">Deals and pipelines</a></li>
+<li><a href="/documentation/crm/activities-and-tasks/">Activities and tasks</a></li>
+<li><a href="/documentation/crm/lists/">Lists</a></li>
+<li><a href="/documentation/crm/custom-fields/">Custom fields</a></li>
+<li><a href="/documentation/crm/import-export-and-duplicates/">Import, export and duplicates</a></li>
+<li><a href="/documentation/crm/lead-forms-and-routing/">Lead forms and routing</a></li>
+<li><a href="/documentation/crm/email/">Email</a></li>
+<li><a href="/documentation/crm/calls-and-ai/" aria-current="page">Calls and AI</a></li>
+<li><a href="/documentation/crm/roles-and-permissions/">Roles and permissions</a></li>
+</ul>
+</nav>
+</div>
+<footer class="footer">
+<p>Fulcrum Docs is written and maintained by the Fulcrum Cortex team in Australia.</p>
+<p><a href="https://github.com/fulcrumcortex/documentation">Suggest a correction on GitHub</a></p>
+</footer>
+</body>
+</html>

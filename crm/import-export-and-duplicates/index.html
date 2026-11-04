@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Import contacts, export data and merge duplicates in Fulcrum CRM | Fulcrum Docs</title>
+<meta name="description" content="Import contacts into Fulcrum CRM from a CSV with AI column mapping, export contacts and lists, merge duplicate contacts, companies and deals, and restore deleted records.">
+<link rel="canonical" href="https://fulcrumcortex.github.io/documentation/crm/import-export-and-duplicates/">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Fulcrum Docs">
+<meta property="og:locale" content="en_AU">
+<meta property="og:title" content="Import, export, duplicates and the recycle bin">
+<meta property="og:description" content="Import contacts into Fulcrum CRM from a CSV with AI column mapping, export contacts and lists, merge duplicate contacts, companies and deals, and restore deleted records.">
+<meta property="og:url" content="https://fulcrumcortex.github.io/documentation/crm/import-export-and-duplicates/">
+<meta property="og:image" content="https://fulcrumcortex.github.io/documentation/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Fulcrum Docs">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Import, export, duplicates and the recycle bin">
+<meta name="twitter:description" content="Import contacts into Fulcrum CRM from a CSV with AI column mapping, export contacts and lists, merge duplicate contacts, companies and deals, and restore deleted records.">
+<meta name="twitter:image" content="https://fulcrumcortex.github.io/documentation/assets/og-image.png">
+<meta name="theme-color" content="#14100f">
+<link rel="icon" href="/documentation/assets/fulcrum-logo.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/documentation/assets/fulcrum-logo.png">
+<link rel="stylesheet" href="/documentation/assets/site.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://fulcrumcortex.com/#organization",
+   "name": "Fulcrum Cortex",
+   "url": "https://fulcrumcortex.com/",
+   "logo": "https://fulcrumcortex.github.io/documentation/assets/fulcrum-logo.png",
+   "description": "Fulcrum Cortex is the AI execution layer for business, built in Australia.",
+   "sameAs": [
+    "https://fulcrumcrm.app/",
+    "https://fulcrumcode.app/",
+    "https://fulcrumail.app/",
+    "https://lyre.au/",
+    "https://docs.lyre.au/",
+    "https://github.com/fulcrumcortex"
+   ]
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://fulcrumcortex.github.io/documentation/#website",
+   "name": "Fulcrum Docs",
+   "url": "https://fulcrumcortex.github.io/documentation/",
+   "inLanguage": "en-AU",
+   "publisher": {
+    "@id": "https://fulcrumcortex.com/#organization"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Docs",
+     "item": "https://fulcrumcortex.github.io/documentation/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "CRM overview",
+     "item": "https://fulcrumcortex.github.io/documentation/crm/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Import, export and duplicates",
+     "item": "https://fulcrumcortex.github.io/documentation/crm/import-export-and-duplicates/"
+    }
+   ]
+  },
+  {
+   "@type": "TechArticle",
+   "headline": "Import, export, duplicates and the recycle bin",
+   "description": "Import contacts into Fulcrum CRM from a CSV with AI column mapping, export contacts and lists, merge duplicate contacts, companies and deals, and restore deleted records.",
+   "url": "https://fulcrumcortex.github.io/documentation/crm/import-export-and-duplicates/",
+   "mainEntityOfPage": "https://fulcrumcortex.github.io/documentation/crm/import-export-and-duplicates/",
+   "inLanguage": "en-AU",
+   "isPartOf": {
+    "@id": "https://fulcrumcortex.github.io/documentation/#website"
+   },
+   "author": {
+    "@id": "https://fulcrumcortex.com/#organization"
+   },
+   "publisher": {
+    "@id": "https://fulcrumcortex.com/#organization"
+   },
+   "image": "https://fulcrumcortex.github.io/documentation/assets/og-image.png",
+   "dateModified": "2026-11-04",
+   "about": {
+    "@type": "SoftwareApplication",
+    "name": "Fulcrum CRM",
+    "applicationCategory": "BusinessApplication"
+   }
+  },
+  {
+   "@type": "HowTo",
+   "name": "Import contacts into Fulcrum CRM from a CSV file",
+   "description": "Import contacts into Fulcrum CRM from a CSV with AI column mapping, export contacts and lists, merge duplicate contacts, companies and deals, and restore deleted records.",
+   "url": "https://fulcrumcortex.github.io/documentation/crm/import-export-and-duplicates/",
+   "step": [
+    {
+     "@type": "HowToStep",
+     "position": 1,
+     "text": "Open Contacts and select Import. The Import Contacts window opens on the CSV Upload tab."
+    },
+    {
+     "@type": "HowToStep",
+     "position": 2,
+     "text": "Click or drop your CSV file into the upload area."
+    },
+    {
+     "@type": "HowToStep",
+     "position": 3,
+     "text": "AI maps your columns to CRM fields and shows how many it mapped, such as \"Mapped 8 of 9 columns\". Check the preview."
+    },
+    {
+     "@type": "HowToStep",
+     "position": 4,
+     "text": "If a column is mapped wrongly, describe the fix in Wrong mapping? Tell the AI what to fix: and select Remap. To start over, choose Upload a different file."
+    },
+    {
+     "@type": "HowToStep",
+     "position": 5,
+     "text": "Select the import button, which shows how many contacts will be imported."
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="topbar">
+<a class="brand" href="/documentation/"><img src="/documentation/assets/fulcrum-logo.svg" alt="" width="28" height="28"><span>Fulcrum <b>Docs</b></span></a>
+<a class="menu-link" href="#docs-nav">Guides</a>
+</header>
+<div class="layout">
+<main id="main">
+<nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="/documentation/">Docs</a></li><li><a href="/documentation/crm/">CRM overview</a></li><li><span aria-current="page">Import, export and duplicates</span></li></ol></nav>
+<article>
+<h1>Import, export, duplicates and the recycle bin</h1>
+<p class="lead">Import contacts into Fulcrum CRM from a CSV with AI column mapping, export contacts and lists, merge duplicate contacts, companies and deals, and restore deleted records.</p>
+<p>This guide covers getting data into and out of Fulcrum CRM and keeping it tidy. It also covers how to undo a deletion. If you're moving from another CRM, read <a href="https://fulcrumcrm.app/blog/crm-data-migration-switch-crms-without-losing-contacts">how to switch CRMs without losing contacts</a> before your first import.</p>
+
+<h2 id="import-contacts-from-a-csv">Import contacts from a CSV</h2>
+<ol class="steps">
+<li>Open <strong>Contacts</strong> and select <strong>Import</strong>. The <strong>Import Contacts</strong> window opens on the <strong>CSV Upload</strong> tab.</li>
+<li>Click or drop your CSV file into the upload area.</li>
+<li>AI maps your columns to CRM fields and shows how many it mapped, such as "Mapped 8 of 9 columns". Check the preview.</li>
+<li>If a column is mapped wrongly, describe the fix in <strong>Wrong mapping? Tell the AI what to fix:</strong> and select <strong>Remap</strong>. To start over, choose <strong>Upload a different file</strong>.</li>
+<li>Select the import button, which shows how many contacts will be imported.</li>
+</ol>
+<div class="warning"><p>Before you import, know these rules:</p>
+<ul>
+<li>Every row becomes a new contact. The import doesn't check for duplicates, so clean the file first, or merge afterwards (see below).</li>
+<li>You become the owner of the imported contacts.</li>
+<li>The company column is added to the contact's description. It isn't linked to a company record.</li>
+<li>The import stops at your plan's contact limit.</li>
+<li>Column mapping uses AI credits.</li>
+</ul></div>
+<p>You need the import permission to see the <strong>Import</strong> button. The <strong>HubSpot</strong> tab in the import window is marked <strong>Coming Soon</strong>, so use a CSV export from HubSpot for now. You can also import straight into a list with <strong>Import CSV</strong>; see <a href="/documentation/crm/lists/">Lists</a>.</p>
+
+<h2 id="export-your-data">Export your data</h2>
+<ul>
+<li><strong>Contacts</strong> → <strong>Export</strong> downloads a CSV with name, email, phone, role, description, status, score, lead status, lifecycle stage, lead source, LinkedIn URL, company, owner and created date.</li>
+<li>A list's <strong>Export CSV</strong> downloads that list.</li>
+<li>On a contact's page (on desktop), <strong>Export</strong> next to the activity timeline downloads that contact's activity history as a CSV.</li>
+</ul>
+<p>Export is limited to owners by default. An owner can give other roles the <strong>Export</strong> permission in <strong>Settings</strong> → <strong>Roles &amp; Permissions</strong>. Deals and companies can't be exported yet.</p>
+
+<h2 id="merge-duplicate-contacts">Merge duplicate contacts</h2>
+<ol>
+<li>Open <strong>Contacts</strong> and select <strong>Duplicates</strong>. Each suggested pair shows why it matched, such as same email or same phone, and how confident the match is (High, Medium or Low).</li>
+<li>Select <strong>Details and history</strong> to compare the two records side by side.</li>
+<li>Tick <strong>Keep</strong> on the record you want to keep, then select <strong>Merge</strong>. To merge several pairs at once, tick them and select <strong>Bulk merge</strong>.</li>
+<li>If two records really are different people, select <strong>Not a duplicate</strong> so the pair isn't suggested again.</li>
+</ol>
+<p>The merged-away record goes to the recycle bin. By default, owners and admins can merge.</p>
+
+<h3 id="companies-and-deals">Companies and deals</h3>
+<ul>
+<li><strong>Companies</strong>: open <strong>Duplicates</strong> on the Companies page, then <strong>Compare side by side</strong>. Choose <strong>Keep</strong> and pick which values to keep, then <strong>Merge</strong>, or use <strong>Bulk merge</strong>.</li>
+<li><strong>Deals</strong>: open <strong>Duplicates</strong> on the Deals page, then <strong>Compare and merge</strong>. Pick the deal to keep and the values it should end with, then merge. If they aren't the same deal, choose <strong>Not duplicates</strong>.</li>
+</ul>
+
+<h2 id="recycle-bin">Restore something you deleted</h2>
+<ol>
+<li>Go to <strong>Settings</strong> → <strong>Recycle bin</strong>. Deleted contacts, companies and deals are kept for 90 days.</li>
+<li>Filter by <strong>Type</strong>, by <strong>Who</strong> deleted it, and by <strong>Show</strong> (in the bin, restored, or all).</li>
+<li>Select <strong>Restore</strong> next to the record.</li>
+</ol>
+<p>Admins can also delete a single entry forever, or <strong>Empty</strong> the bin. To undo a single field change rather than a deletion, open the record's history and undo that change. This works for contacts, companies and deals.</p>
+
+<section class="related" aria-labelledby="related-reading">
+<h2 id="related-reading">Related reading</h2>
+<ul>
+<li><a href="https://fulcrumcortex.com/blog/clean-contact-list-before-crm-import">Checklist: clean a contact list before CRM import</a></li>
+<li><a href="https://fulcrumcrm.app/blog/crm-data-quality-guide">Why CRM data quality matters for revenue</a></li>
+<li><a href="https://fulcrumcrm.app/blog/crm-data-export-portability">Your right to export and own your customer data</a></li>
+</ul>
+</section>
+<p class="updated">Last updated <time datetime="2026-11-04">2026-11-04</time></p>
+</article>
+<nav class="pager" aria-label="Previous and next guides"><a class="prev" href="/documentation/crm/custom-fields/"><span>Previous</span>Custom fields</a><a class="next" href="/documentation/crm/lead-forms-and-routing/"><span>Next</span>Lead forms and routing</a></nav>
+</main>
+<aside class="toc" aria-label="On this page"><p>On this page</p><ul>
+<li><a href="#import-contacts-from-a-csv">Import contacts from a CSV</a></li>
+<li><a href="#export-your-data">Export your data</a></li>
+<li><a href="#merge-duplicate-contacts">Merge duplicate contacts</a></li>
+<li><a href="#recycle-bin">Restore something you deleted</a></li>
+<li><a href="#related-reading">Related reading</a></li>
+</ul></aside>
+<nav class="sidebar" id="docs-nav" aria-label="Documentation">
+<p class="nav-section">Start here</p><ul>
+<li><a href="/documentation/">Overview</a></li>
+</ul>
+<p class="nav-section">Fulcrum Mail</p><ul>
+<li><a href="/documentation/fulcrum-mail/">Fulcrum Mail overview</a></li>
+<li><a href="/documentation/fulcrum-mail/create-an-account/">Create an account</a></li>
+<li><a href="/documentation/fulcrum-mail/workspaces/">Company workspaces</a></li>
+<li><a href="/documentation/fulcrum-mail/invite-and-manage-members/">Invite and manage members</a></li>
+<li><a href="/documentation/fulcrum-mail/switch-workspaces-and-accounts/">Switch workspaces and accounts</a></li>
+<li><a href="/documentation/fulcrum-mail/mail-basics/">Mail basics</a></li>
+<li><a href="/documentation/fulcrum-mail/settings/">Mail settings</a></li>
+</ul>
+<p class="nav-section">Calendar</p><ul>
+<li><a href="/documentation/calendar/">Calendar overview</a></li>
+<li><a href="/documentation/calendar/import-and-connect-calendars/">Import and connect calendars</a></li>
+<li><a href="/documentation/calendar/booking-pages/">Booking pages</a></li>
+<li><a href="/documentation/calendar/manage-bookings/">Manage bookings</a></li>
+<li><a href="/documentation/calendar/meetings/">Meetings</a></li>
+</ul>
+<p class="nav-section">Pages</p><ul>
+<li><a href="/documentation/pages/">Shareable pages</a></li>
+</ul>
+<p class="nav-section">Lyre</p><ul>
+<li><a href="/documentation/lyre/">Lyre overview</a></li>
+<li><a href="/documentation/lyre/voice-agents/">Voice agents</a></li>
+<li><a href="/documentation/lyre/phone-numbers/">Phone numbers</a></li>
+<li><a href="/documentation/lyre/outbound-calls-and-campaigns/">Outbound calls and campaigns</a></li>
+<li><a href="/documentation/lyre/book-meetings/">Book meetings</a></li>
+<li><a href="/documentation/lyre/call-history/">Call history</a></li>
+<li><a href="/documentation/lyre/credits-and-billing/">Credits and billing</a></li>
+<li><a href="/documentation/lyre/compliance/">Compliance</a></li>
+</ul>
+<p class="nav-section">Fulcrum CRM</p><ul>
+<li><a href="/documentation/crm/">CRM overview</a></li>
+<li><a href="/documentation/crm/contacts-and-companies/">Contacts and companies</a></li>
+<li><a href="/documentation/crm/deals-and-pipelines/">Deals and pipelines</a></li>
+<li><a href="/documentation/crm/activities-and-tasks/">Activities and tasks</a></li>
+<li><a href="/documentation/crm/lists/">Lists</a></li>
+<li><a href="/documentation/crm/custom-fields/">Custom fields</a></li>
+<li><a href="/documentation/crm/import-export-and-duplicates/" aria-current="page">Import, export and duplicates</a></li>
+<li><a href="/documentation/crm/lead-forms-and-routing/">Lead forms and routing</a></li>
+<li><a href="/documentation/crm/email/">Email</a></li>
+<li><a href="/documentation/crm/calls-and-ai/">Calls and AI</a></li>
+<li><a href="/documentation/crm/roles-and-permissions/">Roles and permissions</a></li>
+</ul>
+</nav>
+</div>
+<footer class="footer">
+<p>Fulcrum Docs is written and maintained by the Fulcrum Cortex team in Australia.</p>
+<p><a href="https://github.com/fulcrumcortex/documentation">Suggest a correction on GitHub</a></p>
+</footer>
+</body>
+</html>

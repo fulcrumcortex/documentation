@@ -1,0 +1,50 @@
+---
+title: Pages you can share from Fulcrum
+seo_title: Fulcrum Pages: booking pages and shared file links | Fulcrum Docs
+description: The public pages Fulcrum makes for people outside your team: booking pages, booking management pages and expiring Drive file links, and how to create them.
+nav: Shareable pages
+updated: 2026-11-04
+about: Fulcrum Mail
+howto: Share a file with an expiring Fulcrum Drive link
+related:
+  - https://fulcrumcrm.app/blog/crm-security-2026-protecting-customer-data-ai-era | Protecting customer data in the AI era
+  - https://fulcrumcrm.app/blog/how-to-build-lead-capture-form-that-actually-converts | Lead capture forms that convert
+  - https://fulcrumcrm.app/blog/crm-data-export-portability | Data portability: owning and sharing your customer data
+---
+<p>Most of Fulcrum sits behind your sign-in, but a few pages are meant for people outside your team. Customers, guests and suppliers can open them without a Fulcrum account. This guide lists those public pages, what each one shows, and where to manage it.</p>
+
+<table>
+<thead><tr><th>Page</th><th>Address</th><th>Who it's for</th></tr></thead>
+<tbody>
+<tr><td>Booking page</td><td><code>fulcrumail.app/calendar/<em>your-link</em>/</code></td><td>Anyone you want to let book time with you</td></tr>
+<tr><td>Booking management page</td><td>Linked from each booking confirmation email</td><td>A guest who has booked, to join, reschedule or cancel</td></tr>
+<tr><td>Shared file page</td><td><code>fulcrumail.app/share/…</code></td><td>Anyone you send a Drive file link to</td></tr>
+<tr><td>Invitation response page</td><td>Linked from calendar invitation emails</td><td>Guests without a Fulcrum account answering an invitation</td></tr>
+</tbody>
+</table>
+
+<h2>Booking pages</h2>
+<p>A booking page shows your available times and lets a visitor book one. It never shows the details of your other events. You choose its link, length, location, weekly hours and the calendars it checks. Every booking is confirmed by email before it's added to your calendar.</p>
+<ul>
+<li>Create one: <a href="/calendar/booking-pages/">Create a booking page</a></li>
+<li>See what your guests experience, and handle bookings: <a href="/calendar/manage-bookings/">Manage bookings</a></li>
+</ul>
+<p>If you only need booking pages and not a mailbox, you can <a href="https://fulcrumail.app/calendar/sign-in">sign in to Fulcrum Calendar with Google or Microsoft</a> and use booking pages on their own.</p>
+
+<h2>Shared file pages</h2>
+<p>When you share a Drive file outside your company, Fulcrum creates a link to a simple page. The page shows the file's name, size and link expiry date, with a button to download it if you allow downloads. Files are scanned for malware before they can be downloaded.</p>
+<ol class="steps">
+<li>In <strong>Drive</strong>, open the file and select <strong>Details</strong>.</li>
+<li>Open the <strong>Sharing</strong> tab and go to <strong>External links</strong>.</li>
+<li>Choose a <strong>Link expiry</strong> of <strong>1 day</strong>, <strong>7 days</strong> or <strong>30 days</strong>.</li>
+<li>Leave <strong>Allow download</strong> ticked if the recipient should be able to save the file.</li>
+<li>Select <strong>Create link</strong>, then <strong>Copy link</strong> and send it to the recipient.</li>
+</ol>
+<p>Each link lists its status (<strong>Active link</strong>, <strong>Expired</strong> or <strong>Revoked</strong>), its expiry date and how many times it has been downloaded. Select <strong>Revoke</strong> to switch a link off early.</p>
+<div class="note"><p>Only the file's owner can create external links, and only for files, not folders. Your company workspace must also allow external sharing. An administrator turns this on with <strong>Allow external sharing</strong> in <strong>Workspace</strong> → <strong>Settings</strong>. To share with colleagues instead, use <strong>Share with</strong> on the same tab and pick <strong>Viewer</strong>, <strong>Commenter</strong> or <strong>Editor</strong>.</p></div>
+
+<h2>Invitation response pages</h2>
+<p>When you invite someone to an event, guests who don't have a Fulcrum account answer from a page linked in the invitation email. The page shows the event, asks <strong>Will you attend?</strong>, and records their answer in your calendar. See <a href="/calendar/">Use the Fulcrum Calendar</a>.</p>
+
+<h2>Looking for website or landing pages?</h2>
+<p>Fulcrum Mail doesn't include a website builder. For marketing and campaign pages, Cortex's coding agent can build them for you. Read about <a href="https://fulcrumcortex.com/blog/building-landing-pages-via-cortex">landing pages built through Cortex</a> and the <a href="https://fulcrumcortex.com/code">Fulcrum Code agent</a>. To capture leads on a site you already have, embed a <a href="/crm/lead-forms-and-routing/">Fulcrum CRM lead form</a>.</p>

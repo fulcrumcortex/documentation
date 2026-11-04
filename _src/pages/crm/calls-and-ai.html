@@ -1,0 +1,48 @@
+---
+title: Calls and AI in Fulcrum CRM
+seo_title: Lyre calls, AI agents, AI Pals and the MCP server in Fulcrum CRM | Fulcrum Docs
+description: Call contacts through Lyre from Fulcrum CRM, let an AI voice agent make consented calls, work with your AI Pal, and connect your own AI tools with an MCP token.
+nav: Calls and AI
+updated: 2026-11-04
+about: Fulcrum CRM
+howto: Connect your AI tool to Fulcrum CRM with an MCP token
+related:
+  - https://fulcrumcrm.app/blog/agentic-crm-explained | What is agentic CRM?
+  - https://fulcrumcrm.app/blog/ai-voice-calling-in-sales-future-of-outbound-prospecting | The future of outbound prospecting with AI voice
+  - https://fulcrumcortex.com/blog/least-privilege-access-for-ai-agents | Least-privilege access for AI agents
+  - https://fulcrumcortex.com/blog/ai-voice-agents-australia | An operator's guide to AI voice agents in Australia
+---
+<p>Fulcrum CRM is built for people and AI agents working on the same records. You can ring a contact through Lyre, have a voice agent call them for you, and ask your AI Pal to do CRM work on your behalf. You can also connect your own AI tools securely. The <a href="https://fulcrumcrm.app/platform/ai-bdrs">AI BDR agents</a> page describes the outbound prospecting side.</p>
+
+<h2>Call contacts through Lyre</h2>
+<ol>
+<li>An administrator connects Lyre on the Lyre telephony card in <strong>Settings</strong> → <strong>Integrations</strong>. They select <strong>Sync</strong>, then assign phone numbers to people or AI agents.</li>
+<li>To call, open a contact and press <strong>Call</strong>. The button only appears once you're set up to call.</li>
+<li>If you'd like Lyre to ring your own phone first and then connect you, add your mobile number in <strong>Settings</strong> → <strong>Profile &amp; Security</strong>.</li>
+</ol>
+<p>Every call is logged on the contact's timeline. To set up agents, numbers and campaigns in Lyre itself, see the <a href="/lyre/">Lyre guides</a>.</p>
+
+<h2>Have an AI voice agent call a contact</h2>
+<p>On a contact's page, <strong>Call with AI Agent</strong> has a voice agent make the call. It's only available when the contact has agreed to AI calls; this is recorded under <strong>AI Call Consent</strong>. The agent's call is logged on the timeline like any other. Read the <a href="/lyre/compliance/">Lyre compliance guide</a> before calling at scale.</p>
+
+<h2>AI Agents</h2>
+<p><strong>AI Agents</strong> in the sidebar is where your workspace's agents are built and managed. The tabs are <strong>Builder</strong>, <strong>All Agents</strong>, <strong>Providers</strong>, <strong>AI Pals</strong>, <strong>Pal Chat</strong> and <strong>Conversations</strong>. Voice agents can make and answer calls. Agents can own contacts and be assigned tasks, just like people.</p>
+
+<h2>Your AI Pal</h2>
+<p>An AI Pal is a personal assistant that works for one person. Administrators create Pals under <strong>AI Agents</strong> → <strong>AI Pals</strong>. They can switch on <strong>CRM access</strong> and choose what the Pal may do. A Pal acts as its owner and can never do more than its owner can.</p>
+<ul>
+<li>Chat with your Pal by tapping its picture, or open <strong>Pal Chat</strong>.</li>
+<li>If a Pal seems stuck, an administrator can select <strong>Restart</strong>. <strong>Duplicate</strong> copies a Pal's set-up for someone else.</li>
+</ul>
+
+<h2>Connect your own AI tools (MCP)</h2>
+<p>Fulcrum CRM includes an MCP server, so AI tools that support the Model Context Protocol can read and update your CRM. They only get the access you allow.</p>
+<ol class="steps">
+<li>Go to <strong>Settings</strong> → <strong>Connected Apps</strong> and select <strong>New MCP token</strong>.</li>
+<li>Choose the <strong>Scopes</strong>, which are the parts of the CRM the tool can use, and select <strong>Create token</strong>.</li>
+<li>Copy the token straight away. It's only shown once.</li>
+<li>In your AI tool, add your workspace's <code>/api/mcp</code> address as the MCP server and send the token as a bearer token.</li>
+<li>Check <strong>Settings</strong> → <strong>MCP Tool Logs</strong> to see the calls the tool makes.</li>
+</ol>
+<p>Use <strong>Revoke</strong> to cut a tool off, or <strong>Rotate</strong> to issue a fresh token. By default only owners and admins can manage MCP tokens. Give each tool the narrowest scopes it needs.</p>
+<p>The same agent-native approach runs across the whole fleet. The <a href="https://fulcrumcortex.com/blog/agent-native-crm">agent-native CRM article</a> explains the thinking, and <a href="https://fulcrumcortex.com/integrations">Fulcrum Cortex integrations</a> lists the tools the agents already work with.</p>

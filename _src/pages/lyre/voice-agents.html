@@ -1,0 +1,77 @@
+---
+title: Create and configure a Lyre voice agent
+seo_title: Create and configure a Lyre AI voice agent | Fulcrum Docs
+description: Create a Lyre voice agent, shape its identity and opening line, pick a model and voice, attach a knowledge base, add skills, and test it in the browser before going live.
+nav: Voice agents
+updated: 2026-11-04
+about: Lyre
+howto: Create a Lyre voice agent
+related:
+  - https://fulcrumcortex.com/blog/sub-500ms-voice-to-voice-why-it-matters | Why sub-500ms voice latency matters
+  - https://lyre.au/blog/building-sub-500ms-voice-agents-with-groq-and-deepgram | Building sub-500ms voice agents with Groq and Deepgram
+  - https://fulcrumcortex.com/blog/inbound-ai-answering-after-hours | After-hours call answering with an AI receptionist
+---
+<p>An agent is the voice that answers and places your calls. You give it a name, a role, an opening line and instructions, then choose how it thinks, sounds and listens. Lyre keeps the first step short. You can fill in everything else after the agent exists. For the API view of agents, see the <a href="https://docs.lyre.au/docs/agents">Lyre agents reference</a>.</p>
+
+<h2>Create an agent</h2>
+<ol class="steps">
+<li>Open <strong>Agents</strong> and select <strong>New agent</strong>.</li>
+<li>Enter a <strong>Name</strong>, for example "Customer support agent", and optionally a <strong>Description</strong>.</li>
+<li>Write the <strong>Opening line</strong>, the first thing the agent says on a call.</li>
+<li>Review the <strong>System prompt</strong>. It starts with a default you can edit later.</li>
+<li>Select <strong>Create agent</strong>. The agent editor opens.</li>
+</ol>
+
+<h2>The agent editor</h2>
+<p>The editor is split into tabs: <strong>Identity Studio</strong>, <strong>Model</strong>, <strong>Voice</strong>, <strong>Transcriber</strong>, <strong>Tool access</strong>, <strong>Instructions</strong>, <strong>Quality</strong>, <strong>Compliance</strong>, <strong>Advanced</strong> and <strong>Share</strong>. Changes in Identity Studio save automatically. For every other tab, select <strong>Save changes</strong> in the top bar. The top bar shows <strong>Unsaved changes</strong> until you save.</p>
+
+<h3>Identity Studio</h3>
+<p>Identity Studio builds the agent's personality from blocks. Each block covers one part of how it behaves:</p>
+<ul>
+<li><strong>Core Identity</strong>: name, role, traits and description.</li>
+<li><strong>Call direction</strong>: <strong>Inbound</strong>, <strong>Outbound</strong> or <strong>Both</strong>. This decides which opening blocks appear.</li>
+<li><strong>The Vibe</strong>, <strong>Conversational Style</strong>, <strong>Behavioural Rules</strong> and <strong>Emotional Layering</strong>: tone and manner.</li>
+<li><strong>Regional voice &amp; conversational style</strong>: how the agent speaks for your region.</li>
+<li><strong>Tool capabilities</strong>: which tools the agent may use during a call, such as booking a meeting.</li>
+<li><strong>Compliance</strong>, <strong>Call Resolution and Fallbacks</strong> and <strong>SMS behaviour</strong>.</li>
+</ul>
+
+<h3>Model and voice</h3>
+<ul>
+<li><strong>Model</strong>: pick the <strong>Provider</strong> and <strong>Model</strong> that drive the conversation. Under <strong>First Message Mode</strong>, choose whether the agent or the caller speaks first. Set the agent's <strong>Timezone</strong>, <strong>Operating city</strong> and <strong>Operating country</strong> so it talks about dates and places correctly.</li>
+<li><strong>Voice</strong>: choose a voice from <strong>Library voices</strong> or <strong>Your cloned voices</strong>. You can search by name, accent or gender. Adjust <strong>Stability</strong>, <strong>Speed</strong> and <strong>Volume</strong>.</li>
+<li><strong>Transcriber</strong>: choose the caller's <strong>Language</strong>. The options are English (Australia), English (United States), English (United Kingdom) and English (New Zealand). Add <strong>Keyterms</strong> for names or jargon the agent should hear correctly.</li>
+</ul>
+
+<h3>Advanced settings</h3>
+<p>The <strong>Advanced</strong> tab holds call handling settings:</p>
+<ul>
+<li>voicemail for outbound calls, using an AI-generated or a custom message</li>
+<li><strong>VAD sensitivity</strong> and <strong>Barge-in threshold (ms)</strong>, which control how quickly the agent responds and when a caller can interrupt</li>
+<li><strong>Max call duration (seconds)</strong></li>
+<li>dual-channel <strong>Recording</strong></li>
+</ul>
+
+<h2>Give the agent knowledge</h2>
+<ol>
+<li>Open <strong>Knowledge Base</strong>, select <strong>New knowledge base</strong>, give it a <strong>Name</strong> and select <strong>Create</strong>.</li>
+<li>Drop files onto the knowledge base, or click to browse. It accepts PDF, DOCX, Markdown or plain text, up to 50 MB per file. Each file shows as Pending, Processing, Ready or Failed.</li>
+<li>In the agent's <strong>Tool access</strong> tab, select the knowledge base under <strong>Knowledge bases</strong> and save.</li>
+</ol>
+
+<h2>Teach it playbooks with skills</h2>
+<p>On the <strong>Instructions</strong> tab, <strong>Add skill</strong> creates a playbook the agent loads only when it's relevant. Each skill has a <strong>Name</strong>, a description of <strong>When to use</strong> it, and <strong>Instructions (markdown)</strong>. Examples include handling a complaint or explaining your pricing.</p>
+
+<h2>Use your own voice</h2>
+<p>Under <strong>Voice clones</strong>, select <strong>Clone a new voice</strong>. Upload a <strong>Voice sample</strong> in MP3, WAV, M4A or FLAC format (1 to 3 minutes is recommended), give it a <strong>Voice name</strong>, and confirm the consent checkbox. Only clone a voice you have permission to use. The new voice then appears under <strong>Your cloned voices</strong>.</p>
+
+<h2>Test before going live</h2>
+<ul>
+<li><strong>Talk</strong> starts a web call so you can speak to the agent through your microphone. Select <strong>End Call</strong> to finish.</li>
+<li><strong>Chat</strong> opens a text conversation with the same agent.</li>
+<li>In Identity Studio, the <strong>Test Harness</strong> simulates a caller persona so you can see how the agent copes.</li>
+</ul>
+
+<h2>Share a public voice link</h2>
+<p>On the <strong>Share</strong> tab, you can create a personal voice link for each recipient. Anyone with the link can talk to the agent without signing in. Enter the <strong>Recipient name</strong>, an optional <strong>Message</strong> and a <strong>Theme</strong>, then select <strong>Create link</strong>.</p>
+<p>When your agent sounds right, <a href="/lyre/phone-numbers/">give it a phone number</a>.</p>

@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Create and configure a Lyre AI voice agent | Fulcrum Docs</title>
+<meta name="description" content="Create a Lyre voice agent, shape its identity and opening line, pick a model and voice, attach a knowledge base, add skills, and test it in the browser before going live.">
+<link rel="canonical" href="https://fulcrumcortex.github.io/documentation/lyre/voice-agents/">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Fulcrum Docs">
+<meta property="og:locale" content="en_AU">
+<meta property="og:title" content="Create and configure a Lyre voice agent">
+<meta property="og:description" content="Create a Lyre voice agent, shape its identity and opening line, pick a model and voice, attach a knowledge base, add skills, and test it in the browser before going live.">
+<meta property="og:url" content="https://fulcrumcortex.github.io/documentation/lyre/voice-agents/">
+<meta property="og:image" content="https://fulcrumcortex.github.io/documentation/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Fulcrum Docs">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Create and configure a Lyre voice agent">
+<meta name="twitter:description" content="Create a Lyre voice agent, shape its identity and opening line, pick a model and voice, attach a knowledge base, add skills, and test it in the browser before going live.">
+<meta name="twitter:image" content="https://fulcrumcortex.github.io/documentation/assets/og-image.png">
+<meta name="theme-color" content="#14100f">
+<link rel="icon" href="/documentation/assets/fulcrum-logo.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/documentation/assets/fulcrum-logo.png">
+<link rel="stylesheet" href="/documentation/assets/site.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://fulcrumcortex.com/#organization",
+   "name": "Fulcrum Cortex",
+   "url": "https://fulcrumcortex.com/",
+   "logo": "https://fulcrumcortex.github.io/documentation/assets/fulcrum-logo.png",
+   "description": "Fulcrum Cortex is the AI execution layer for business, built in Australia.",
+   "sameAs": [
+    "https://fulcrumcrm.app/",
+    "https://fulcrumcode.app/",
+    "https://fulcrumail.app/",
+    "https://lyre.au/",
+    "https://docs.lyre.au/",
+    "https://github.com/fulcrumcortex"
+   ]
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://fulcrumcortex.github.io/documentation/#website",
+   "name": "Fulcrum Docs",
+   "url": "https://fulcrumcortex.github.io/documentation/",
+   "inLanguage": "en-AU",
+   "publisher": {
+    "@id": "https://fulcrumcortex.com/#organization"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Docs",
+     "item": "https://fulcrumcortex.github.io/documentation/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Lyre overview",
+     "item": "https://fulcrumcortex.github.io/documentation/lyre/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Voice agents",
+     "item": "https://fulcrumcortex.github.io/documentation/lyre/voice-agents/"
+    }
+   ]
+  },
+  {
+   "@type": "TechArticle",
+   "headline": "Create and configure a Lyre voice agent",
+   "description": "Create a Lyre voice agent, shape its identity and opening line, pick a model and voice, attach a knowledge base, add skills, and test it in the browser before going live.",
+   "url": "https://fulcrumcortex.github.io/documentation/lyre/voice-agents/",
+   "mainEntityOfPage": "https://fulcrumcortex.github.io/documentation/lyre/voice-agents/",
+   "inLanguage": "en-AU",
+   "isPartOf": {
+    "@id": "https://fulcrumcortex.github.io/documentation/#website"
+   },
+   "author": {
+    "@id": "https://fulcrumcortex.com/#organization"
+   },
+   "publisher": {
+    "@id": "https://fulcrumcortex.com/#organization"
+   },
+   "image": "https://fulcrumcortex.github.io/documentation/assets/og-image.png",
+   "dateModified": "2026-11-04",
+   "about": {
+    "@type": "SoftwareApplication",
+    "name": "Lyre",
+    "applicationCategory": "BusinessApplication"
+   }
+  },
+  {
+   "@type": "HowTo",
+   "name": "Create a Lyre voice agent",
+   "description": "Create a Lyre voice agent, shape its identity and opening line, pick a model and voice, attach a knowledge base, add skills, and test it in the browser before going live.",
+   "url": "https://fulcrumcortex.github.io/documentation/lyre/voice-agents/",
+   "step": [
+    {
+     "@type": "HowToStep",
+     "position": 1,
+     "text": "Open Agents and select New agent."
+    },
+    {
+     "@type": "HowToStep",
+     "position": 2,
+     "text": "Enter a Name, for example \"Customer support agent\", and optionally a Description."
+    },
+    {
+     "@type": "HowToStep",
+     "position": 3,
+     "text": "Write the Opening line, the first thing the agent says on a call."
+    },
+    {
+     "@type": "HowToStep",
+     "position": 4,
+     "text": "Review the System prompt. It starts with a default you can edit later."
+    },
+    {
+     "@type": "HowToStep",
+     "position": 5,
+     "text": "Select Create agent. The agent editor opens."
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="topbar">
+<a class="brand" href="/documentation/"><img src="/documentation/assets/fulcrum-logo.svg" alt="" width="28" height="28"><span>Fulcrum <b>Docs</b></span></a>
+<a class="menu-link" href="#docs-nav">Guides</a>
+</header>
+<div class="layout">
+<main id="main">
+<nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="/documentation/">Docs</a></li><li><a href="/documentation/lyre/">Lyre overview</a></li><li><span aria-current="page">Voice agents</span></li></ol></nav>
+<article>
+<h1>Create and configure a Lyre voice agent</h1>
+<p class="lead">Create a Lyre voice agent, shape its identity and opening line, pick a model and voice, attach a knowledge base, add skills, and test it in the browser before going live.</p>
+<p>An agent is the voice that answers and places your calls. You give it a name, a role, an opening line and instructions, then choose how it thinks, sounds and listens. Lyre keeps the first step short. You can fill in everything else after the agent exists. For the API view of agents, see the <a href="https://docs.lyre.au/docs/agents">Lyre agents reference</a>.</p>
+
+<h2 id="create-an-agent">Create an agent</h2>
+<ol class="steps">
+<li>Open <strong>Agents</strong> and select <strong>New agent</strong>.</li>
+<li>Enter a <strong>Name</strong>, for example "Customer support agent", and optionally a <strong>Description</strong>.</li>
+<li>Write the <strong>Opening line</strong>, the first thing the agent says on a call.</li>
+<li>Review the <strong>System prompt</strong>. It starts with a default you can edit later.</li>
+<li>Select <strong>Create agent</strong>. The agent editor opens.</li>
+</ol>
+
+<h2 id="the-agent-editor">The agent editor</h2>
+<p>The editor is split into tabs: <strong>Identity Studio</strong>, <strong>Model</strong>, <strong>Voice</strong>, <strong>Transcriber</strong>, <strong>Tool access</strong>, <strong>Instructions</strong>, <strong>Quality</strong>, <strong>Compliance</strong>, <strong>Advanced</strong> and <strong>Share</strong>. Changes in Identity Studio save automatically. For every other tab, select <strong>Save changes</strong> in the top bar. The top bar shows <strong>Unsaved changes</strong> until you save.</p>
+
+<h3 id="identity-studio">Identity Studio</h3>
+<p>Identity Studio builds the agent's personality from blocks. Each block covers one part of how it behaves:</p>
+<ul>
+<li><strong>Core Identity</strong>: name, role, traits and description.</li>
+<li><strong>Call direction</strong>: <strong>Inbound</strong>, <strong>Outbound</strong> or <strong>Both</strong>. This decides which opening blocks appear.</li>
+<li><strong>The Vibe</strong>, <strong>Conversational Style</strong>, <strong>Behavioural Rules</strong> and <strong>Emotional Layering</strong>: tone and manner.</li>
+<li><strong>Regional voice &amp; conversational style</strong>: how the agent speaks for your region.</li>
+<li><strong>Tool capabilities</strong>: which tools the agent may use during a call, such as booking a meeting.</li>
+<li><strong>Compliance</strong>, <strong>Call Resolution and Fallbacks</strong> and <strong>SMS behaviour</strong>.</li>
+</ul>
+
+<h3 id="model-and-voice">Model and voice</h3>
+<ul>
+<li><strong>Model</strong>: pick the <strong>Provider</strong> and <strong>Model</strong> that drive the conversation. Under <strong>First Message Mode</strong>, choose whether the agent or the caller speaks first. Set the agent's <strong>Timezone</strong>, <strong>Operating city</strong> and <strong>Operating country</strong> so it talks about dates and places correctly.</li>
+<li><strong>Voice</strong>: choose a voice from <strong>Library voices</strong> or <strong>Your cloned voices</strong>. You can search by name, accent or gender. Adjust <strong>Stability</strong>, <strong>Speed</strong> and <strong>Volume</strong>.</li>
+<li><strong>Transcriber</strong>: choose the caller's <strong>Language</strong>. The options are English (Australia), English (United States), English (United Kingdom) and English (New Zealand). Add <strong>Keyterms</strong> for names or jargon the agent should hear correctly.</li>
+</ul>
+
+<h3 id="advanced-settings">Advanced settings</h3>
+<p>The <strong>Advanced</strong> tab holds call handling settings:</p>
+<ul>
+<li>voicemail for outbound calls, using an AI-generated or a custom message</li>
+<li><strong>VAD sensitivity</strong> and <strong>Barge-in threshold (ms)</strong>, which control how quickly the agent responds and when a caller can interrupt</li>
+<li><strong>Max call duration (seconds)</strong></li>
+<li>dual-channel <strong>Recording</strong></li>
+</ul>
+
+<h2 id="give-the-agent-knowledge">Give the agent knowledge</h2>
+<ol>
+<li>Open <strong>Knowledge Base</strong>, select <strong>New knowledge base</strong>, give it a <strong>Name</strong> and select <strong>Create</strong>.</li>
+<li>Drop files onto the knowledge base, or click to browse. It accepts PDF, DOCX, Markdown or plain text, up to 50 MB per file. Each file shows as Pending, Processing, Ready or Failed.</li>
+<li>In the agent's <strong>Tool access</strong> tab, select the knowledge base under <strong>Knowledge bases</strong> and save.</li>
+</ol>
+
+<h2 id="teach-it-playbooks-with-skills">Teach it playbooks with skills</h2>
+<p>On the <strong>Instructions</strong> tab, <strong>Add skill</strong> creates a playbook the agent loads only when it's relevant. Each skill has a <strong>Name</strong>, a description of <strong>When to use</strong> it, and <strong>Instructions (markdown)</strong>. Examples include handling a complaint or explaining your pricing.</p>
+
+<h2 id="use-your-own-voice">Use your own voice</h2>
+<p>Under <strong>Voice clones</strong>, select <strong>Clone a new voice</strong>. Upload a <strong>Voice sample</strong> in MP3, WAV, M4A or FLAC format (1 to 3 minutes is recommended), give it a <strong>Voice name</strong>, and confirm the consent checkbox. Only clone a voice you have permission to use. The new voice then appears under <strong>Your cloned voices</strong>.</p>
+
+<h2 id="test-before-going-live">Test before going live</h2>
+<ul>
+<li><strong>Talk</strong> starts a web call so you can speak to the agent through your microphone. Select <strong>End Call</strong> to finish.</li>
+<li><strong>Chat</strong> opens a text conversation with the same agent.</li>
+<li>In Identity Studio, the <strong>Test Harness</strong> simulates a caller persona so you can see how the agent copes.</li>
+</ul>
+
+<h2 id="share-a-public-voice-link">Share a public voice link</h2>
+<p>On the <strong>Share</strong> tab, you can create a personal voice link for each recipient. Anyone with the link can talk to the agent without signing in. Enter the <strong>Recipient name</strong>, an optional <strong>Message</strong> and a <strong>Theme</strong>, then select <strong>Create link</strong>.</p>
+<p>When your agent sounds right, <a href="/documentation/lyre/phone-numbers/">give it a phone number</a>.</p>
+
+<section class="related" aria-labelledby="related-reading">
+<h2 id="related-reading">Related reading</h2>
+<ul>
+<li><a href="https://fulcrumcortex.com/blog/sub-500ms-voice-to-voice-why-it-matters">Why sub-500ms voice latency matters</a></li>
+<li><a href="https://lyre.au/blog/building-sub-500ms-voice-agents-with-groq-and-deepgram">Building sub-500ms voice agents with Groq and Deepgram</a></li>
+<li><a href="https://fulcrumcortex.com/blog/inbound-ai-answering-after-hours">After-hours call answering with an AI receptionist</a></li>
+</ul>
+</section>
+<p class="updated">Last updated <time datetime="2026-11-04">2026-11-04</time></p>
+</article>
+<nav class="pager" aria-label="Previous and next guides"><a class="prev" href="/documentation/lyre/"><span>Previous</span>Lyre overview</a><a class="next" href="/documentation/lyre/phone-numbers/"><span>Next</span>Phone numbers</a></nav>
+</main>
+<aside class="toc" aria-label="On this page"><p>On this page</p><ul>
+<li><a href="#create-an-agent">Create an agent</a></li>
+<li><a href="#the-agent-editor">The agent editor</a></li>
+<li><a href="#give-the-agent-knowledge">Give the agent knowledge</a></li>
+<li><a href="#teach-it-playbooks-with-skills">Teach it playbooks with skills</a></li>
+<li><a href="#use-your-own-voice">Use your own voice</a></li>
+<li><a href="#test-before-going-live">Test before going live</a></li>
+<li><a href="#share-a-public-voice-link">Share a public voice link</a></li>
+<li><a href="#related-reading">Related reading</a></li>
+</ul></aside>
+<nav class="sidebar" id="docs-nav" aria-label="Documentation">
+<p class="nav-section">Start here</p><ul>
+<li><a href="/documentation/">Overview</a></li>
+</ul>
+<p class="nav-section">Fulcrum Mail</p><ul>
+<li><a href="/documentation/fulcrum-mail/">Fulcrum Mail overview</a></li>
+<li><a href="/documentation/fulcrum-mail/create-an-account/">Create an account</a></li>
+<li><a href="/documentation/fulcrum-mail/workspaces/">Company workspaces</a></li>
+<li><a href="/documentation/fulcrum-mail/invite-and-manage-members/">Invite and manage members</a></li>
+<li><a href="/documentation/fulcrum-mail/switch-workspaces-and-accounts/">Switch workspaces and accounts</a></li>
+<li><a href="/documentation/fulcrum-mail/mail-basics/">Mail basics</a></li>
+<li><a href="/documentation/fulcrum-mail/settings/">Mail settings</a></li>
+</ul>
+<p class="nav-section">Calendar</p><ul>
+<li><a href="/documentation/calendar/">Calendar overview</a></li>
+<li><a href="/documentation/calendar/import-and-connect-calendars/">Import and connect calendars</a></li>
+<li><a href="/documentation/calendar/booking-pages/">Booking pages</a></li>
+<li><a href="/documentation/calendar/manage-bookings/">Manage bookings</a></li>
+<li><a href="/documentation/calendar/meetings/">Meetings</a></li>
+</ul>
+<p class="nav-section">Pages</p><ul>
+<li><a href="/documentation/pages/">Shareable pages</a></li>
+</ul>
+<p class="nav-section">Lyre</p><ul>
+<li><a href="/documentation/lyre/">Lyre overview</a></li>
+<li><a href="/documentation/lyre/voice-agents/" aria-current="page">Voice agents</a></li>
+<li><a href="/documentation/lyre/phone-numbers/">Phone numbers</a></li>
+<li><a href="/documentation/lyre/outbound-calls-and-campaigns/">Outbound calls and campaigns</a></li>
+<li><a href="/documentation/lyre/book-meetings/">Book meetings</a></li>
+<li><a href="/documentation/lyre/call-history/">Call history</a></li>
+<li><a href="/documentation/lyre/credits-and-billing/">Credits and billing</a></li>
+<li><a href="/documentation/lyre/compliance/">Compliance</a></li>
+</ul>
+<p class="nav-section">Fulcrum CRM</p><ul>
+<li><a href="/documentation/crm/">CRM overview</a></li>
+<li><a href="/documentation/crm/contacts-and-companies/">Contacts and companies</a></li>
+<li><a href="/documentation/crm/deals-and-pipelines/">Deals and pipelines</a></li>
+<li><a href="/documentation/crm/activities-and-tasks/">Activities and tasks</a></li>
+<li><a href="/documentation/crm/lists/">Lists</a></li>
+<li><a href="/documentation/crm/custom-fields/">Custom fields</a></li>
+<li><a href="/documentation/crm/import-export-and-duplicates/">Import, export and duplicates</a></li>
+<li><a href="/documentation/crm/lead-forms-and-routing/">Lead forms and routing</a></li>
+<li><a href="/documentation/crm/email/">Email</a></li>
+<li><a href="/documentation/crm/calls-and-ai/">Calls and AI</a></li>
+<li><a href="/documentation/crm/roles-and-permissions/">Roles and permissions</a></li>
+</ul>
+</nav>
+</div>
+<footer class="footer">
+<p>Fulcrum Docs is written and maintained by the Fulcrum Cortex team in Australia.</p>
+<p><a href="https://github.com/fulcrumcortex/documentation">Suggest a correction on GitHub</a></p>
+</footer>
+</body>
+</html>

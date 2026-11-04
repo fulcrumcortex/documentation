@@ -1,0 +1,54 @@
+---
+title: Outbound calls, objectives and campaigns in Lyre
+seo_title: Run outbound AI calls and campaigns with Lyre | Fulcrum Docs
+description: Place a one-off outbound call with a Lyre agent, set reusable objectives that qualify leads, and run call, SMS or email campaigns across a list of recipients.
+nav: Outbound calls and campaigns
+updated: 2026-11-04
+about: Lyre
+howto: Run an outbound call campaign in Lyre
+related:
+  - https://fulcrumcortex.com/blog/speed-to-lead-with-lyre-calls | Calling new enquiries back within minutes
+  - https://fulcrumcortex.com/blog/measuring-call-ai-like-a-sales-floor | AI voice agent metrics: the call funnel to track
+  - https://fulcrumcrm.app/blog/ai-voice-calling-in-sales-future-of-outbound-prospecting | AI voice calling in outbound prospecting
+  - https://fulcrumcortex.com/blog/acma-compliant-ai-calling-australia | ACMA rules for AI outbound calls
+---
+<p>Lyre agents can call people as well as answer. You can place a single call, give the agent a reusable <strong>objective</strong> that says what the call should achieve, or run a <strong>campaign</strong> across a whole list. Before you start, make sure the agent has a <a href="/lyre/phone-numbers/">phone number</a> and you've read <a href="/lyre/compliance/">calling hours and do-not-contact rules</a>.</p>
+
+<h2>Place a one-off call</h2>
+<ol>
+<li>Open <strong>Calls</strong> and select <strong>New outbound call</strong>.</li>
+<li>Choose the <strong>Agent</strong> and, optionally, an <strong>Objective</strong>. Without one, the agent uses its default persona.</li>
+<li>Check <strong>Call from</strong>. The agent needs a phone number attached.</li>
+<li>In <strong>Call to</strong>, search for a name or number, or type a number such as +61412345678. Add a <strong>Name</strong> if you like.</li>
+<li>Select <strong>Dial</strong>.</li>
+</ol>
+
+<h2>Set an objective</h2>
+<p>An objective is a reusable goal for outbound calls, such as qualifying a new enquiry or confirming an appointment. Open <strong>Objectives</strong> and fill in:</p>
+<ul>
+<li><strong>Name</strong> and <strong>Goal</strong>: what a successful call looks like.</li>
+<li><strong>Information to collect</strong>: the answers you need, such as budget, timing or decision-maker. This is how Lyre qualifies a lead.</li>
+<li><strong>Guardrails</strong>: what the agent must not say or do.</li>
+<li><strong>Opening line</strong>: you can personalise it with <code>{{name}}</code>, <code>{{agent_name}}</code>, <code>{{date}}</code> and <code>{{time}}</code>.</li>
+</ul>
+<p>Select <strong>Create objective</strong>. Then choose it on a one-off call or a campaign.</p>
+
+<h2>Run a campaign</h2>
+<ol class="steps">
+<li>Open <strong>Campaigns</strong> and select <strong>New campaign</strong>.</li>
+<li>Give it a <strong>Name</strong> and choose the <strong>Channel</strong>: call, SMS or email.</li>
+<li>Under <strong>Agent &amp; number</strong>, pick an outbound number that has an agent assigned.</li>
+<li>For calls, set <strong>Concurrent calls</strong>, which is how many calls run at a time (1 to 10).</li>
+<li>Choose the <strong>Objective</strong>, an optional <strong>Category</strong>, and the <strong>Recipients</strong>.</li>
+<li>Under <strong>Schedule</strong>, choose <strong>Send now</strong> or <strong>Schedule</strong> a start time. Scheduled times use your local time.</li>
+<li>Optionally enter a <strong>Report email</strong> to have the campaign report sent by email.</li>
+<li>Select <strong>Create &amp; run</strong>, or <strong>Schedule campaign</strong> if it starts later.</li>
+</ol>
+<p>Open a campaign to follow each recipient's <strong>Status</strong>, <strong>Outcome</strong> and attempt time. From there you can open the <strong>Campaign report</strong> or select <strong>Cancel campaign</strong> to stop it.</p>
+<div class="note"><p>Campaigns only call within your organisation's calling hours. The <strong>Override calling hours</strong> option is only for testing or for contacts who have agreed to be called; see <a href="/lyre/compliance/">Compliance</a>.</p></div>
+
+<h2>Multi-step journeys</h2>
+<p>For outreach with several steps and branches, use <strong>Journeys</strong>. Select <strong>New journey</strong> to design the flow on a visual canvas.</p>
+
+<h2>How Lyre records the result</h2>
+<p>After each call, Lyre classifies the outcome. Examples are <strong>Booking made</strong>, <strong>Lead captured</strong>, <strong>Not the decision maker</strong>, <strong>Not interested</strong>, <strong>Callback requested</strong>, <strong>Do not call</strong> and <strong>Escalated to human</strong>. Outcomes and quality scores appear in <a href="/lyre/call-history/">call history</a>. You can use them to decide who to follow up first. If your team works the leads in a CRM, <a href="/crm/calls-and-ai/">Fulcrum CRM can place Lyre calls from a contact record</a> and logs each call on the timeline.</p>

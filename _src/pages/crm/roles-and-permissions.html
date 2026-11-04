@@ -1,0 +1,47 @@
+---
+title: Roles and permissions in Fulcrum CRM
+seo_title: Set up roles and permissions in Fulcrum CRM | Fulcrum Docs
+description: Understand the built-in Fulcrum CRM roles, edit what each role can see and do, preview the app as a role, create custom roles and assign them to team members.
+nav: Roles and permissions
+updated: 2026-11-04
+about: Fulcrum CRM
+howto: Edit a role in Fulcrum CRM
+related:
+  - https://fulcrumcrm.app/blog/crm-security-2026-protecting-customer-data-ai-era | CRM security in the AI era
+  - https://fulcrumcrm.app/blog/crm-privacy-act-australia | CRM and the Privacy Act: what Australian businesses must know
+  - https://fulcrumcortex.com/blog/audit-trails-for-ai-agent-actions | Audit trails for AI agent actions
+---
+<p>Roles control what each person can see and do in Fulcrum CRM, from viewing contacts to exporting data. The sidebar only shows the areas a person's role allows, so it's simpler for everyone.</p>
+
+<h2>Built-in roles</h2>
+<p>Every workspace starts with six roles: <strong>Owner</strong>, <strong>Admin</strong>, <strong>Manager</strong>, <strong>Member</strong>, <strong>Limited</strong> and <strong>Read-only</strong>. Owner and Admin are locked. You can adjust the others, or create your own.</p>
+
+<h2>Edit a role</h2>
+<ol class="steps">
+<li>Go to <strong>Settings</strong> → <strong>Roles &amp; Permissions</strong> and pick a role.</li>
+<li>For each area of the CRM, set the level: <strong>None</strong>, <strong>View</strong>, <strong>Edit</strong> or <strong>Manage</strong>.</li>
+<li>Set the record scope, which controls whose records the role can reach, and tick any extra capabilities, such as <strong>Export</strong>.</li>
+<li>Select <strong>Preview as this role</strong> to see the app the way that role would before you save.</li>
+<li>Save your changes.</li>
+</ol>
+<p>To start a new role, use <strong>New role</strong>, or duplicate an existing one and adjust it. <strong>Reset to default</strong> undoes your changes to a built-in role, and <strong>Delete role</strong> removes a custom one.</p>
+
+<h2>Sensitive capabilities</h2>
+<p>Some actions are kept to owners or admins by default:</p>
+<ul>
+<li>Exporting contacts and activity history: owner only.</li>
+<li>Deleting contacts in bulk: owner only.</li>
+<li>Merging duplicates: owners and admins.</li>
+<li>Reassigning a contact to someone else: needs the reassign capability.</li>
+<li>Creating and managing MCP tokens for AI tools: owners and admins.</li>
+</ul>
+<p>Grant these to other roles only when there's a clear need.</p>
+
+<h2>Assign roles to people</h2>
+<ol>
+<li>Invite people with <strong>Invite User</strong> in Quick Actions, or from <strong>Settings</strong> → <strong>Teams &amp; Members</strong>.</li>
+<li>In <strong>Teams &amp; Members</strong>, set each person's role on their member row. This is also where you limit which pipelines a person can see.</li>
+</ol>
+
+<h2>Keep a record</h2>
+<p>Owners and admins can check two records. <strong>Settings</strong> → <strong>Activity log</strong> shows who did what (exports, edits, emails, calls, sign-ins and AI Pal actions) per person and day. <strong>Settings</strong> → <strong>Audit log</strong> records permission and token changes, restores and denied access attempts. AI Pals always act within their owner's permissions; see <a href="/crm/calls-and-ai/">Calls and AI</a>. Fulcrum Mail workspace roles are separate; see <a href="/fulcrum-mail/invite-and-manage-members/">Invite and manage members</a>.</p>

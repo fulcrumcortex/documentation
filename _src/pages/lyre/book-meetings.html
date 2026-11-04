@@ -1,0 +1,40 @@
+---
+title: Book meetings with a Lyre voice agent
+seo_title: Let a Lyre voice agent check calendars and book meetings | Fulcrum Docs
+description: Connect Google Workspace so a Lyre voice agent can check availability and book meetings during a call, then switch the booking tools on for the agent.
+nav: Book meetings
+updated: 2026-11-04
+about: Lyre
+howto: Connect Google Workspace so a Lyre agent can book meetings
+related:
+  - https://fulcrumcrm.app/blog/crm-calendar-integration | CRM calendar integration for follow-up meetings
+  - https://lyre.au/blog/6-things-ai-agent-google-workspace-replace-saas | Six things an AI agent can do with Google Workspace
+  - https://fulcrumcortex.com/blog/tradie-job-confirmations-by-call-and-text | Booking and confirming jobs by call and text
+---
+<p>A Lyre agent can book a meeting while it's still on the call: it checks your calendar for a free time, offers it to the caller and books it. The supported way to set this up in the dashboard is the Google Workspace connection. It uses a Google service account with domain-wide delegation. That lets the agent check calendars, book meetings and send email as the person you choose.</p>
+
+<h2>Connect Google Workspace</h2>
+<p>You'll need a Google Workspace administrator for one step.</p>
+<ol class="steps">
+<li>In Google Cloud, create a service account for Lyre and download its JSON key.</li>
+<li>In Lyre, open <strong>Connections</strong> and choose <strong>Google Workspace</strong>.</li>
+<li>Upload the <strong>Service account key</strong> JSON file.</li>
+<li>Under <strong>Impersonation</strong>, enter the email address the agent should book meetings and send email as.</li>
+<li>Tick <strong>Book and check calendar</strong>, then select <strong>Save configuration</strong>.</li>
+<li>Copy the <strong>Domain-wide delegation scopes</strong> shown in Lyre. Your Google Workspace administrator pastes them into the Google Admin console for the service account.</li>
+<li>Back in Lyre, use <strong>Test connection</strong> → <strong>Run tests</strong> to confirm everything works.</li>
+</ol>
+<p>For a step-by-step walkthrough of the Google side, see <a href="https://lyre.au/blog/connect-google-workspace-ai-voice-agent-10-minutes">connecting Google Workspace to a Lyre agent</a>. If domain-wide delegation is new to you, <a href="https://lyre.au/blog/google-workspace-security-domain-wide-delegation-explained">this plain-English explainer</a> covers what it can and can't access.</p>
+
+<h2>Switch booking on for an agent</h2>
+<ol>
+<li>Open the agent and go to <strong>Identity Studio</strong> → <strong>Tool capabilities</strong>.</li>
+<li>Turn on the calendar tools that the Google Workspace connection added: one checks the calendar and one books meetings.</li>
+<li>In the agent's instructions or objective, tell it when to offer a meeting, for example "once the caller has confirmed their budget and timing".</li>
+<li>Test with <strong>Talk</strong> and ask the agent to book a time.</li>
+</ol>
+<p>Successful bookings show up in call history with the outcome <strong>Booking made</strong>.</p>
+
+<h2>Other calendar tools</h2>
+<p>Lyre's tools page (<strong>Connections</strong> → CRM, calendars and tool servers) also lists Calendly and Google Calendar cards. You connect them with a token and then assign them to agents. Availability of these integrations can vary; if a card doesn't connect, use the Google Workspace connection above.</p>
+<div class="note"><p>Lyre bookings go into the Google calendar you connect here. They are separate from <a href="/calendar/booking-pages/">Fulcrum Calendar booking pages</a>, which people use to book themselves.</p></div>

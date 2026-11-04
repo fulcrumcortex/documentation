@@ -1,0 +1,41 @@
+---
+title: Lead forms and lead routing in Fulcrum CRM
+seo_title: Lead capture forms and lead routing in Fulcrum CRM | Fulcrum Docs
+description: Build a Fulcrum CRM lead form, embed it on your website or share it as a link, and set up routing rules that assign each new lead to the right person or team.
+nav: Lead forms and routing
+updated: 2026-11-04
+about: Fulcrum CRM
+howto: Create a lead form in Fulcrum CRM
+related:
+  - https://fulcrumcrm.app/blog/how-to-build-lead-capture-form-that-actually-converts | Building a lead capture form that converts
+  - https://fulcrumcortex.com/blog/speed-to-lead-with-lyre-calls | Speed to lead with Lyre calls
+  - https://fulcrumcrm.app/blog/crm-workflow-automation-build-once-sell-forever | CRM workflow automation: build once, sell forever
+---
+<p>Lead forms put new enquiries straight into Fulcrum CRM, and lead routing decides who gets them. Together they make sure no enquiry sits unanswered in a shared inbox. To act on leads automatically after they arrive, see the <a href="https://fulcrumcrm.app/platform/automations">workflow automation features</a>.</p>
+
+<h2>Create a lead form</h2>
+<ol class="steps">
+<li>Go to <strong>Settings</strong> → <strong>Lead Forms</strong> and select <strong>Create Form</strong>.</li>
+<li>Enter a <strong>Form Name</strong>, then select <strong>Add Field</strong> for each field you want. You can use standard, special or <a href="/crm/custom-fields/">custom</a> fields.</li>
+<li>Set the <strong>Thank You Message</strong>, or a <strong>Redirect URL</strong> to send people to your own thank-you page.</li>
+<li>Choose who to alert about new submissions (a person or an AI agent), whether to <strong>Auto-enrich leads with AI</strong>, and which tags to apply.</li>
+<li>Under the on-submit options, choose what else should happen. The options are a confirmation email, a Google Calendar invite, reminders, and <strong>Notify team members</strong>.</li>
+<li>Under <strong>Allowed Domains</strong>, list the websites allowed to show the form. Leave it empty to allow any site.</li>
+<li>Save, then copy the embed code for your website, or use <strong>Copy link</strong> to share the form as its own page.</li>
+</ol>
+<p>When someone submits the form with an email address that's already in the CRM, Fulcrum updates the existing contact instead of creating a new one. Each form accepts up to 100 submissions an hour. To make a similar form, use <strong>Clone</strong>.</p>
+<p>Submissions also appear under <strong>Form responses</strong> for admins and anyone on the form's <strong>Notify team members</strong> list.</p>
+
+<h2>Route new leads automatically</h2>
+<p>Owners and admins set up routing in <strong>Settings</strong> → <strong>Lead Routing</strong>.</p>
+<ol>
+<li>Select <strong>New rule</strong> and give it a <strong>Rule name</strong>.</li>
+<li>Choose which leads it applies to: the source, the event, particular forms, the country or region, and any field conditions (<strong>Add condition</strong>). Leaving a box unticked means "any".</li>
+<li>Choose the <strong>Assignee</strong>. The options are a specific user, a round-robin pool of users, a team (round-robin across its members) or nobody. Decide whether to change the <strong>Contact owner</strong>, for example only if the contact has no owner yet.</li>
+<li>Optionally have the rule create a deal owned by the assignee, create a task for them, open a Support Inbox conversation, and notify them in the app or by email.</li>
+<li>Select <strong>Save rule</strong>. New rules are saved switched off; select <strong>Enable</strong> when you're ready.</li>
+</ol>
+<div class="note"><p>Use <strong>Run test</strong> under <strong>Test a rule</strong> to see what a rule would do. A test rolls everything back: nothing is written and nobody is notified. If someone already owns a lead, they keep it. Mark people as away in <strong>Round-robin availability</strong> so they're skipped while they're out.</p></div>
+
+<h2>Respond fast</h2>
+<p>The quicker a new lead hears back, the more likely it is to convert. Pair your form with a task for the assignee, or have a <a href="/lyre/outbound-calls-and-campaigns/">Lyre agent call new enquiries back</a>. You can also send people to a <a href="/calendar/booking-pages/">booking page</a> from your thank-you page so they can pick a time straight away.</p>

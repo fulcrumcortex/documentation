@@ -1,0 +1,56 @@
+---
+title: How guests book, and how to manage bookings
+seo_title: Manage, reschedule and cancel Fulcrum bookings | Fulcrum Docs
+description: What guests see on a Fulcrum booking page, how they confirm by email, and how hosts and guests reschedule or cancel a booking afterwards.
+nav: Manage bookings
+updated: 2026-11-04
+about: Fulcrum Calendar
+howto: Book a time on a Fulcrum booking page
+related:
+  - https://fulcrumcortex.com/blog/missed-call-text-back-automation | Missed-call text-back: templates and timing
+  - https://fulcrumcortex.com/blog/sms-follow-up-after-every-ai-call | SMS follow-up after a call
+  - https://fulcrumcortex.com/blog/crm-follow-up-queue | How to design a CRM follow-up process
+---
+<p>Once your <a href="/calendar/booking-pages/">booking page</a> is published, anyone with the link can book a time. This guide covers the guest's side first, so you know what your customers see, and then how you manage what comes in.</p>
+
+<h2>What the guest does</h2>
+<p>The booking page shows your name, the meeting title and length, the location and your welcome message, along with the note <strong>Only available times are shared.</strong></p>
+<ol class="steps">
+<li>Under <strong>Select a date &amp; time</strong>, the guest checks <strong>Your time zone</strong>. It defaults to their device's time zone.</li>
+<li>They pick a date, then one of the available times. Days outside your booking window can't be chosen.</li>
+<li>Under <strong>Your details</strong>, they enter <strong>Your name</strong>, <strong>Email address</strong> and, optionally, anything they'd like to share.</li>
+<li>They select <strong>Email my confirmation link</strong>. The page tells them the booking isn't confirmed yet and to check their email.</li>
+<li>They open the email, titled "Confirm your booking with" followed by your name, and select <strong>Verify email &amp; confirm booking</strong>. The link is valid for 15 minutes.</li>
+</ol>
+<p>Fulcrum checks your calendars one last time, then confirms. You and the guest both get a <strong>Booking confirmed</strong> email with the meeting link (for Fulcrum Meeting pages) and a link to manage or cancel. The event is added to the calendar you chose under <strong>Add bookings to</strong>, and the guest is invited to it.</p>
+<div class="note"><p>If someone else takes the slot first, or you change your hours while a guest is booking, the guest is asked to choose another time. Nothing is double-booked.</p></div>
+
+<h2>Reschedule or cancel as a guest</h2>
+<p>The link in the confirmation email opens the booking's own page, which confirms the guest is booked and shows the meeting details.</p>
+<ul>
+<li><strong>Join Fulcrum Meeting</strong> opens the video meeting.</li>
+<li><strong>Reschedule</strong> opens the time picker again. The guest picks a new time and selects <strong>Confirm new time</strong>. The original booking stays in place until the new time is confirmed.</li>
+<li><strong>Cancel booking</strong> asks <strong>Cancel this booking?</strong>. Selecting <strong>Yes, cancel booking</strong> cancels it and updates the host's calendar invitation. <strong>Keep booking</strong> leaves it as it is.</li>
+</ul>
+<p>A booking can only be changed while it's confirmed and still in the future.</p>
+
+<h2>Manage bookings as the host</h2>
+<p>In Calendar, select <strong>Booking pages</strong> and open the <strong>Bookings</strong> tab. Each booking shows its status, the meeting title, the guest's name and email, and the time. The list refreshes on its own.</p>
+<ol>
+<li>Select <strong>Manage booking</strong> next to a booking.</li>
+<li>Choose <strong>Reschedule</strong> to move it to another free time, or <strong>Cancel booking</strong> to cancel it.</li>
+</ol>
+<p>Bookings show up here only after the guest has verified their email. Booked events in your main calendar can't be edited directly; always use <strong>Manage booking</strong> so the guest is kept up to date.</p>
+
+<h3>Booking statuses</h3>
+<table>
+<thead><tr><th>Status</th><th>Meaning</th></tr></thead>
+<tbody>
+<tr><td>reserved</td><td>The time is being held while the booking is confirmed.</td></tr>
+<tr><td>confirmed</td><td>The booking is in your calendar.</td></tr>
+<tr><td>rescheduling</td><td>A change of time is being applied.</td></tr>
+<tr><td>cancelling / cancelled</td><td>The booking is being cancelled, or has been.</td></tr>
+<tr><td>failed</td><td>The booking couldn't be added to the destination calendar. The guest's booking page offers <strong>Choose another time</strong>.</td></tr>
+</tbody>
+</table>
+<p>If a booking needs a follow-up call, a <a href="/lyre/outbound-calls-and-campaigns/">Lyre outbound call</a> or a <a href="/crm/activities-and-tasks/">CRM task</a> keeps it from slipping.</p>
