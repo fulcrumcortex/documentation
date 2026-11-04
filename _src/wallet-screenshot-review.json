@@ -1,0 +1,52 @@
+{
+  "sourceRevision": "37c4d9059cadc102faaf5905570462ad46a57c52",
+  "description": "Actual local production Mail Wallet UI, fictional Demo User/demo@example.test. All balance, credit lots, transactions, plan state and connected apps supplied by browser route fixtures. External requests blocked. Non-GET API calls denied. No real purchase, subscription, saved card, app disconnect or billing change. Screenshots visually privacy reviewed. Example prices and credit amounts are fictional demonstration data, not current quotations.",
+  "files": [
+    {
+      "name": "wallet-auto-topup.png",
+      "sha256": "315991f0b62ab8b75f40bc0775227d476e361f21d2d1d70c7011595e325708ab"
+    },
+    {
+      "name": "wallet-complete-page.png",
+      "sha256": "f8ab4ad8f95aad4c0487677806655cb9752b4314d91738bf87a6628d0c8f7358"
+    },
+    {
+      "name": "wallet-connected-apps.png",
+      "sha256": "18797ada4dbe0e736f80141887ad843c680ec6caf768b79660769de026f04317"
+    },
+    {
+      "name": "wallet-credit-lots.png",
+      "sha256": "7de19b26437e717faaec1ddf45552f92177a9140afdbdbf5c846c82ea719dd5b"
+    },
+    {
+      "name": "wallet-history.png",
+      "sha256": "d9c6f59a80eab2d4cc834c377da62b925bc243ea51fcc1bc19182d73463c42c8"
+    },
+    {
+      "name": "wallet-mobile.png",
+      "sha256": "dcca63efe51e527f8ba60d714eecceaa3db2a0f2b274303d31537235ac33be7f"
+    },
+    {
+      "name": "wallet-overview.png",
+      "sha256": "b893f0e9b35fe309a313ddf11d0c06fe84cf8ad1cd664171be6604cd18a2bf87"
+    },
+    {
+      "name": "wallet-plan-options.png",
+      "sha256": "d55e2de9c07bb6ef5c32e90a4c1c6739ba52040225fb89e0c70d5658922eb5ad"
+    },
+    {
+      "name": "wallet-subscription.png",
+      "sha256": "07b083b9fcebe98e6231d7f9f22b53fb45c607e33c94c4a4d916e86173a98c61"
+    },
+    {
+      "name": "wallet-topup.png",
+      "sha256": "e05722732767c24ea5b02330377bf668454b6efe6bb7a40c8036ffab3b5eea2b"
+    }
+  ],
+  "checks": [
+    "Source visual review",
+    "Hash comparison",
+    "PNG metadata chunks",
+    "OCR sensitive identifier scan"
+  ]
+}
