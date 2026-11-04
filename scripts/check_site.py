@@ -7,7 +7,8 @@
 Checks: one <h1> per page, unique <title> and meta description, canonical URL,
 Open Graph tags, valid JSON-LD with BreadcrumbList, balanced tags, unique ids,
 internal links and #anchors that resolve, no rel=nofollow/ugc, external links
-only to the allowed production domains, and (with --online) HTTP 200 for each.
+only to the allowed production domains, and (with --online) HTTP 200 for each
+external link and external image.
 """
 
 from __future__ import annotations
@@ -27,6 +28,7 @@ import build  # noqa: E402
 ALLOWED_HOSTS = {
     "fulcrumcortex.com", "fulcrumcrm.app", "fulcrumcode.app", "lyre.au",
     "docs.lyre.au", "fulcrumail.app", "github.com", "fulcrumcortex.github.io",
+    "www.f6s.com",  # F6S follow badge on the home page (link and badge image)
 }
 VOID = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "source", "track", "wbr"}
 
@@ -109,6 +111,7 @@ def main() -> int:
     problems: list[str] = []
     pages = built_pages()
     parsed: dict[str, PageParser] = {}
+    external_images: dict[str, list[str]] = defaultdict(list)
     for path, file in pages.items():
         if not file.exists():
             problems.append(f"{path}: not built")
@@ -139,6 +142,11 @@ def main() -> int:
                 target = ROOT / src[len(build.BASE_PATH):].lstrip("/")
                 if not target.is_file():
                     problems.append(f"{path}: missing image {src}")
+            elif src.startswith("http"):
+                host = re.sub(r"^https?://([^/]+).*", r"\1", src)
+                if host not in ALLOWED_HOSTS:
+                    problems.append(f"{path}: external image host not allowed: {src}")
+                external_images[src].append(path)
         dup_ids = [i for i, n in Counter(p.ids).items() if n > 1]
         if dup_ids:
             problems.append(f"{path}: duplicate ids {dup_ids}")
@@ -189,9 +197,10 @@ def main() -> int:
                 elif frag and site_path in parsed and frag not in parsed[site_path].ids:
                     problems.append(f"{path}: missing anchor {href}")
 
-    print(f"{len(parsed)} pages checked, {len(external)} distinct external URLs")
+    print(f"{len(parsed)} pages checked, {len(external)} distinct external URLs, "
+          f"{len(external_images)} external images")
     if online:
-        for url in sorted(external):
+        for url in sorted(set(external) | set(external_images)):
             out = subprocess.run(
                 ["curl", "-s", "-o", "/dev/null", "-L", "--max-time", "30", "-A",
                  "Mozilla/5.0 (compatible; FulcrumDocsLinkCheck/1.0)", "-w", "%{http_code} %{url_effective}", url],
