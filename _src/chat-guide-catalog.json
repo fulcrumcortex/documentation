@@ -1,0 +1,1307 @@
+[
+  {
+    "category": "Start here",
+    "slug": "workspace-tour",
+    "title": "Find your way around Cortex Chat",
+    "explanation": "Cortex Chat combines private Sidekick conversations, conversations with people, groups and connected applications. The selected item changes both the visible history and the context in which an assistant acts; the sidebar is more than a list of interchangeable chat windows.",
+    "steps": [
+      "Open https://chat.fulcrumcortex.com/ and sign in if asked.",
+      "Locate Sidekicks, People & groups and Connected Apps in the workspace navigation.",
+      "Open one item from each section and check the heading before returning to your intended conversation."
+    ],
+    "check": "You can identify the current conversation, assistant and app before sending anything.",
+    "troubleshooting": "If a section is hidden on a phone, return to the workspace list and use its section controls. Do not assume a hidden sidebar means your data was deleted."
+  },
+  {
+    "category": "Start here",
+    "slug": "sign-in",
+    "title": "Sign in to Cortex Chat with Fmail",
+    "explanation": "The Continue with Fmail flow establishes the identity used by Cortex. On the Chat subdomain, sign-in starts through the main Cortex host and returns to Chat. A successful browser redirect does not necessarily mean a Sessions workspace has also been connected.",
+    "steps": [
+      "Select Continue with Fmail from the signed-out Chat surface.",
+      "Authenticate with the intended Fulcrum account and complete the sign-in flow.",
+      "After returning, open the account control and compare the displayed identity with the account you intended to use."
+    ],
+    "check": "The signed-in identity is correct and Chat no longer asks you to sign in.",
+    "troubleshooting": "If you return to a different account, check the Fmail account used during authentication. Repeating login in an already signed-in browser can select the same unintended account again."
+  },
+  {
+    "category": "Start here",
+    "slug": "account-and-workspace",
+    "title": "Understand your account and workspace context",
+    "explanation": "One person can have a personal identity and company workspace access. Account and workspace context affect conversations, app access and billing. A Sidekick with a familiar name in another context is not proof that it has the same history or permissions.",
+    "steps": [
+      "Open the account control and read the identity shown beneath your name.",
+      "Check whether the displayed context is personal or a company workspace.",
+      "Before changing permissions or sending a message, confirm that the relevant conversation belongs to this context."
+    ],
+    "check": "The account, workspace and target conversation agree with the task you are about to perform.",
+    "troubleshooting": "When records appear missing, check context before creating replacements. The wrong workspace can look like an empty or disconnected installation."
+  },
+  {
+    "category": "Start here",
+    "slug": "connect-sessions",
+    "title": "Connect your Sessions workspace",
+    "explanation": "Cortex Chat is the conversation surface; Sessions supplies the running Sidekicks. The panel can distinguish Sessions being unavailable from Sessions being reachable but not connected to this account. Those states need different recovery steps.",
+    "steps": [
+      "Open Manage Sidekicks and inspect Sessions connection.",
+      "If offered, select Connect Cortex Chat using the intended Fulcrum account.",
+      "Keep the panel open until its confirmed connection and agent status appear, then open a connected Sidekick."
+    ],
+    "check": "The panel reports Connected to Sessions and shows the relevant agents or the genuine empty state.",
+    "troubleshooting": "If Sessions is unavailable, inspect the displayed issue and retry status after addressing it. Creating another account or repeatedly pressing Connect is not a substitute for resolving the connection error."
+  },
+  {
+    "category": "Start here",
+    "slug": "choose-sidekick",
+    "title": "Choose the right Sidekick for a task",
+    "explanation": "Each Sidekick has a name, a job description and runtime state. Selecting an assistant determines which conversation receives your next request. When an app opens without an explicit selection, the default preference or another available assistant can be used.",
+    "steps": [
+      "Read the names and roles in the Sidekicks list.",
+      "Select the assistant whose job fits the task and check the conversation heading.",
+      "Read its current status and recent messages before writing a new request."
+    ],
+    "check": "Your request is addressed to the intended assistant, with the expected conversation history.",
+    "troubleshooting": "If the assistant is offline or stopped, inspect Manage Sidekicks rather than sending the same message to several assistants. Parallel duplicate requests can produce duplicate external work."
+  },
+  {
+    "category": "Start here",
+    "slug": "first-request",
+    "title": "Write your first useful request",
+    "explanation": "A useful brief gives the assistant an observable outcome, the source material and the actions you authorise. For example, reviewing an enquiry and drafting a reply is different from sending that reply. The tools available to the Sidekick still limit what it can do.",
+    "steps": [
+      "Choose a connected Sidekick and describe one concrete outcome.",
+      "Include the relevant record or supplied context and any constraints.",
+      "State what counts as finished, such as a draft, a saved document or an authorised send with evidence."
+    ],
+    "check": "The reply addresses the intended result and clearly identifies any missing input or action that remains.",
+    "troubleshooting": "If the result is vague, supply the trigger and expected behaviour rather than asking the assistant to do everything. A stronger brief cannot fix a missing tool connection by itself."
+  },
+  {
+    "category": "Start here",
+    "slug": "permission-basics",
+    "title": "Understand what gives a Sidekick access",
+    "explanation": "A role description and a skill teach an assistant how to approach work. Connected-app access and tool policies determine what it may actually read or change. Group permissions, administrator approval and private tool policies can add separate restrictions.",
+    "steps": [
+      "Open the Sidekick conversation settings and inspect Tools permissions.",
+      "Check the relevant connected app settings for account access.",
+      "Compare the task with the saved tool choices and, where required, the owner approval for that context."
+    ],
+    "check": "The intended operation has both the account connection and the specific saved tool access it needs.",
+    "troubleshooting": "Do not grant all tools just because one action fails. Read the missing-access message and change only the relevant authorised setting."
+  },
+  {
+    "category": "Start here",
+    "slug": "private-versus-group",
+    "title": "Choose a private chat or a group",
+    "explanation": "A private Sidekick conversation and a shared group have different audiences and permission contexts. A private question about a group should not accidentally become a message to every member. The Ask a Sidekick panel provides a distinct private assistance surface alongside people or group conversations.",
+    "steps": [
+      "Decide whether the message is intended for the assistant alone or the group.",
+      "Open the corresponding conversation and inspect its heading and participants.",
+      "Use Ask a Sidekick for private assistance about the selected conversation when that is the intended audience."
+    ],
+    "check": "The intended audience can be identified before Send, and a private draft remains separate from a group message.",
+    "troubleshooting": "If you are uncertain where the message will appear, stop and check the active panel. Mentioning a person or Sidekick does not make a shared message private."
+  },
+  {
+    "category": "Start here",
+    "slug": "read-result-evidence",
+    "title": "Check whether a task really finished",
+    "explanation": "An assistant can describe an action before the destination confirms it. Drafting, saving, sending, delivery and live deployment are different results. Check the record appropriate to the request rather than relying on a confident final sentence.",
+    "steps": [
+      "Read the assistant reply and note each claimed completed action.",
+      "Open the linked document, contact, sent item or other destination if the task requires it.",
+      "Compare the observed result with your original completion condition and ask about any unperformed stage."
+    ],
+    "check": "You have an artifact or destination record that supports the completion claim.",
+    "troubleshooting": "A successful chat message only proves the conversation request progressed. If an external action timed out, reconcile its destination before asking for a retry."
+  },
+  {
+    "category": "Start here",
+    "slug": "first-day-checklist",
+    "title": "Set up a practical first day in Chat",
+    "explanation": "Start with a small workflow before connecting every service or granting broad access. A correct identity, one working Sidekick and one harmless result establish a useful baseline for diagnosing later problems.",
+    "steps": [
+      "Confirm your account and Sessions connection.",
+      "Choose or create one focused Sidekick and inspect its role and status.",
+      "Run a read-only task, then review one relevant app connection and a permission setting you understand."
+    ],
+    "check": "You can complete a small task and explain which identity, assistant and tools were involved.",
+    "troubleshooting": "If several setup steps fail, isolate them: sign-in, Sessions availability, assistant readiness and app access should be checked separately rather than changed together."
+  },
+  {
+    "category": "Manage Sidekicks",
+    "slug": "create-sidekick",
+    "title": "Create a specialist Sidekick",
+    "explanation": "The create form separates Name from Skills and job. The latter describes the job and operating rules; it is not an automatic installation of every skill mentioned in the text. The runtime must confirm the new assistant before it can be treated as ready.",
+    "steps": [
+      "Open Add to workspace and choose Add Sidekick, or use Manage Sidekicks.",
+      "Enter a Name of up to 60 characters and a Skills and job description of up to 2,000 characters.",
+      "Select Create Sidekick and keep the panel open while Sessions prepares and confirms its status."
+    ],
+    "check": "The new Sidekick appears once, with the intended job description and a confirmed runtime state.",
+    "troubleshooting": "If creation times out, refresh status and check for an existing new assistant before creating another. A pending preparation message is not an invitation to submit repeatedly."
+  },
+  {
+    "category": "Manage Sidekicks",
+    "slug": "write-skills-and-job",
+    "title": "Write a clear Skills and job description",
+    "explanation": "The job field should explain the outcome this assistant specialises in, the information it should use and any boundaries that materially affect the work. Listing many products without a method makes the role harder to evaluate.",
+    "steps": [
+      "Describe the role in concrete terms, such as reviewing enquiries and preparing next actions.",
+      "State the authoritative sources, expected output and any action requiring separate authority.",
+      "Keep the description within 2,000 characters and check it on the saved Sidekick card."
+    ],
+    "check": "The role is understandable without private customer examples or credentials.",
+    "troubleshooting": "If the Sidekick cannot perform a named action, check the actual tools and app permissions. Rewording the job does not create a missing integration."
+  },
+  {
+    "category": "Manage Sidekicks",
+    "slug": "runtime-status",
+    "title": "Read a Sidekick runtime status",
+    "explanation": "The status display combines lifecycle and activity information. Starting, restarting or stopped describe runtime availability; thinking, working or writing describe activity. The connected indicator is another signal and should be read alongside the label.",
+    "steps": [
+      "Locate the Sidekick status beside its name or in Manage Sidekicks.",
+      "Read both the textual state and the connection indicator.",
+      "Use Refresh status or Check status when the state needs a current read."
+    ],
+    "check": "You can distinguish an idle connected assistant from a stopped or unreachable one.",
+    "troubleshooting": "Do not treat a changing avatar or a working label as evidence that your requested external task completed. Inspect the conversation and destination result as well."
+  },
+  {
+    "category": "Manage Sidekicks",
+    "slug": "working-versus-typing",
+    "title": "Understand working status and typing indicators",
+    "explanation": "Typing is a conversation signal, while the runtime can be doing tool work or waiting for input. A quiet transcript does not necessarily mean the assistant is idle, and a typing indication does not prove a message has already been saved.",
+    "steps": [
+      "Check the selected Sidekick heading and current activity.",
+      "Read the latest message for an unanswered question or requested input.",
+      "Wait for the actual reply or inspect a specific status error before sending a duplicate task."
+    ],
+    "check": "The next action follows the observed state rather than an assumption based only on animation.",
+    "troubleshooting": "If activity appears stale, check connectivity and refresh the relevant status. Avoid restarting an agent merely because one poll or animation is delayed."
+  },
+  {
+    "category": "Manage Sidekicks",
+    "slug": "default-sidekick",
+    "title": "Set your default Sidekick",
+    "explanation": "The default preference is used when opening an app or private assistant without an explicit choice. The settings distinguish a saved account preference from a cached device value, so the label matters when expecting another device to use the same assistant.",
+    "steps": [
+      "Open Settings for the intended Sidekick.",
+      "Turn on Default Sidekick and wait for the preference save to complete.",
+      "Read Saved to your account, then reopen an app without explicitly choosing another assistant."
+    ],
+    "check": "The default points to the intended assistant and the save status is confirmed.",
+    "troubleshooting": "If saving fails, use Reload preference and compare the current account value before trying again. A cached device preference is not proof of server persistence."
+  },
+  {
+    "category": "Manage Sidekicks",
+    "slug": "change-default",
+    "title": "Change or clear the default Sidekick",
+    "explanation": "An explicit assistant selection can override the default for the current context. Changing the default is useful for future app openings; it does not mean every existing conversation or running task has moved to another agent.",
+    "steps": [
+      "Open the settings for the assistant that should become default, or the existing default to clear it.",
+      "Change the Default Sidekick switch and wait for a confirmed account save.",
+      "Open the intended app and inspect the assistant name before starting work."
+    ],
+    "check": "New implicit selections use the intended preference without changing unrelated conversation history.",
+    "troubleshooting": "If the old assistant remains visible, check for an explicit current selection. Confirm the default save before assuming cross-device synchronisation failed."
+  },
+  {
+    "category": "Manage Sidekicks",
+    "slug": "avatar",
+    "title": "Change a Sidekick avatar",
+    "explanation": "A custom avatar helps distinguish assistants, especially when several have similar roles. The default artwork can change with runtime state, so replacing it is an identity choice rather than a repair for an activity problem.",
+    "steps": [
+      "Open the Sidekick avatar control in Manage Sidekicks or the selected conversation.",
+      "Choose a supported image through the upload control and read any size or format validation.",
+      "Confirm the saved image appears on the intended assistant in the list and conversation."
+    ],
+    "check": "The selected Sidekick uses the intended image without exposing a private face, customer logo or document in a public example.",
+    "troubleshooting": "If the preview fails, use the exact validation message and retry with a suitable image. Do not assume a local file preview means the upload was saved."
+  },
+  {
+    "category": "Manage Sidekicks",
+    "slug": "restart",
+    "title": "Restart the intended Sidekick",
+    "explanation": "Restart acts on the runtime, not just the current browser panel. A tool-settings restart can affect the Sidekick in every conversation, so it should be done after saving relevant changes and understanding ongoing work.",
+    "steps": [
+      "Open Manage Sidekicks and identify the exact assistant.",
+      "Select Restart only when you intend to restart that runtime.",
+      "Keep the panel open and read the updated lifecycle and connection status."
+    ],
+    "check": "The runtime leaves restarting and reports its confirmed state.",
+    "troubleshooting": "A successful restart request is not proof the agent is ready. If status remains unavailable, inspect the underlying Sessions connection instead of issuing repeated restarts."
+  },
+  {
+    "category": "Manage Sidekicks",
+    "slug": "remove",
+    "title": "Remove a Sidekick and understand transcript deletion",
+    "explanation": "Removing a Sidekick is destructive. The confirmation states that it stops the agent and permanently deletes its transcript; it is not merely hiding the assistant from your sidebar. Read the selected name before confirming.",
+    "steps": [
+      "Open Manage Sidekicks and select Remove on the intended assistant.",
+      "Read the confirmation and preserve any work you are authorised to retain.",
+      "Use Keep Sidekick to cancel, or Remove and delete transcript only when that permanent result is intended."
+    ],
+    "check": "The intended assistant is removed after confirmation, with no confusion about preserved versus deleted history.",
+    "troubleshooting": "Do not remove an assistant as a first fix for a connection error. Refresh status and investigate the specific problem before considering a destructive replacement."
+  },
+  {
+    "category": "Manage Sidekicks",
+    "slug": "reusable-skills",
+    "title": "Use reusable skill procedures with a Sidekick",
+    "explanation": "The public skill library contains task procedures, not credentials or automatically connected apps. The Chat Skills and job field and the terminal marketplace are distinct surfaces. Do not assume that pasting a skill name into Chat installed a package on its runtime.",
+    "steps": [
+      "Open the linked skill file and read the procedure that matches your task.",
+      "Ask the Sidekick to follow that procedure, supplying the intended context and scope.",
+      "If installation is needed, use the runtime\u2019s supported skill setup and verify discovery there rather than inventing a Chat install button."
+    ],
+    "check": "The assistant follows the requested method and accurately states which tools or runtime installation are available.",
+    "troubleshooting": "If a tool is missing, inspect connection and permission settings. See the Code skill guide for the verified terminal marketplace flow."
+  },
+  {
+    "category": "Messages and files",
+    "slug": "send-text",
+    "title": "Send a text message",
+    "explanation": "The composer sends to the active conversation or private assistant panel. Text can contain a clear question or task brief; a send request and a delivered or read result are different states.",
+    "steps": [
+      "Check the current heading and intended recipient.",
+      "Enter your message in the composer, keeping within its 8,000-character limit.",
+      "Select Send message or press Enter, then inspect the resulting message state."
+    ],
+    "check": "The message appears once in the correct conversation and its delivery indicator is understandable.",
+    "troubleshooting": "If the send fails, retain the draft and inspect Retry message. Do not paste the same task into multiple conversations before reconciling the first attempt."
+  },
+  {
+    "category": "Messages and files",
+    "slug": "multiline-message",
+    "title": "Write a multi-line message without sending early",
+    "explanation": "Enter normally submits the composer. Shift+Enter creates a line break, which is useful for a task containing a short list or structured context. Mention selection and input-method composition can change how Enter is handled.",
+    "steps": [
+      "Click the composer and type the first line.",
+      "Use Shift+Enter for each deliberate line break.",
+      "Review the complete text and submit only when the recipient and instructions are ready."
+    ],
+    "check": "The assistant receives one complete structured request rather than several accidental partial messages.",
+    "troubleshooting": "If a mention menu is open, Enter can select its highlighted candidate. Close it or complete the mention before expecting Enter to send the full message."
+  },
+  {
+    "category": "Messages and files",
+    "slug": "mention-member",
+    "title": "Mention a group member or Sidekick",
+    "explanation": "A mention chosen from the picker is tied to a real candidate in the group. Plain text that merely looks like a handle may not represent the same structured mention. Choosing the candidate helps avoid ambiguity between similarly named people.",
+    "steps": [
+      "In a supported group composer, type @ and part of the name.",
+      "Select the intended candidate with the pointer or arrow keys and Enter.",
+      "Check the inserted name and surrounding request before sending."
+    ],
+    "check": "The mention identifies the intended group member in the submitted message.",
+    "troubleshooting": "If no candidate appears, check group membership and the current context. The composer supports up to 20 distinct group-member mentions per message; do not treat an arbitrary name as permission to add someone."
+  },
+  {
+    "category": "Messages and files",
+    "slug": "attach-file",
+    "title": "Attach a supported file",
+    "explanation": "Chat supports one non-empty attachment at a time, up to 20 MB. Supported families include Office documents, images, PDF, text, Markdown, CSV, JSON and supported audio. A recognised extension and a useful analysis result are separate concerns.",
+    "steps": [
+      "Select Add attachment in the intended composer.",
+      "Choose one supported file and inspect its preview, name and any validation message.",
+      "Add a question explaining what to do with it and submit when the attachment is correct."
+    ],
+    "check": "The correct file is attached once to the intended conversation.",
+    "troubleshooting": "If rejected, check size, file type and whether more than one file was selected. Renaming an unsupported file extension does not make its contents supported."
+  },
+  {
+    "category": "Messages and files",
+    "slug": "drag-drop",
+    "title": "Drag and drop a file into Chat",
+    "explanation": "The drop target associates the pending attachment with a conversation. This is convenient but makes it important to confirm the active panel before dropping. Folders and multi-file drops are not the same as one supported attachment.",
+    "steps": [
+      "Open the intended conversation or assistant panel.",
+      "Drag a single supported file over its drop target and drop it.",
+      "Read the preview and any attachment notice before sending."
+    ],
+    "check": "The file preview belongs to the intended composer and no unrelated conversation receives it.",
+    "troubleshooting": "If nothing is attached, inspect the notice for a folder, multiple files, unsupported format or size error. The drop itself does not mean a message was sent."
+  },
+  {
+    "category": "Messages and files",
+    "slug": "preview-attachment",
+    "title": "Review or remove an attachment before sending",
+    "explanation": "A preview is the last chance to check the selected file and its caption. A local preview does not prove an upload or send has completed. Sensitive documents should be checked before they enter the conversation context.",
+    "steps": [
+      "Select the attachment and open the preview shown by the composer.",
+      "Inspect the name, visible content and any text that will accompany it.",
+      "Cancel or remove the pending file if it is wrong; otherwise confirm the send through the displayed control."
+    ],
+    "check": "Only the intended content is sent, with a clear question or caption.",
+    "troubleshooting": "If a preview cannot render, use the supported download or file information rather than assuming the file is empty. Check the actual attachment before retrying an upload."
+  },
+  {
+    "category": "Messages and files",
+    "slug": "ask-about-document",
+    "title": "Ask a useful question about an attached document",
+    "explanation": "An attachment gives the assistant source material, but the question determines whether it summarises, extracts or reviews it. Ask for source-grounded findings and keep uncertainty visible, particularly for imported or complex documents.",
+    "steps": [
+      "Attach the intended supported document.",
+      "Ask for a specific result, such as decisions, inconsistencies or rows matching a stated condition.",
+      "Review the answer against the relevant passages and ask it to identify missing or unreadable content."
+    ],
+    "check": "The answer addresses your requested analysis and distinguishes source facts from inference.",
+    "troubleshooting": "Do not infer that every sheet, image or embedded object was read merely because the upload succeeded. Narrow the question and verify a sample of the result."
+  },
+  {
+    "category": "Messages and files",
+    "slug": "voice-message",
+    "title": "Record and send a voice message",
+    "explanation": "A recorded voice message is an asynchronous attachment. It is different from a live Lyre conversation. The composer requests microphone access and limits a recording to five minutes. You can review it before sending.",
+    "steps": [
+      "Choose Record voice message and allow the browser microphone request if appropriate.",
+      "Speak the message, then stop using the recording controls before the five-minute limit.",
+      "Review the audio and send it, or discard it if it contains a mistake or private background speech."
+    ],
+    "check": "One audio message appears in the intended conversation with a playable recording.",
+    "troubleshooting": "If permission is blocked, inspect the browser and operating-system microphone settings. A pending permission prompt is not an active recording."
+  },
+  {
+    "category": "Messages and files",
+    "slug": "play-voice-message",
+    "title": "Play, pause and seek a voice message",
+    "explanation": "Voice messages do not start playback automatically. Their controls show elapsed time and duration, with a waveform and a seek control when metadata is available. Audio decoding and native playback can fail independently.",
+    "steps": [
+      "Select Play voice message on the intended recording.",
+      "Use Pause or the seek slider to review the relevant passage.",
+      "If the interface reports a loading or playback error, use its download option when available and appropriate."
+    ],
+    "check": "You can review the message without confusing it with the live voice conversation controls.",
+    "troubleshooting": "Check device volume and browser audio permission if playback fails. An unavailable waveform does not by itself prove the underlying recording is lost."
+  },
+  {
+    "category": "Messages and files",
+    "slug": "delivery-and-retry",
+    "title": "Understand delivery indicators and retry a failed send",
+    "explanation": "Sent, delivered and read describe different receipt states. A local pending message can also show sending or failed. These indicators do not establish that a Sidekick completed an external action described in the text.",
+    "steps": [
+      "Read the indicator on the message you intended to send.",
+      "If it failed, inspect the visible error and whether the message already exists in the conversation.",
+      "Use Retry message only after reconciling an uncertain result, then verify that a single message remains."
+    ],
+    "check": "The conversation contains the intended message once, with its actual receipt or failure state.",
+    "troubleshooting": "A slow reply is not a failed send. Check runtime activity and the existing message before retrying or sending a rewritten duplicate."
+  },
+  {
+    "category": "People and groups",
+    "slug": "find-person",
+    "title": "Find the right person in People & groups",
+    "explanation": "The workspace distinguishes direct human conversations from Sidekick chats and groups. Similar display names make the email or membership context useful when selecting a recipient.",
+    "steps": [
+      "Open People & groups from the workspace navigation.",
+      "Search the person or inspect the available conversation list.",
+      "Open the intended entry and confirm its heading before writing."
+    ],
+    "check": "You have the correct direct conversation rather than a group with a similar name.",
+    "troubleshooting": "If the person is missing, check the workspace and invitations. A search result does not automatically create membership or permission to see another conversation."
+  },
+  {
+    "category": "People and groups",
+    "slug": "invite-people",
+    "title": "Invite a person to a conversation",
+    "explanation": "Invite people can select existing workspace members or an external email. An external invitation is different from adding the person to the entire workspace; inspect the destination conversation and intended role.",
+    "steps": [
+      "Open Add to workspace and select Invite people, or use the current group\u2019s add-members action.",
+      "Choose the intended existing member or enter the external email, then review Selected people.",
+      "Submit the invitation and inspect its resulting status rather than assuming the person joined immediately."
+    ],
+    "check": "The intended person receives access or an invitation for the intended context.",
+    "troubleshooting": "Correct a mistaken selected address before submitting. Do not use a lookalike name when an email address is available to disambiguate the recipient."
+  },
+  {
+    "category": "People and groups",
+    "slug": "create-group",
+    "title": "Create a group conversation",
+    "explanation": "A group brings several people into a shared conversation. Its name and participant selection set the initial context, while later group settings control history, invitations and member actions.",
+    "steps": [
+      "Choose Create group from Add to workspace.",
+      "Enter the group details required by the dialog and select the intended people.",
+      "Review the selected members and create the group, then inspect its heading and participants."
+    ],
+    "check": "The new group has the intended identity and membership.",
+    "troubleshooting": "If creation fails, inspect the error and current group list before resubmitting. A repeated submission can create confusing duplicate groups if the first result was uncertain."
+  },
+  {
+    "category": "People and groups",
+    "slug": "join-invite-link",
+    "title": "Join a group through an invitation",
+    "explanation": "The join dialog explains that joining grants access to the group conversation, not the whole workspace. The invitation can require sign-in before its details can be read or accepted.",
+    "steps": [
+      "Open the invitation link from its intended sender.",
+      "Check the group name and sign in if the dialog requests it.",
+      "Select Join group only when you intend to join, then confirm the resulting conversation."
+    ],
+    "check": "The intended group opens under your own account.",
+    "troubleshooting": "A revoked, expired or unavailable invitation needs a fresh link from an authorised group manager. Do not try to infer another group\u2019s token or bypass the invitation."
+  },
+  {
+    "category": "People and groups",
+    "slug": "group-info",
+    "title": "Open group information and content",
+    "explanation": "Group info brings together the group identity, membership and content collections. It helps you inspect the audience before changing settings or sharing more information. The controls shown depend on your group rights.",
+    "steps": [
+      "Open the group conversation and select its group header.",
+      "Read the description and member count in Group info.",
+      "Review the Members or content tabs relevant to your task without changing settings unnecessarily."
+    ],
+    "check": "You can identify the group and its audience from the information available to your role.",
+    "troubleshooting": "A missing edit control can reflect permissions. Being able to read Group info does not mean you can change members, invitations or tool access."
+  },
+  {
+    "category": "People and groups",
+    "slug": "group-media",
+    "title": "Find shared media in a group",
+    "explanation": "Group content is separated into Media, Files, Links, Music, Voice and GIFs. These collections help locate previously shared material without asking everyone to resend it. They follow the group\u2019s access rules.",
+    "steps": [
+      "Open Group info from the intended group.",
+      "Select the content tab matching the material you need.",
+      "Open the intended item and check its sender or surrounding context when meaning is ambiguous."
+    ],
+    "check": "You find the existing item in the appropriate group rather than another workspace or conversation.",
+    "troubleshooting": "If a collection is empty, check the selected tab and your access to history. An empty media tab does not prove no messages exist."
+  },
+  {
+    "category": "People and groups",
+    "slug": "group-files-links",
+    "title": "Find a group file or shared link",
+    "explanation": "Files and Links are separate group-content views. A link can lead outside Cortex and can contain private access tokens or reservation controls, so it should be treated according to its purpose.",
+    "steps": [
+      "Open the group\u2019s information and choose Files or Links.",
+      "Inspect the name or destination before opening the item.",
+      "Verify that the external destination and its account context are the ones you expect."
+    ],
+    "check": "The intended file or destination opens without exposing the link to an unintended audience.",
+    "troubleshooting": "If a shared file is unavailable, check its independent sharing permissions or expiry. Membership in the group does not automatically grant access to every external file."
+  },
+  {
+    "category": "People and groups",
+    "slug": "add-sidekick-group",
+    "title": "Add a Sidekick to a group",
+    "explanation": "Adding an assistant to a shared group changes who can contribute to that conversation. It does not automatically grant that assistant every workspace tool. The group and tool-permission controls have separate roles.",
+    "steps": [
+      "Open the group and its information or edit controls.",
+      "Use Add Sidekicks when your group role allows it and select the intended assistant.",
+      "Confirm the updated group membership, then review the assistant\u2019s group-context tools if it needs app access."
+    ],
+    "check": "The intended assistant is present with an understood role and permitted tools.",
+    "troubleshooting": "If the action is unavailable, check group Sidekick-management rights. Do not grant broad workspace administration merely to add one assistant."
+  },
+  {
+    "category": "People and groups",
+    "slug": "ask-sidekick-private",
+    "title": "Ask a Sidekick privately beside a conversation",
+    "explanation": "Ask a Sidekick opens a separate assistant panel beside a human or group conversation. This supports drafting and analysis without posting the question directly to everyone in the shared thread.",
+    "steps": [
+      "Open the human or group conversation you need help with.",
+      "Select Ask a Sidekick and inspect the assistant selected in the private panel.",
+      "Ask for a draft or analysis, then decide separately whether any result should be posted to the group."
+    ],
+    "check": "The assistant reply appears in the private assistance panel, with the intended shared conversation still separate.",
+    "troubleshooting": "Check the active composer before sending. A private assistant result is not automatically a message to the group, and copying it into the group is a separate action."
+  },
+  {
+    "category": "People and groups",
+    "slug": "group-video-call",
+    "title": "Start a video meeting from a group",
+    "explanation": "The group can open a video-chat workflow and produce a meeting card. A meeting link and an active call are different states; participants still need to join and pass any meeting admission controls.",
+    "steps": [
+      "Open the intended group and select Video chat where available.",
+      "Review the meeting action and create or open the meeting as the dialog directs.",
+      "Check the meeting card and join link, then verify the actual meeting separately."
+    ],
+    "check": "The intended group receives the correct meeting reference and you can identify its destination.",
+    "troubleshooting": "If joining fails, inspect meeting permissions and browser device access. A card in a conversation does not prove every member has joined or that recording is active."
+  },
+  {
+    "category": "Group settings",
+    "slug": "edit-group",
+    "title": "Edit a group name and description",
+    "explanation": "Group identity settings help members recognise the conversation and its purpose. Name and description changes are shared group changes, while a personal background setting is local. Only permitted editors see the relevant fields.",
+    "steps": [
+      "Open Group info and choose Edit group when available.",
+      "Update Group name and Description with the intended shared wording.",
+      "Save the change and reopen the information to confirm the stored values."
+    ],
+    "check": "The group shows the intended name and description for the correct conversation.",
+    "troubleshooting": "If saving is blocked or stale, refresh the group details before retrying. Do not confuse unsaved form text with the group\u2019s saved identity."
+  },
+  {
+    "category": "Group settings",
+    "slug": "group-photo",
+    "title": "Change a group photo",
+    "explanation": "The group logo or photo appears beside its identity. Supported formats are PNG, JPEG and WebP, up to 5 MB. A changed group photo is shared identity information rather than your private device background.",
+    "steps": [
+      "Open the group information with permission to edit it.",
+      "Use Upload group logo or Change group photo and choose a suitable image.",
+      "Confirm the uploaded photo appears on the intended group."
+    ],
+    "check": "The correct group displays a safe, intended image.",
+    "troubleshooting": "If the upload is rejected, check format and size. Avoid including private people, customer records or screenshots with account details in a group logo."
+  },
+  {
+    "category": "Group settings",
+    "slug": "new-member-history",
+    "title": "Choose whether new members see earlier history",
+    "explanation": "Show chat history to new members controls what joining members can read from earlier conversation history. This can affect sensitive historical context, so review it before inviting new people rather than assuming all members see the same past messages.",
+    "steps": [
+      "Open Edit group with history-management rights.",
+      "Locate Chat history and set Show chat history to new members as intended.",
+      "Save, then verify the stored setting before creating the next invitation."
+    ],
+    "check": "The saved history policy matches the intended onboarding audience.",
+    "troubleshooting": "Changing an invitation alone does not explain what prior history will be visible. If the setting is missing, ask an authorised group manager to review it."
+  },
+  {
+    "category": "Group settings",
+    "slug": "welcome-message",
+    "title": "Set a useful group welcome message",
+    "explanation": "A welcome message can explain the group\u2019s purpose, expected behaviour and where to find context. It is shared onboarding information, not a secure place for passwords or internal access tokens.",
+    "steps": [
+      "Open Edit group and locate Welcome message.",
+      "Enter concise onboarding text within the displayed 1,000-character limit.",
+      "Save and reopen the group settings to confirm the intended text."
+    ],
+    "check": "New-member guidance is accurate, readable and free of private credentials.",
+    "troubleshooting": "If you need a longer handbook, link an appropriately shared document. The presence of a link does not automatically grant access to its destination."
+  },
+  {
+    "category": "Group settings",
+    "slug": "member-messaging",
+    "title": "Control group message and media permissions",
+    "explanation": "Group settings separately control Send messages and Send files and media. Disabling one type of contribution is different from removing a member or changing a Sidekick\u2019s connected-app tools.",
+    "steps": [
+      "Open Edit group with permission-management rights.",
+      "Set Send messages and Send files and media to the intended group policy.",
+      "Save and review the resulting settings before asking members to continue work."
+    ],
+    "check": "The group policy reflects the intended contribution rules without unrelated role changes.",
+    "troubleshooting": "If a user cannot send a file, check both group media permission and file validation. A 20 MB attachment limit remains relevant even when media sending is allowed."
+  },
+  {
+    "category": "Group settings",
+    "slug": "invite-permissions",
+    "title": "Control who can invite people and Sidekicks",
+    "explanation": "Invite people and Sidekicks is a group member permission. Separate administrator rights can control managing invitations and managing group Sidekicks. Group invitation control does not grant workspace-wide membership administration.",
+    "steps": [
+      "Open the intended group\u2019s Edit group settings.",
+      "Review Invite people and Sidekicks and the applicable administrator rights.",
+      "Save the narrow policy intended for this group and confirm it before testing an invitation."
+    ],
+    "check": "The people who should invite can do so in this group, without broader unintended access.",
+    "troubleshooting": "If a manager still cannot perform an action, inspect the exact group right and context instead of assuming every administrator role is identical."
+  },
+  {
+    "category": "Group settings",
+    "slug": "invite-link",
+    "title": "Create and share a group invite link",
+    "explanation": "Invite links allow intended recipients to join a private group through the supported join flow. Possession of the link can be meaningful access, so share it only with the intended audience and review it separately from file-share links.",
+    "steps": [
+      "Open Group info with invite-link management rights.",
+      "Under Invite links, select Create link and inspect the returned invitation.",
+      "Use Copy and send it only to the intended recipients through an authorised channel."
+    ],
+    "check": "The link resolves to the correct group invitation.",
+    "troubleshooting": "Do not publish a private-group invitation as a public product URL. If the wrong audience receives it, use the group\u2019s revoke control promptly when authorised."
+  },
+  {
+    "category": "Group settings",
+    "slug": "revoke-invite-link",
+    "title": "Revoke a group invitation link",
+    "explanation": "Revoking a link prevents further use of that invitation. It is different from removing people who already joined and does not automatically undo messages or access they previously had.",
+    "steps": [
+      "Open Invite links for the intended group.",
+      "Identify the specific link and choose Revoke.",
+      "Confirm its inactive state and review membership separately if an existing member also needs removal."
+    ],
+    "check": "The intended invitation is no longer usable for new joins.",
+    "troubleshooting": "If the problem concerns an existing member, revoking the link alone is incomplete. Use the appropriate membership process without deleting the entire group."
+  },
+  {
+    "category": "Group settings",
+    "slug": "administrator-rights",
+    "title": "Assign precise group administrator rights",
+    "explanation": "Group administrator permissions can cover identity, settings/history/welcome, member removal, invite links and Sidekick management. Rights are not automatically all granted, and tool access is a separate layer.",
+    "steps": [
+      "Open the member or administrator controls as the group owner when permitted.",
+      "Select the intended person and review each Administrator permissions option.",
+      "Save only the rights needed and reopen the person\u2019s entry to verify them."
+    ],
+    "check": "The person has the intended group-management rights without an assumption of connected-tool access.",
+    "troubleshooting": "If they can manage the group but cannot use an app, inspect the app and tool policies. A group administrator title does not establish a workspace tool ceiling."
+  },
+  {
+    "category": "Group settings",
+    "slug": "leave-or-delete-group",
+    "title": "Choose between leaving and deleting a group",
+    "explanation": "Leave group changes your participation; Delete group can remove the shared group for everyone. Only the owner can delete the group or change administrator roles in the supported group controls. Read the confirmation rather than treating these actions as interchangeable.",
+    "steps": [
+      "Open Group info and identify whether your goal is to leave or permanently delete.",
+      "Review the displayed action and its affected audience.",
+      "Confirm only the intended operation, or cancel and preserve the group if you are resolving a temporary problem."
+    ],
+    "check": "The resulting membership or deletion state matches the intended scope.",
+    "troubleshooting": "Do not delete a group to repair a missing message or app permission. Check filters, history and access first because deletion can be irreversible."
+  },
+  {
+    "category": "Connected apps",
+    "slug": "open-app",
+    "title": "Open a connected app beside your assistant",
+    "explanation": "Connected Apps separates opening an application from opening its connection settings. This lets you use the app and the Sidekick together, but seeing the application does not mean the assistant has permission to use every tool in it.",
+    "steps": [
+      "Find the intended item under Connected Apps.",
+      "Select the app name to open its workspace surface.",
+      "Check the selected Sidekick and account, then use the app-settings control separately when access needs review."
+    ],
+    "check": "The intended app opens with an identifiable account and assistant context.",
+    "troubleshooting": "If the app takes too long to load, use the displayed retry path. Repeatedly opening several copies does not repair an unavailable embedded service."
+  },
+  {
+    "category": "Connected apps",
+    "slug": "connection-states",
+    "title": "Understand app connection and access states",
+    "explanation": "A connection can be configured but still need repair, owner approval, saved tools or a new account-access save. The dialog reports those conditions separately. Read the actual state instead of assuming a coloured dot proves full readiness.",
+    "steps": [
+      "Open the settings control beside the app name.",
+      "Read its status, selected account and any access guidance for the intended Sidekick.",
+      "Complete the specific missing stage and inspect the refreshed status."
+    ],
+    "check": "The connection and access state are understood for the intended assistant.",
+    "troubleshooting": "Do not reconnect indiscriminately when the guidance asks for tool selection or owner approval. Fixing the wrong layer can leave the original restriction unchanged."
+  },
+  {
+    "category": "Connected apps",
+    "slug": "docs",
+    "title": "Open and work with Docs in Cortex Chat",
+    "explanation": "Docs can open inside the workspace while the assistant remains available. The current open document can provide useful task context, but you should still identify what to change and verify that the result is saved.",
+    "steps": [
+      "Select Docs under Connected Apps and finish any connection step.",
+      "Open the intended document and check its title and save state.",
+      "Ask the selected Sidekick for a specific review or authorised edit, then inspect the actual document result."
+    ],
+    "check": "The task refers to the intended document rather than another tab or an assumed file.",
+    "troubleshooting": "If Docs asks for connection again, follow its verified connection link. A visible editor and a connected assistant are separate checks."
+  },
+  {
+    "category": "Connected apps",
+    "slug": "open-document-context",
+    "title": "Explain what the open document means for a request",
+    "explanation": "The workspace can include open-document context in an assistant request. This helps ground a request such as reviewing the current proposal, but it is important to confirm which document is open and whether the request is read-only or an edit.",
+    "steps": [
+      "Open the intended document in Docs and verify its title.",
+      "State what the assistant should do with that document and what must remain unchanged.",
+      "Check the answer or saved edit against the actual document rather than an assumed context."
+    ],
+    "check": "The assistant response is grounded in the intended document and matches the requested action.",
+    "troubleshooting": "If the wrong document was active, correct the context before another edit. Do not rely solely on the phrase this document when several surfaces are open."
+  },
+  {
+    "category": "Connected apps",
+    "slug": "drive",
+    "title": "Use Drive from Cortex Chat",
+    "explanation": "Drive provides files and folders while Chat supplies the assistant conversation. A file\u2019s access rules and a Sidekick\u2019s tool permission both matter when asking it to read, organise or share material.",
+    "steps": [
+      "Open Drive under Connected Apps.",
+      "Locate the intended file and check its account/workspace and sharing state.",
+      "Ask for the specific action you intend, then verify the resulting file or permissions in Drive."
+    ],
+    "check": "The intended file is used and any authorised mutation is visible in its destination.",
+    "troubleshooting": "If the assistant cannot access the file, inspect both file sharing and its Drive tool policy. Do not make an entire drive public to solve one read problem."
+  },
+  {
+    "category": "Connected apps",
+    "slug": "email",
+    "title": "Use Email inside Cortex Chat",
+    "explanation": "The Email app surface can show signed-in mailbox accounts separately from the Sidekick\u2019s Email permissions. Reading the inbox yourself and allowing an agent to draft or send are different access decisions.",
+    "steps": [
+      "Select Email under Connected Apps and finish any connection prompt.",
+      "Check the active email account tab and the intended thread.",
+      "Ask the assistant for a clearly scoped read, draft or already-authorised send, then verify the corresponding result."
+    ],
+    "check": "The mailbox and recipient context are correct, with a draft or send state that matches your request.",
+    "troubleshooting": "A message visible in the app does not prove the Sidekick can access it. Check Email settings and Tools permissions rather than pasting account credentials into the conversation."
+  },
+  {
+    "category": "Connected apps",
+    "slug": "switch-email-account",
+    "title": "Switch between signed-in email accounts",
+    "explanation": "The Email account tabs identify the active mailbox. Switching waits for confirmation from the embedded email app; it is not just a cosmetic change of the tab label. Drafts and pending account changes need attention during the transition.",
+    "steps": [
+      "Open Email and read the active account tab.",
+      "Select the intended alternate tab and wait for Switching to finish.",
+      "Confirm the active mailbox address before composing or asking the Sidekick to act on a thread."
+    ],
+    "check": "The selected mailbox is confirmed active and the visible content matches it.",
+    "troubleshooting": "If switching takes too long, reopen Email through the displayed recovery path. Do not send from an assumed account while the switch is still pending."
+  },
+  {
+    "category": "Connected apps",
+    "slug": "add-email-account",
+    "title": "Add or refresh an email account",
+    "explanation": "Email can show up to five signed-in accounts. Add account and refresh use the supported Mail connection flow and first coordinate saving drafts; they are not a way to bypass authentication for another mailbox.",
+    "steps": [
+      "Open Email and select Add account when fewer than five accounts are signed in.",
+      "Wait for Saving drafts, then complete the supported sign-in flow.",
+      "Return and inspect the account tabs, using Refresh signed-in email accounts when the list needs updating."
+    ],
+    "check": "The intended account appears in the confirmed list without losing the current draft.",
+    "troubleshooting": "If the account handoff cannot be verified, reopen Email and retry the connection flow. A full five-account list explains a disabled add control."
+  },
+  {
+    "category": "Connected apps",
+    "slug": "calendar-meetings",
+    "title": "Use Calendar and Meetings from Chat",
+    "explanation": "Calendar and Meetings are separate app surfaces. An assistant\u2019s ability to view events, create them or start a meeting depends on the saved app and tool access. An event note is not necessarily a confirmed invitation.",
+    "steps": [
+      "Open Calendar or Meetings from Connected Apps for the intended task.",
+      "Check the event, time zone, attendees or meeting destination.",
+      "After an authorised action, inspect the saved event, invitation or meeting link in the destination app."
+    ],
+    "check": "The scheduling or meeting result exists outside the chat reply.",
+    "troubleshooting": "If an event is missing, check account, calendar, time zone and permissions. Repeating creation before reconciling the first result can produce duplicate invitations."
+  },
+  {
+    "category": "Connected apps",
+    "slug": "crm-cloud",
+    "title": "Understand CRM and Cloud connections",
+    "explanation": "CRM supplies customer and business records; Cloud is a separate connection entry. Their available tools and configuration should be inspected in the current environment rather than inferred from their names. A configured connection may still require saved permissions or repair.",
+    "steps": [
+      "Open the intended connection\u2019s settings under Connected Apps.",
+      "Read its account, status and available permission controls.",
+      "Use only the supported tool actions shown for the selected Sidekick and verify any result in its service."
+    ],
+    "check": "The task is tied to a real available connection, not an assumed integration.",
+    "troubleshooting": "If a setup or owner-approval link is shown, follow the specific supported flow. Do not invent a server endpoint, provider credential or automatic cloud deployment capability."
+  },
+  {
+    "category": "Tools and permissions",
+    "slug": "open-tool-permissions",
+    "title": "Review a Sidekick\u2019s tool permissions",
+    "explanation": "Tools permissions displays the operations available for a Sidekick in a private or group context. App access, workspace rights and owner approval still apply after tool choices are saved. The dialog distinguishes selected choices from the saved policy.",
+    "steps": [
+      "Open Settings for the Sidekick or its Manage Sidekicks card.",
+      "Select Tools permissions and inspect the context beneath the assistant name.",
+      "Expand the relevant application and read the available tool descriptions before changing any selection."
+    ],
+    "check": "You can identify which tools are saved, which are only selected and which cannot be granted.",
+    "troubleshooting": "If the dialog is read-only, use the displayed owner/administrator guidance. Viewing a permission list does not grant authority to change it."
+  },
+  {
+    "category": "Tools and permissions",
+    "slug": "search-tool-catalogue",
+    "title": "Search tools by operation or category",
+    "explanation": "The tool search filters names, descriptions and categories. This is more precise than granting an entire application when the task needs one operation. Search results can exclude tools belonging to inactive CRM modules.",
+    "steps": [
+      "Open Tools permissions for the correct assistant and context.",
+      "Enter the operation you need in Search tools.",
+      "Expand the relevant app/category and read whether each matching tool is read-only or can make changes."
+    ],
+    "check": "You find the operation relevant to the task and understand its effect before selecting it.",
+    "troubleshooting": "If there is no match, clear the filter and inspect connection/module availability. A missing tool should not be replaced with an invented command."
+  },
+  {
+    "category": "Tools and permissions",
+    "slug": "read-versus-write-tools",
+    "title": "Distinguish read-only tools from tools that change data",
+    "explanation": "Each tool description identifies whether it is Read only or Can make changes. A write-capable tool may create a record, send information or alter access depending on its purpose; the label should be read alongside the description.",
+    "steps": [
+      "Expand the application and category for the intended operation.",
+      "Read the tool label, description and read/write annotation.",
+      "Select only the operations appropriate to the task and existing user authority."
+    ],
+    "check": "The saved set supports the intended task without unrelated write access.",
+    "troubleshooting": "Read-only account access can still prevent a write tool from being granted. Inspect the account-level setting rather than assuming a checked UI row overrides it."
+  },
+  {
+    "category": "Tools and permissions",
+    "slug": "select-save-tools",
+    "title": "Select and save tool permissions",
+    "explanation": "Selections apply after saving. The meter can show an unsaved selection while the currently running policy is still different. Saving an app\u2019s tools is distinct from completing the app connection\u2019s account-access stage.",
+    "steps": [
+      "Choose the intended tools in the correct app and context.",
+      "Select Save the relevant app tools, or Save all changed apps when several app selections were intentionally changed.",
+      "Read the saved notice and current permission counts before returning to the task."
+    ],
+    "check": "The saved policy reflects your intended selection, with no unsaved changes left ambiguous.",
+    "troubleshooting": "If the dialog says to save account access next, complete that separate step. Do not assume a tool-checkbox change is active before its save succeeds."
+  },
+  {
+    "category": "Tools and permissions",
+    "slug": "disable-tool-access",
+    "title": "Disable tool access using an explicit empty policy",
+    "explanation": "An explicitly saved policy with no tools disables the application\u2019s tools for that context. That differs from having no explicit policy saved. Clearing permitted selections is therefore a meaningful access change, not a way to reset an unrelated connection error.",
+    "steps": [
+      "Open the intended app\u2019s Tools permissions.",
+      "Clear the permitted selections only if disabling that access is your goal.",
+      "Save the app policy and verify the All tools are disabled by this explicit policy message or zero saved count."
+    ],
+    "check": "The intended application tools are disabled for this assistant/context.",
+    "troubleshooting": "If you intended to restore access rather than remove it, choose and save the specific tools instead. Do not clear unrelated app policies as a troubleshooting shortcut."
+  },
+  {
+    "category": "Tools and permissions",
+    "slug": "owner-approval",
+    "title": "Resolve owner approval needed",
+    "explanation": "An administrator may only delegate tools within the owner\u2019s approved ceiling. The tool dialog provides exact guidance when owner approval is missing, including the account, private or group context and application.",
+    "steps": [
+      "Read the owner-approval message for the intended app.",
+      "Have the workspace owner open Profile \u2192 Administrator permissions, select the administrator and the correct context/application, then save the permitted tools.",
+      "Return and use Refresh owner approval before saving the assistant\u2019s own tool policy."
+    ],
+    "check": "The administrator can grant only the approved operations for the intended context.",
+    "troubleshooting": "A group administrator title alone is insufficient. Match the exact account and context instead of granting a broad workspace role to suppress the message."
+  },
+  {
+    "category": "Tools and permissions",
+    "slug": "private-group-tools",
+    "title": "Separate private tool access from group tool access",
+    "explanation": "Private conversations and group conversations have separate permission contexts. A tool available in the private assistant may be intentionally unavailable in a shared group. That difference helps prevent a group from inheriting unrelated private capabilities.",
+    "steps": [
+      "Open the tool controls from the actual context where the action is needed.",
+      "Read Private conversations or the named group under the Sidekick heading.",
+      "Review the owner approval and saved policy for that specific context."
+    ],
+    "check": "The permission change applies to the intended context rather than a similarly named assistant elsewhere.",
+    "troubleshooting": "If a task works privately but fails in a group, inspect the group policy. Do not assume a private grant should automatically propagate."
+  },
+  {
+    "category": "Tools and permissions",
+    "slug": "email-read-draft-send",
+    "title": "Set Email access: read, draft and send",
+    "explanation": "Email account access distinguishes Read only, Read and draft and a separate Allow sending email control. Tool selections are constrained by that account level. Allowing draft creation is not the same as allowing sends from your account.",
+    "steps": [
+      "Open Email settings for the intended Sidekick and mailbox.",
+      "Choose the account access level, enabling Allow sending email only when that authority is intended.",
+      "Review and save the matching Email tools, then save account access as the dialog directs."
+    ],
+    "check": "The assistant can perform only the intended email operations from the intended account.",
+    "troubleshooting": "If a send tool is unavailable, inspect both the send allowance and owner-approved tool ceiling. Do not label a saved draft as a sent message."
+  },
+  {
+    "category": "Tools and permissions",
+    "slug": "repair-connection",
+    "title": "Repair a specific app connection",
+    "explanation": "Repair connection is available for supported configured connections when the state permits it. It addresses the selected assistant\u2019s connection and should be used after understanding saved access, not as a universal fix for every permission error.",
+    "steps": [
+      "Open the intended app settings and read the current state.",
+      "Save any intentional pending access changes before using the repair action.",
+      "Select Repair connection where offered and inspect the refreshed account and agent access result."
+    ],
+    "check": "The specific connection is restored or the remaining state is clearly reported.",
+    "troubleshooting": "If the message instead says tools required or owner approval required, complete that stage first. Repeated repair requests cannot grant missing authority."
+  },
+  {
+    "category": "Tools and permissions",
+    "slug": "apply-runtime-permissions",
+    "title": "Apply saved permissions to a running Sidekick",
+    "explanation": "Saved tool changes can refresh automatically when the assistant is idle. The tool dialog also offers Restart Sidekick, which affects the runtime across every conversation. Unsaved changes should be resolved before restarting.",
+    "steps": [
+      "Save the intended tool-policy changes.",
+      "Read Apply to the running Sidekick and the current save/restart guidance.",
+      "Allow idle refresh or deliberately request Restart Sidekick, then verify its status and a harmless tool read."
+    ],
+    "check": "The running assistant can see the saved intended tools and its runtime is ready.",
+    "troubleshooting": "Do not restart while the dialog still reports unsaved selection. A restart request and a verified tool call are different evidence."
+  },
+  {
+    "category": "Voice conversations",
+    "slug": "voice-or-recording",
+    "title": "Choose live voice or a recorded message",
+    "explanation": "Record voice message creates an audio attachment for asynchronous review. Start voice conversation opens a live Lyre-powered interaction with the selected Sidekick. They use related microphone permissions but have different controls and completion states.",
+    "steps": [
+      "Decide whether the recipient should receive a recording or you want an immediate spoken exchange.",
+      "Choose Record voice message for an attachment, or the live voice control for the selected Sidekick.",
+      "Review the relevant recording preview or live session status before continuing."
+    ],
+    "check": "You use the intended communication mode without accidentally starting another one.",
+    "troubleshooting": "If a control is disabled, check recording/live-session conflicts and microphone requests rather than assuming voice is globally unavailable."
+  },
+  {
+    "category": "Voice conversations",
+    "slug": "activate-voice",
+    "title": "Activate voice for a Sidekick",
+    "explanation": "Voice activation belongs to the selected Sidekick\u2019s private voice profile. Choose a voice before activation and read the readiness response. A configured voice can still be blocked from starting by credits or another service condition.",
+    "steps": [
+      "Open the Sidekick\u2019s conversation settings and locate Voice.",
+      "Choose an available voice and select Activate voice.",
+      "Wait for the saved configuration, then inspect Lyre readiness before starting a live conversation."
+    ],
+    "check": "The selected Sidekick has a saved activated voice and a clearly reported readiness state.",
+    "troubleshooting": "If activation succeeds but Start is blocked, read the specific readiness guidance. Repeated activation will not resolve insufficient credit or missing service configuration."
+  },
+  {
+    "category": "Voice conversations",
+    "slug": "choose-voice",
+    "title": "Choose or change a Sidekick voice",
+    "explanation": "The voice picker searches by name, language, accent and other catalogue metadata. Voice changes are disabled during an active conversation so the current session is not reconfigured mid-call. A highlighted choice still needs a successful save.",
+    "steps": [
+      "Open Settings for the intended Sidekick and find Voice.",
+      "End an active voice conversation, search the catalogue and select the intended radio option.",
+      "Select Save voice and confirm the displayed Current voice name."
+    ],
+    "check": "The saved voice belongs to the intended Sidekick and the current session is no longer using an unsaved choice.",
+    "troubleshooting": "If no voices match, clear the search and check the catalogue load error. If saving fails, use Retry and inspect the confirmed configuration."
+  },
+  {
+    "category": "Voice conversations",
+    "slug": "start-voice",
+    "title": "Start a live conversation with your Sidekick",
+    "explanation": "The Lyre panel can show whether voice is inactive, ready or needs attention. Microphone capture starts through your deliberate start action; a decorative voice surface is not an active call.",
+    "steps": [
+      "Choose the intended Sidekick and open Lyre or the live-voice control.",
+      "Confirm voice is activated and ready, then select Start conversation.",
+      "Grant microphone access if requested and observe the session moving from getting ready to its active state."
+    ],
+    "check": "The intended Sidekick has an active voice session and you can verify an actual exchange.",
+    "troubleshooting": "If the button is unavailable, inspect offline, loading, saving, credits and readiness guidance. Do not mistake a connected chat account for a working audio session."
+  },
+  {
+    "category": "Voice conversations",
+    "slug": "mute-end-voice",
+    "title": "Mute the microphone or end a voice conversation",
+    "explanation": "Mute changes the microphone state while a session remains active. End conversation closes the live interaction. Minimising a chat panel is a layout action and should not be relied on as the way to stop microphone capture.",
+    "steps": [
+      "During an active voice conversation, select Mute microphone when you need temporary silence.",
+      "Use Unmute microphone to resume when appropriate.",
+      "Select End conversation when finished and confirm the interface returns to the inactive/ready state."
+    ],
+    "check": "The microphone and session states match what you intend.",
+    "troubleshooting": "If you still see an active-session indicator, do not assume navigating elsewhere ended it. Use the explicit end control and inspect its resulting state."
+  },
+  {
+    "category": "Voice conversations",
+    "slug": "peptalk",
+    "title": "Understand and change Peptalk",
+    "explanation": "Peptalk adds interruptible conversation while you wait. It is a per-Sidekick voice setting, separate from enabling voice itself and from choosing the voice. The interface describes it as easy to interrupt rather than a promise about task completion.",
+    "steps": [
+      "Open Lyre settings for the selected Sidekick.",
+      "Locate Peptalk and set the switch as intended while voice is activated.",
+      "Wait for the configuration save and check the switch\u2019s confirmed state."
+    ],
+    "check": "Peptalk is saved for the intended Sidekick without changing another voice profile.",
+    "troubleshooting": "If the control is disabled, check activation, connectivity and save state. Do not treat speech while waiting as evidence that an external tool action has finished."
+  },
+  {
+    "category": "Voice conversations",
+    "slug": "enable-audio",
+    "title": "Enable voice audio when the browser blocks playback",
+    "explanation": "A browser can allow the microphone while still blocking remote audio playback. The Enable voice audio control addresses that playback condition; it is distinct from starting a second voice session.",
+    "steps": [
+      "Confirm the current live session and the selected output device.",
+      "Select Enable voice audio when the interface offers it.",
+      "Verify that you can hear the actual Sidekick response, checking device volume if necessary."
+    ],
+    "check": "Playback resumes within the intended session rather than creating a duplicate call.",
+    "troubleshooting": "If sound remains absent, check browser site sound permissions and device output routing. An animated voice display alone is not audible-output evidence."
+  },
+  {
+    "category": "Voice conversations",
+    "slug": "voice-credit-readiness",
+    "title": "Resolve a voice readiness or credits warning",
+    "explanation": "An activated voice can show Lyre credits needed or Voice needs attention. The guidance and Check again action explain that configuration and account readiness are different. A payment checkout result should be reconciled before paying twice.",
+    "steps": [
+      "Read the specific Lyre readiness message for the selected Sidekick.",
+      "Use Manage credits only if the issue is credit-related and inspect the intended Lyre billing account.",
+      "After resolving the cause, return and choose Check again before starting the conversation."
+    ],
+    "check": "Readiness changes to a state that actually permits starting voice.",
+    "troubleshooting": "Do not reactivate the profile repeatedly to fix a balance issue. If a payment is uncertain, check transaction history before submitting another top-up."
+  },
+  {
+    "category": "Voice conversations",
+    "slug": "full-lyre-profile",
+    "title": "Open the full voice profile in Lyre",
+    "explanation": "Cortex provides the focused voice controls, while the full Lyre profile contains persona, instructions, skills and advanced voice settings. Phone numbers, call history and billing are also managed through Lyre rather than assumed hidden Chat controls.",
+    "steps": [
+      "Open the Sidekick\u2019s Voice or Lyre settings.",
+      "Use Open full profile in Lyre or Full profile in Lyre when the verified link is present.",
+      "Check the selected profile and account before changing advanced settings or reviewing phone activity."
+    ],
+    "check": "You are editing the intended voice profile in the appropriate product surface.",
+    "troubleshooting": "If the profile link is absent or the destination asks for sign-in, complete the supported account flow. Do not guess another profile ID or assume every Sidekick shares the same voice settings."
+  },
+  {
+    "category": "Voice conversations",
+    "slug": "voice-status-errors",
+    "title": "Understand listening, thinking and speaking states",
+    "explanation": "The live interface describes getting ready, listening, checking/thinking, speaking, ended and retry states. These are conversation states and can differ from the broader Sidekick runtime status shown elsewhere.",
+    "steps": [
+      "Read the Lyre panel\u2019s current status and whether the microphone is muted.",
+      "Give the active session a clear request, then observe the response rather than relying only on animation.",
+      "If an error appears, read its text and end or retry through the supported controls."
+    ],
+    "check": "You can distinguish a healthy conversation turn from an actual readiness or audio error.",
+    "troubleshooting": "A thinking state is not necessarily a failure. If repeated errors occur, inspect microphone permission, service readiness, connectivity and credits as separate causes."
+  },
+  {
+    "category": "Account and workspace",
+    "slug": "profile-menu",
+    "title": "Use the account menu and My account",
+    "explanation": "The account control shows identity and provides My account, workspace administration and sign-out actions where available. Profile settings are different from a Sidekick\u2019s conversation settings, so use the menu appropriate to the thing you want to change.",
+    "steps": [
+      "Open the account control in Chat.",
+      "Read the displayed identity and select My account for account-level settings.",
+      "Return to Chat and confirm that the intended account context remains selected."
+    ],
+    "check": "You can distinguish account settings from Sidekick, group and app settings.",
+    "troubleshooting": "If an administration item is absent, inspect your role instead of looking for it in the conversation gear. Not every account can change workspace-wide settings."
+  },
+  {
+    "category": "Account and workspace",
+    "slug": "wallet-balance",
+    "title": "Read the Wallet balance shown in your profile",
+    "explanation": "The profile summary can show Fmail Wallet credit and its account or workspace context. Balance unavailable is different from zero credit. A visible credit amount is not a guarantee that every separate voice or app service is ready.",
+    "steps": [
+      "Open the account control and locate Fmail wallet.",
+      "Read the balance, any account/workspace name and state note.",
+      "Use the appropriate Wallet history when you need to explain a change rather than inferring it from the summary alone."
+    ],
+    "check": "You know which balance is displayed and whether it was successfully loaded.",
+    "troubleshooting": "If unavailable, refresh after connectivity returns. Do not start a payment merely because the summary could not be loaded."
+  },
+  {
+    "category": "Account and workspace",
+    "slug": "add-credits",
+    "title": "Open the intended Add credits flow",
+    "explanation": "Add credits opens the linked Fmail Wallet credit surface. It is a financial action path, separate from a read-only balance view. Check the destination account and checkout before committing a purchase.",
+    "steps": [
+      "Open the account control and verify the identity and Wallet context.",
+      "Select Add credits and inspect the destination\u2019s balance and offered purchase details.",
+      "Complete a payment only when intended, then reconcile the resulting transaction and balance before retrying."
+    ],
+    "check": "Any intended top-up is associated with the correct account and a confirmed transaction.",
+    "troubleshooting": "A redirect to checkout is not proof credit was applied. An uncertain payment needs transaction-history review rather than another immediate purchase."
+  },
+  {
+    "category": "Account and workspace",
+    "slug": "administrator-permissions",
+    "title": "Open workspace Administrator permissions",
+    "explanation": "Workspace owner approval sets what an administrator can manage or delegate. This differs from the tool selection saved for one Sidekick. Selecting the administrator and private/group context is central to the permission you are actually changing.",
+    "steps": [
+      "Open the account control and choose Administrator permissions when authorised.",
+      "Select the intended administrator and inspect the current capabilities and tool ceilings.",
+      "Choose the correct private or group context before reviewing an application\u2019s permitted tools."
+    ],
+    "check": "The panel refers to the intended person and context, with saved versus draft changes clear.",
+    "troubleshooting": "If access is denied, use an authorised owner account. Do not assume a group administrator can change owner-level workspace approval."
+  },
+  {
+    "category": "Account and workspace",
+    "slug": "administrator-tool-ceilings",
+    "title": "Set an administrator\u2019s tool ceiling",
+    "explanation": "A tool ceiling limits what the administrator can subsequently grant to a Sidekick. It does not itself grant every agent those tools. The context and application filters help constrain this approval to the relevant workflow.",
+    "steps": [
+      "As an authorised owner, open Administrator permissions and select the intended account.",
+      "Set the private or named-group context and application, then select the permitted operations.",
+      "Save the changed approval and have the administrator refresh owner approval before saving the Sidekick policy."
+    ],
+    "check": "The intended ceiling is saved, and the assistant still needs its own appropriate tool policy.",
+    "troubleshooting": "If the intended administrator is missing or a revision conflict appears, reload current data before saving. Avoid overwriting another owner\u2019s concurrent change."
+  },
+  {
+    "category": "Account and workspace",
+    "slug": "workspace-members",
+    "title": "Review workspace members and roles",
+    "explanation": "Workspace members manages organisation membership, which is separate from reading a particular private group\u2019s messages. Member roles and active/suspended states determine access across the relevant workspace services.",
+    "steps": [
+      "Open the account control and choose Workspace members.",
+      "Inspect Members and identify the person using their email as well as display name.",
+      "Read the current role and status before proposing a change."
+    ],
+    "check": "You can identify the correct person and current workspace access state.",
+    "troubleshooting": "The absence of a role control can be intentional for your role or for your own account. Do not infer permission to edit a person merely because their row is visible."
+  },
+  {
+    "category": "Account and workspace",
+    "slug": "invite-workspace-member",
+    "title": "Send or revoke a workspace invitation",
+    "explanation": "A workspace invitation and a group invitation have different scope. The workspace invitation screen offers permitted roles, shows pending entries and states that invitations expire after seven days.",
+    "steps": [
+      "Open Workspace members and the Invitations section.",
+      "Enter the intended email and choose a role you are permitted to invite, then review before Send invitation.",
+      "Inspect the saved invitation status; use Revoke for an unintended pending invitation when authorised."
+    ],
+    "check": "The intended address has the correct workspace invitation and role.",
+    "troubleshooting": "If an invitation already exists, inspect its status before resending. A sent invitation is not proof the person accepted and became an active member."
+  },
+  {
+    "category": "Account and workspace",
+    "slug": "change-role-suspend",
+    "title": "Change a member role, suspend or reactivate access",
+    "explanation": "Save role, Suspend and Reactivate have different effects. Suspension removes workspace access in Cortex and Fmail until reactivated; it is not just silencing notifications. Owners may have additional role-management powers that other administrators do not.",
+    "steps": [
+      "Find the intended member in Workspace members and confirm their email.",
+      "Choose the appropriate role or status action and read any confirmation about affected access.",
+      "Save or confirm, then refresh the member list to verify the resulting role/status."
+    ],
+    "check": "The intended person has the intended access state, with no change to a similarly named member.",
+    "troubleshooting": "If details are stale, refresh before another mutation. Do not suspend a member to troubleshoot one unavailable app or a muted conversation."
+  },
+  {
+    "category": "Account and workspace",
+    "slug": "recent-actions",
+    "title": "Review recent workspace actions",
+    "explanation": "Recent actions is an audit-oriented view for workspace operations, separate from the notification bell and from a conversation transcript. It helps identify what changed and what the service actually recorded.",
+    "steps": [
+      "Open the account control and select Recent actions when available.",
+      "Inspect the relevant entries and their time/context.",
+      "Use Load older actions if needed, then compare the recorded event with the change you are investigating."
+    ],
+    "check": "You have a relevant action record or a clearly stated absence of evidence.",
+    "troubleshooting": "An absent entry in the currently loaded page is not proof the action never happened. Check time range, pagination and the correct workspace before concluding."
+  },
+  {
+    "category": "Account and workspace",
+    "slug": "sign-out",
+    "title": "Sign out of Chat or Fmail deliberately",
+    "explanation": "Log out and Log out of Fmail too have different scope. Sign-out also affects local Chat data such as saved private backgrounds. Use the action matching whether you are leaving only Cortex or the wider identity session.",
+    "steps": [
+      "Open the account control and finish or preserve relevant unsent work.",
+      "Read the chosen sign-out action and its scope.",
+      "Sign out, then verify that the account is no longer available in the intended surface."
+    ],
+    "check": "The intended session is ended without confusing a local app logout with the broader Fmail identity.",
+    "troubleshooting": "If using a shared device, confirm the actual signed-out state. Closing a browser tab alone is not the same as ending the account session."
+  },
+  {
+    "category": "Device and recovery",
+    "slug": "light-dark-theme",
+    "title": "Switch between light and dark mode",
+    "explanation": "The theme button offers Switch to dark mode or Switch to light mode and stores a device preference. Embedded workspace surfaces can follow the current Chat theme, but an app\u2019s own availability is independent of its colour scheme.",
+    "steps": [
+      "Find the theme control in the Chat interface.",
+      "Activate the button for the intended mode.",
+      "Check the conversation and an open app surface, then reopen Chat to inspect the retained preference."
+    ],
+    "check": "The interface remains readable in the chosen mode on this device.",
+    "troubleshooting": "If another device shows a different theme, check that device\u2019s preference. Theme changes do not repair account, connection or permission problems."
+  },
+  {
+    "category": "Device and recovery",
+    "slug": "chat-background",
+    "title": "Choose a conversation background",
+    "explanation": "Chat background is explicitly marked This device. Plain, Sage folds and Slate layers change the current conversation\u2019s canvas locally; other participants keep their own background. This is different from changing a shared group photo.",
+    "steps": [
+      "Open the conversation settings and expand Chat background.",
+      "Choose Plain, Sage folds or Slate layers and inspect Background preview.",
+      "Wait for Background saved on this device, then reopen the same conversation to verify it."
+    ],
+    "check": "The intended conversation uses the chosen background on this device.",
+    "troubleshooting": "If it does not save, check browser storage and the displayed error. A local background preference should not be expected to synchronise to everyone in a group."
+  },
+  {
+    "category": "Device and recovery",
+    "slug": "custom-background",
+    "title": "Upload or remove a custom chat background",
+    "explanation": "Custom backgrounds accept PNG, JPEG or WebP up to 5 MB and fewer than 24 million pixels. The image is processed and stored locally rather than uploaded, and the interface says it is cleared when you sign out.",
+    "steps": [
+      "Expand Chat background and choose Upload background.",
+      "Select an appropriate non-sensitive image and review the resulting preview and save confirmation.",
+      "Use Remove custom image when you no longer want it, then verify the selected preset."
+    ],
+    "check": "The intended local image is used only for the current conversation/device and can be removed.",
+    "troubleshooting": "A rejected image needs a supported format, smaller size or fewer pixels. Do not interpret the local preview as a shared group upload."
+  },
+  {
+    "category": "Device and recovery",
+    "slug": "dock-popout-minimize",
+    "title": "Dock, pop out or minimise Sidekick chat",
+    "explanation": "Panel controls change layout while an app is open. Pop out creates a floating panel, Dock returns it to the side and Minimize to avatar leaves a reopen control. These are layout choices, not actions that stop a live voice session or delete a conversation.",
+    "steps": [
+      "Open an app alongside the selected Sidekick conversation.",
+      "Use Pop out Sidekick chat or Dock Sidekick chat as appropriate.",
+      "Use Minimize Sidekick chat and reopen from the avatar, checking the same assistant context."
+    ],
+    "check": "The conversation remains accessible in the intended layout without implying its work stopped.",
+    "troubleshooting": "If the panel is hidden, look for the avatar and unread badge. End voice explicitly rather than relying on minimisation to stop microphone activity."
+  },
+  {
+    "category": "Device and recovery",
+    "slug": "resize-chat",
+    "title": "Resize a docked or floating chat panel",
+    "explanation": "The divider supports pointer and keyboard resizing, while the floating panel has its own resize grip. Resizing should improve workspace room without changing which assistant or app is active.",
+    "steps": [
+      "Locate Resize Sidekick chat on the docked divider, or Resize floating chat on the floating panel.",
+      "Drag to the desired size, or focus the control and use arrow keys.",
+      "Check that the composer, app and settings controls remain usable after the change."
+    ],
+    "check": "The panel fits your workspace and retains the intended conversation.",
+    "troubleshooting": "If the window is narrow, use the mobile/list layout rather than forcing a desktop width. A clipped panel may be a layout issue, not missing data."
+  },
+  {
+    "category": "Device and recovery",
+    "slug": "notification-center",
+    "title": "Use the notification center",
+    "explanation": "The bell collects recent activity that is not already being viewed. Opening the center clears its unread count; it is different from the audit-oriented Recent actions screen. An empty center can simply mean there is no new unseen activity.",
+    "steps": [
+      "Select Notifications in the Chat interface.",
+      "Open the relevant activity entry and inspect the destination conversation or task.",
+      "Close the center when done and compare its unread badge with the actual new activity."
+    ],
+    "check": "You can navigate to the relevant activity without treating the notification as proof of external task completion.",
+    "troubleshooting": "If an expected event is absent, check whether that conversation was already visible. The current activity system avoids repeatedly announcing visible or baseline history."
+  },
+  {
+    "category": "Device and recovery",
+    "slug": "notification-sounds-alerts",
+    "title": "Set notification sounds, volume and alerts",
+    "explanation": "Sounds & alerts contains App alerts, Notification sounds, volume and event-type choices for this device. Desktop alerts while Cortex is open also require browser notification permission where supported. Device and browser restrictions can override an app preference.",
+    "steps": [
+      "Open Notifications and expand Sounds & alerts.",
+      "Set the intended switches, event types and Sound volume, then use Preview to test.",
+      "If enabling desktop alerts, answer the browser permission request and inspect its resulting state."
+    ],
+    "check": "The selected event sound can be heard and the device\u2019s alert settings are understood.",
+    "troubleshooting": "If Preview reports audio unavailable, check browser sound and output volume. App alerts, custom sounds and system desktop notifications are separate mechanisms."
+  },
+  {
+    "category": "Device and recovery",
+    "slug": "mobile-install",
+    "title": "Use Cortex Chat on a phone or install it",
+    "explanation": "On mobile, workspace sections and conversations use a compact navigation layout. A browser may offer installation when supported; an installed window and browser tab can differ in available controls. Installation does not create a second account or add tool permissions.",
+    "steps": [
+      "Open Chat in a supported browser and confirm the intended account.",
+      "Use the workspace section controls to choose Sidekicks, people or apps.",
+      "Use the installation offer when available, then verify the launched app still shows the correct identity and conversations."
+    ],
+    "check": "The compact interface or installed app is usable with the same intended account.",
+    "troubleshooting": "An absent install offer can reflect browser support or an existing installation. Do not use installation as a fix for an authentication or Sessions error."
+  },
+  {
+    "category": "Device and recovery",
+    "slug": "offline-reconnect",
+    "title": "Read offline history and recover connectivity",
+    "explanation": "Chat can retain account-scoped cached conversation data on the device. Cached history is not evidence of a current authenticated connection. While identity is being verified or connectivity is unavailable, the interface can keep existing history read-only rather than exposing new actions.",
+    "steps": [
+      "Read the offline or reconnecting state before attempting another send.",
+      "Inspect only the cached history available to the current account.",
+      "Restore connectivity, let identity verification finish and inspect the current conversation before retrying any failed work."
+    ],
+    "check": "The app returns to a verified connected state without confusing old cached messages with new server results.",
+    "troubleshooting": "Do not clear all browser storage as the first recovery step; it can remove useful local drafts and preferences. Reconcile uncertain sends and external actions after reconnecting."
+  },
+  {
+    "category": "Device and recovery",
+    "slug": "support-recovery-checklist",
+    "title": "Collect useful evidence for a Chat problem",
+    "explanation": "A useful report identifies which setting, conversation and operation failed without publishing account secrets or private transcripts. Distinguish sign-in, Sessions runtime, app connection, tool policy and destination errors so support can investigate the right layer.",
+    "steps": [
+      "Record the visible error, approximate time and the action you attempted.",
+      "Check the current account context and relevant assistant/app status, using a harmless read where appropriate.",
+      "Share a redacted screenshot and concise reproduction through the intended support channel, stating any incomplete or uncertain action."
+    ],
+    "check": "The report is actionable and does not expose passwords, tokens, private invite links or unrelated customer content.",
+    "troubleshooting": "If the failed action might already have sent, booked or paid, inspect its destination before retrying. A timeout alone does not establish that nothing happened."
+  },
+  {
+    "category": "Account and workspace",
+    "slug": "wallet-and-billing",
+    "title": "Use Fulcrum Wallet from Cortex Chat"
+  }
+]

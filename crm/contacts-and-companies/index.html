@@ -25,6 +25,7 @@
 <link rel="icon" href="/documentation/assets/fulcrum-logo.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/documentation/assets/fulcrum-logo.png">
 <link rel="stylesheet" href="/documentation/assets/site.css">
+<script src="/documentation/assets/guide-search.js" defer></script>
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -221,9 +222,135 @@
 <li><a href="#related-reading">Related reading</a></li>
 </ul></aside>
 <nav class="sidebar" id="docs-nav" aria-label="Documentation">
+<label class="guide-filter" for="guide-filter">Filter guides by title<input id="guide-filter" type="search" placeholder="e.g. voice, Wallet, permissions" aria-controls="docs-nav"></label><p id="guide-filter-status" role="status"></p>
 <p class="nav-section">Start here</p><ul>
 <li><a href="/documentation/">Overview</a></li>
 <li><a href="/documentation/sessions/">Cortex and Sessions</a></li>
+</ul>
+<p class="nav-section">Cortex Chat</p><ul>
+<li><a href="/documentation/cortex-chat/">Cortex Chat overview</a></li>
+<li><a href="/documentation/cortex-chat/screenshots/">Screenshot tour</a></li>
+</ul>
+<p class="nav-section">Chat · Start here</p><ul>
+<li><a href="/documentation/cortex-chat/workspace-tour/">Find your way around Cortex Chat</a></li>
+<li><a href="/documentation/cortex-chat/sign-in/">Sign in to Cortex Chat with Fmail</a></li>
+<li><a href="/documentation/cortex-chat/account-and-workspace/">Understand your account and workspace context</a></li>
+<li><a href="/documentation/cortex-chat/connect-sessions/">Connect your Sessions workspace</a></li>
+<li><a href="/documentation/cortex-chat/choose-sidekick/">Choose the right Sidekick for a task</a></li>
+<li><a href="/documentation/cortex-chat/first-request/">Write your first useful request</a></li>
+<li><a href="/documentation/cortex-chat/permission-basics/">Understand what gives a Sidekick access</a></li>
+<li><a href="/documentation/cortex-chat/private-versus-group/">Choose a private chat or a group</a></li>
+<li><a href="/documentation/cortex-chat/read-result-evidence/">Check whether a task really finished</a></li>
+<li><a href="/documentation/cortex-chat/first-day-checklist/">Set up a practical first day in Chat</a></li>
+</ul>
+<p class="nav-section">Chat · Manage Sidekicks</p><ul>
+<li><a href="/documentation/cortex-chat/create-sidekick/">Create a specialist Sidekick</a></li>
+<li><a href="/documentation/cortex-chat/write-skills-and-job/">Write a clear Skills and job description</a></li>
+<li><a href="/documentation/cortex-chat/runtime-status/">Read a Sidekick runtime status</a></li>
+<li><a href="/documentation/cortex-chat/working-versus-typing/">Understand working status and typing indicators</a></li>
+<li><a href="/documentation/cortex-chat/default-sidekick/">Set your default Sidekick</a></li>
+<li><a href="/documentation/cortex-chat/change-default/">Change or clear the default Sidekick</a></li>
+<li><a href="/documentation/cortex-chat/avatar/">Change a Sidekick avatar</a></li>
+<li><a href="/documentation/cortex-chat/restart/">Restart the intended Sidekick</a></li>
+<li><a href="/documentation/cortex-chat/remove/">Remove a Sidekick and understand transcript deletion</a></li>
+<li><a href="/documentation/cortex-chat/reusable-skills/">Use reusable skill procedures with a Sidekick</a></li>
+</ul>
+<p class="nav-section">Chat · Messages and files</p><ul>
+<li><a href="/documentation/cortex-chat/send-text/">Send a text message</a></li>
+<li><a href="/documentation/cortex-chat/multiline-message/">Write a multi-line message without sending early</a></li>
+<li><a href="/documentation/cortex-chat/mention-member/">Mention a group member or Sidekick</a></li>
+<li><a href="/documentation/cortex-chat/attach-file/">Attach a supported file</a></li>
+<li><a href="/documentation/cortex-chat/drag-drop/">Drag and drop a file into Chat</a></li>
+<li><a href="/documentation/cortex-chat/preview-attachment/">Review or remove an attachment before sending</a></li>
+<li><a href="/documentation/cortex-chat/ask-about-document/">Ask a useful question about an attached document</a></li>
+<li><a href="/documentation/cortex-chat/voice-message/">Record and send a voice message</a></li>
+<li><a href="/documentation/cortex-chat/play-voice-message/">Play, pause and seek a voice message</a></li>
+<li><a href="/documentation/cortex-chat/delivery-and-retry/">Understand delivery indicators and retry a failed send</a></li>
+</ul>
+<p class="nav-section">Chat · People and groups</p><ul>
+<li><a href="/documentation/cortex-chat/find-person/">Find the right person in People &amp; groups</a></li>
+<li><a href="/documentation/cortex-chat/invite-people/">Invite a person to a conversation</a></li>
+<li><a href="/documentation/cortex-chat/create-group/">Create a group conversation</a></li>
+<li><a href="/documentation/cortex-chat/join-invite-link/">Join a group through an invitation</a></li>
+<li><a href="/documentation/cortex-chat/group-info/">Open group information and content</a></li>
+<li><a href="/documentation/cortex-chat/group-media/">Find shared media in a group</a></li>
+<li><a href="/documentation/cortex-chat/group-files-links/">Find a group file or shared link</a></li>
+<li><a href="/documentation/cortex-chat/add-sidekick-group/">Add a Sidekick to a group</a></li>
+<li><a href="/documentation/cortex-chat/ask-sidekick-private/">Ask a Sidekick privately beside a conversation</a></li>
+<li><a href="/documentation/cortex-chat/group-video-call/">Start a video meeting from a group</a></li>
+</ul>
+<p class="nav-section">Chat · Group settings</p><ul>
+<li><a href="/documentation/cortex-chat/edit-group/">Edit a group name and description</a></li>
+<li><a href="/documentation/cortex-chat/group-photo/">Change a group photo</a></li>
+<li><a href="/documentation/cortex-chat/new-member-history/">Choose whether new members see earlier history</a></li>
+<li><a href="/documentation/cortex-chat/welcome-message/">Set a useful group welcome message</a></li>
+<li><a href="/documentation/cortex-chat/member-messaging/">Control group message and media permissions</a></li>
+<li><a href="/documentation/cortex-chat/invite-permissions/">Control who can invite people and Sidekicks</a></li>
+<li><a href="/documentation/cortex-chat/invite-link/">Create and share a group invite link</a></li>
+<li><a href="/documentation/cortex-chat/revoke-invite-link/">Revoke a group invitation link</a></li>
+<li><a href="/documentation/cortex-chat/administrator-rights/">Assign precise group administrator rights</a></li>
+<li><a href="/documentation/cortex-chat/leave-or-delete-group/">Choose between leaving and deleting a group</a></li>
+</ul>
+<p class="nav-section">Chat · Connected apps</p><ul>
+<li><a href="/documentation/cortex-chat/open-app/">Open a connected app beside your assistant</a></li>
+<li><a href="/documentation/cortex-chat/connection-states/">Understand app connection and access states</a></li>
+<li><a href="/documentation/cortex-chat/docs/">Open and work with Docs in Cortex Chat</a></li>
+<li><a href="/documentation/cortex-chat/open-document-context/">Explain what the open document means for a request</a></li>
+<li><a href="/documentation/cortex-chat/drive/">Use Drive from Cortex Chat</a></li>
+<li><a href="/documentation/cortex-chat/email/">Use Email inside Cortex Chat</a></li>
+<li><a href="/documentation/cortex-chat/switch-email-account/">Switch between signed-in email accounts</a></li>
+<li><a href="/documentation/cortex-chat/add-email-account/">Add or refresh an email account</a></li>
+<li><a href="/documentation/cortex-chat/calendar-meetings/">Use Calendar and Meetings from Chat</a></li>
+<li><a href="/documentation/cortex-chat/crm-cloud/">Understand CRM and Cloud connections</a></li>
+</ul>
+<p class="nav-section">Chat · Tools and permissions</p><ul>
+<li><a href="/documentation/cortex-chat/open-tool-permissions/">Review a Sidekick’s tool permissions</a></li>
+<li><a href="/documentation/cortex-chat/search-tool-catalogue/">Search tools by operation or category</a></li>
+<li><a href="/documentation/cortex-chat/read-versus-write-tools/">Distinguish read-only tools from tools that change data</a></li>
+<li><a href="/documentation/cortex-chat/select-save-tools/">Select and save tool permissions</a></li>
+<li><a href="/documentation/cortex-chat/disable-tool-access/">Disable tool access using an explicit empty policy</a></li>
+<li><a href="/documentation/cortex-chat/owner-approval/">Resolve owner approval needed</a></li>
+<li><a href="/documentation/cortex-chat/private-group-tools/">Separate private tool access from group tool access</a></li>
+<li><a href="/documentation/cortex-chat/email-read-draft-send/">Set Email access: read, draft and send</a></li>
+<li><a href="/documentation/cortex-chat/repair-connection/">Repair a specific app connection</a></li>
+<li><a href="/documentation/cortex-chat/apply-runtime-permissions/">Apply saved permissions to a running Sidekick</a></li>
+</ul>
+<p class="nav-section">Chat · Voice conversations</p><ul>
+<li><a href="/documentation/cortex-chat/voice-or-recording/">Choose live voice or a recorded message</a></li>
+<li><a href="/documentation/cortex-chat/activate-voice/">Activate voice for a Sidekick</a></li>
+<li><a href="/documentation/cortex-chat/choose-voice/">Choose or change a Sidekick voice</a></li>
+<li><a href="/documentation/cortex-chat/start-voice/">Start a live conversation with your Sidekick</a></li>
+<li><a href="/documentation/cortex-chat/mute-end-voice/">Mute the microphone or end a voice conversation</a></li>
+<li><a href="/documentation/cortex-chat/peptalk/">Understand and change Peptalk</a></li>
+<li><a href="/documentation/cortex-chat/enable-audio/">Enable voice audio when the browser blocks playback</a></li>
+<li><a href="/documentation/cortex-chat/voice-credit-readiness/">Resolve a voice readiness or credits warning</a></li>
+<li><a href="/documentation/cortex-chat/full-lyre-profile/">Open the full voice profile in Lyre</a></li>
+<li><a href="/documentation/cortex-chat/voice-status-errors/">Understand listening, thinking and speaking states</a></li>
+</ul>
+<p class="nav-section">Chat · Account and workspace</p><ul>
+<li><a href="/documentation/cortex-chat/profile-menu/">Use the account menu and My account</a></li>
+<li><a href="/documentation/cortex-chat/wallet-balance/">Read the Wallet balance shown in your profile</a></li>
+<li><a href="/documentation/cortex-chat/add-credits/">Open the intended Add credits flow</a></li>
+<li><a href="/documentation/cortex-chat/administrator-permissions/">Open workspace Administrator permissions</a></li>
+<li><a href="/documentation/cortex-chat/administrator-tool-ceilings/">Set an administrator’s tool ceiling</a></li>
+<li><a href="/documentation/cortex-chat/workspace-members/">Review workspace members and roles</a></li>
+<li><a href="/documentation/cortex-chat/invite-workspace-member/">Send or revoke a workspace invitation</a></li>
+<li><a href="/documentation/cortex-chat/change-role-suspend/">Change a member role, suspend or reactivate access</a></li>
+<li><a href="/documentation/cortex-chat/recent-actions/">Review recent workspace actions</a></li>
+<li><a href="/documentation/cortex-chat/sign-out/">Sign out of Chat or Fmail deliberately</a></li>
+<li><a href="/documentation/cortex-chat/wallet-and-billing/">Wallet and billing guide</a></li>
+</ul>
+<p class="nav-section">Chat · Device and recovery</p><ul>
+<li><a href="/documentation/cortex-chat/light-dark-theme/">Switch between light and dark mode</a></li>
+<li><a href="/documentation/cortex-chat/chat-background/">Choose a conversation background</a></li>
+<li><a href="/documentation/cortex-chat/custom-background/">Upload or remove a custom chat background</a></li>
+<li><a href="/documentation/cortex-chat/dock-popout-minimize/">Dock, pop out or minimise Sidekick chat</a></li>
+<li><a href="/documentation/cortex-chat/resize-chat/">Resize a docked or floating chat panel</a></li>
+<li><a href="/documentation/cortex-chat/notification-center/">Use the notification center</a></li>
+<li><a href="/documentation/cortex-chat/notification-sounds-alerts/">Set notification sounds, volume and alerts</a></li>
+<li><a href="/documentation/cortex-chat/mobile-install/">Use Cortex Chat on a phone or install it</a></li>
+<li><a href="/documentation/cortex-chat/offline-reconnect/">Read offline history and recover connectivity</a></li>
+<li><a href="/documentation/cortex-chat/support-recovery-checklist/">Collect useful evidence for a Chat problem</a></li>
 </ul>
 <p class="nav-section">Fulcrum Code</p><ul>
 <li><a href="/documentation/code/">Code overview</a></li>

@@ -83,3 +83,7 @@ Screenshots use a local product build, a fresh browser context, blocked external
 The November 2026 review expands 33 guides to 50: eight Code guides, dedicated Drive/Docs/Wallet/Sessions guides, Lyre resources and additional CRM guides. Existing task guides gain worked examples, result verification and troubleshooting. `_src/review-notes.md` records the evidence scope and limits.
 
 `landing/` is a noindex preview of the separately hosted GitHub profile homepage. The production homepage lives in `fulcrumcortex/fulcrumcortex.github.io`; edit that repository for future homepage changes.
+
+## Cortex Chat reference
+
+`_src/chat-guide-catalog.json` holds 100 individually authored task guides for chat.fulcrumcortex.com. Sources are rendered into `_src/pages/cortex-chat/`; the shared setting explanations distinguish identity, runtime, application access and saved tool policies. The Chat hub and screenshot tour index the content. Twenty-two actual UI captures use a local production build with fictional OIDC/API fixtures; ready voice states are simulations, not live call evidence. Provenance and hashes are in `_src/chat-screenshot-review.json`. The sidebar title filter is progressive enhancement; every guide remains available without JavaScript.

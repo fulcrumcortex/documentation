@@ -26,7 +26,7 @@ import build  # noqa: E402
 
 ALLOWED_HOSTS = {
     "fulcrumcortex.com", "fulcrumcrm.app", "fulcrumcode.app", "lyre.au",
-    "docs.lyre.au", "fulcrumail.app", "github.com", "fulcrumcortex.github.io",
+    "docs.lyre.au", "fulcrumail.app", "github.com", "fulcrumcortex.github.io", "chat.fulcrumcortex.com",
 }
 VOID = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "source", "track", "wbr"}
 

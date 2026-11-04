@@ -1,0 +1,101 @@
+{
+  "reviewed": "2026-11-05",
+  "source": "7503e5a19ba0126939c432fdac1e6f0720bb1135",
+  "privacy": "Actual local production build rendered with Playwright; synthetic Fmail OIDC and browser API fixtures only. No live integrations, model requests, real messages, calls or customer data. All screenshots visually privacy reviewed. Fictional e2e.personal@fulcrumail.app, owner@example.test, member@example.test, Demo and Property team labels are test fixtures. Ready/active voice state is mocked and is not a live call or real activation.",
+  "files": [
+    {
+      "name": "chat-account-menu.png",
+      "sha256": "6e377bcf2a62d95a52823789a57df2d3e9bb92f75692083e1fe2a6ac6b06540a"
+    },
+    {
+      "name": "chat-administrator-permissions.png",
+      "sha256": "48ff7ab8c511abee6c87a9c277370c5907e5cc4f839abe8d78e305ac77ce2674"
+    },
+    {
+      "name": "chat-background-settings.png",
+      "sha256": "ad7e7d30cd7c5628363f8d24a0aaf46149becb9a194a6c965b01a681e621b2cf"
+    },
+    {
+      "name": "chat-conversation-settings.png",
+      "sha256": "2c8e7357a377a423e1470b617fb08c31b5836f97af92b5b6c4499421b7c1480d"
+    },
+    {
+      "name": "chat-dark-theme.png",
+      "sha256": "831e1db2c773eb5ddb2273576a85fcaf438a1b9e2e40ba98dd4c56664a4b1e2f"
+    },
+    {
+      "name": "chat-group-administrator-permissions.png",
+      "sha256": "5897814285484b2be93b0fdd0af8fdc1970fb3e3944c7d9ccdf6385a2cb84d8c"
+    },
+    {
+      "name": "chat-group-edit-settings.png",
+      "sha256": "797c798d1a3d87f6ed97207d9e1e6c9eecb578f98e916cbbe59474afded4d001"
+    },
+    {
+      "name": "chat-group-files.png",
+      "sha256": "cda2526d81819ab4a7b784d0774e1c348c1bcf2cee6d802de5e3897c00208f71"
+    },
+    {
+      "name": "chat-group-info.png",
+      "sha256": "74955684137f8b84c0f10cde8cfd5a5df8ec80b3b20269f223ce6ddec169fd9b"
+    },
+    {
+      "name": "chat-group-member-management.png",
+      "sha256": "c3b70b2d21e86b7d4b074de532454c7d27ccd5675ed6c2fc5fb8de23bc4cc84a"
+    },
+    {
+      "name": "chat-lyre-ready.png",
+      "sha256": "5ee26f2abbe72eef7bf3f5b5ef9fbeb3e5bd496f282c991249194288c65035e4"
+    },
+    {
+      "name": "chat-lyre-settings-peptalk.png",
+      "sha256": "5c09495076de3c1916b0369d4c4a8f7143b6094e7772266a6d08fcd13d332815"
+    },
+    {
+      "name": "chat-lyre-voice.png",
+      "sha256": "9e8c0bafd37245862505b737087741d567e73c0d6eb84124b75a6ea7c6d0929d"
+    },
+    {
+      "name": "chat-mobile.png",
+      "sha256": "fd12d7ddc8f78e338602dfbfe4bd59fc849e7b3b4f3576cecb15f7dbaf43c145"
+    },
+    {
+      "name": "chat-notifications.png",
+      "sha256": "a20a43c13604ccd69ce7a059ea6fae18a6dc4ace7eac8efbe56efed533e6a501"
+    },
+    {
+      "name": "chat-recent-actions.png",
+      "sha256": "7e2486b9b3a7f0d457c189cf57fdd6425cd2712e64ae69b4717b0d2b171b5f47"
+    },
+    {
+      "name": "chat-sounds-alerts.png",
+      "sha256": "f69ca491c7e584191bb6f160890f8977fafb37bc42a1aa0077c77da42db235d6"
+    },
+    {
+      "name": "chat-tool-permissions.png",
+      "sha256": "6403f548663371752b13cc1c069d8c6eaf705e712de9113286e27a832e974fc0"
+    },
+    {
+      "name": "chat-workspace-groups.png",
+      "sha256": "ffb1e43da2d9a110424c3a944911c60d21bee994d6ccc349544347aae8fabd45"
+    },
+    {
+      "name": "chat-workspace-invitations.png",
+      "sha256": "73d793a0198b13fb83e523a572bd1127bd141288f1e9ff747f620254c7f56f00"
+    },
+    {
+      "name": "chat-workspace-members.png",
+      "sha256": "3c2d229adb488a134255cf1a44acf74f47414360516d72d9f057298f4c45d8e7"
+    },
+    {
+      "name": "chat-workspace.png",
+      "sha256": "ae1c7998e6dc1d8481a678ae3029306e886c4e14666b245b8e7e51551afa97c6"
+    }
+  ],
+  "checks": [
+    "Source capture visual review",
+    "SHA256 provenance comparison",
+    "PNG metadata chunks",
+    "OCR sensitive-identifier scan"
+  ]
+}

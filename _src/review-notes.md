@@ -21,3 +21,7 @@ The Sidekick skills repository was empty at review time. The homepage and Code g
 ## Validation
 
 Run the static site checker (including online external links), browser checks for all generated pages and screenshot loading, representative mobile layouts, screenshot OCR/visual inspection, metadata checks, and source-example validation before publication. Release revisions and live checks belong in the release record after the commits are known.
+
+## Cortex Chat expansion
+
+Added 100 distinct task guides and a visual settings tour, grounded in the current Chat source (7bf4681 preserved through marketing revision7503e5a). Surfaces reviewed: Workspace, SidekicksPanel, ConversationSettings, SidekickVoiceSettings, useLyreSettings, LyrePanel, ChatBackgroundSettings, ToolsPermissions, ConnectedApps, AppConnectionControl, EmailAccountTabs, ChatComposer, ChatAttachment, VoiceMessage, GroupDetails, GroupMembersSidebar, AddPeopleDialog, JoinGroupDialog, ConversationSidekickPanel, ChatPanelControls, AccountMenu, AdministratorPermissions, WorkspaceMembers, RecentActions, ActivityCenter and ChatInstall. Twenty-two screenshots were captured and visually reviewed from the real locally rendered UI with fictional identities and mocked APIs. The screenshot gallery and captions explicitly distinguish demonstration states from production integration success. No user-submitted production screenshot is republished.

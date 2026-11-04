@@ -108,6 +108,13 @@ NAV: list[tuple[str, list[str]]] = [
 ]
 
 
+CHAT_GUIDES = json.loads((ROOT / "_src" / "chat-guide-catalog.json").read_text())
+chat_sections = [("Cortex Chat", ["/cortex-chat/", "/cortex-chat/screenshots/"])]
+for category in dict.fromkeys(item["category"] for item in CHAT_GUIDES):
+    chat_sections.append(("Chat · " + category, ["/cortex-chat/" + item["slug"] + "/" for item in CHAT_GUIDES if item["category"] == category]))
+NAV[1:1] = chat_sections
+
+
 @dataclass
 class Page:
     path: str  # site path such as "/crm/lists/"
@@ -254,7 +261,7 @@ def json_ld(page: Page, crumbs: list[tuple[str, str]]) -> str:
 
 
 def render_nav(pages: dict[str, Page], current: Page) -> str:
-    out = ['<nav class="sidebar" id="docs-nav" aria-label="Documentation">']
+    out = ['<nav class="sidebar" id="docs-nav" aria-label="Documentation">', '<label class="guide-filter" for="guide-filter">Filter guides by title<input id="guide-filter" type="search" placeholder="e.g. voice, Wallet, permissions" aria-controls="docs-nav"></label><p id="guide-filter-status" role="status"></p>']
     for section, paths in NAV:
         out.append(f'<p class="nav-section">{esc(section)}</p><ul>')
         for p in paths:
@@ -338,6 +345,7 @@ def render(page: Page, pages: dict[str, Page], order: list[str]) -> str:
 <link rel="icon" href="{BASE_PATH}/assets/fulcrum-logo.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="{BASE_PATH}/assets/fulcrum-logo.png">
 <link rel="stylesheet" href="{BASE_PATH}/assets/site.css">
+<script src="{BASE_PATH}/assets/guide-search.js" defer></script>
 <script type="application/ld+json">
 {json_ld(page, crumbs)}
 </script>
@@ -382,6 +390,7 @@ def render_404() -> str:
 <meta name="robots" content="noindex">
 <link rel="icon" href="{BASE_PATH}/assets/fulcrum-logo.svg" type="image/svg+xml">
 <link rel="stylesheet" href="{BASE_PATH}/assets/site.css">
+<script src="{BASE_PATH}/assets/guide-search.js" defer></script>
 </head>
 <body>
 <header class="topbar">
